@@ -2,9 +2,9 @@
 layout: Post
 permalink: /index
 feedformat: card
-title: Pranav's Place on the Internet
+title: Better Call Pranav
 ---
 
-The answer to every "How do I do that again?" question you might have as a Microsoft IDC Employee.
+Hi - I'm Pranav. I'm a lawyer by day and a lawyer by night. I work too much
 
-If you are new here, a good place to start is [[New Joinee Checklist]]
+If you're new here, we're probably friends. a good place to start is [[New Joinee Checklist]]
