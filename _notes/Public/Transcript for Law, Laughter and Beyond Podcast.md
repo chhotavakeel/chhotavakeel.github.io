@@ -66,3 +66,5 @@ That being said, having good instincts as a lawyer is helpful (and that can be l
 > Not that rocket science is rocket science - after all, we owe a great deal of our aviation history to amateurs working out of garages.
 
 Oh, and Hidden Systems is a [fun](https://www.theverge.com/2023/3/17/23645204/hidden-systems-book-internet-water-power) dive into how the power sector works. 
+
+Cheers!
