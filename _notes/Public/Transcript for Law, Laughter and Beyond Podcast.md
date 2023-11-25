@@ -5,6 +5,8 @@ date: 25-11-2023
 date modified: 25-11-2023
 ---
 
+This is a rough transcript of an interview I did for [Law, Laughter and Beyond](https://open.spotify.com/show/6cBfpq43XuUCBRyVKmXpil), a podcast run by the [Vidhi Centre for Legal Policy](https://vidhilegalpolicy.in/) in conjunction with my college. This description will be updated with the link of the episode I feature in once it comes out - stay tuned!
+
 ## What drove you to pursue a career in corporate law?
 
 You know, I honestly think that this is the first time I’m realising that I have in fact pursued a career in corporate law. In any case, it happened quite by accident - life really is what happens when you’re busy making other plans. I was always interested in litigating and joined the disputes team at Trilegal when I graduated. The partner I was working with then also took up electricity law disputes (which are before a specialised set of tribunals) and I found that body of law interesting enough to switch internally, full-time into the transactional side of things. I was also extremely lucky to have found people who helped me immensely along this journey.
