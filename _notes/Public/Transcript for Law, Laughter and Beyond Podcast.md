@@ -1,8 +1,8 @@
 ---
 feed: show
 title: Transcript for Law, Laughter and Beyond Podcast
-date: 25-11-2023
-date modified: 25-11-2023
+date: 19-11-2023
+date modified: 26-11-2023
 ---
 
 This is a rough transcript of an interview I did for [Law, Laughter and Beyond](https://open.spotify.com/show/6cBfpq43XuUCBRyVKmXpil), a podcast run by the [Vidhi Centre for Legal Policy](https://vidhilegalpolicy.in/) in conjunction with my college. This description will be updated with the link of the episode I feature in once it comes out - stay tuned!
@@ -47,7 +47,7 @@ Also remember, everyone has interests - the aim is to find one that lets you ear
 
 As to how I found my interest, as I said, it was purely by accident. I had no idea what electricity law was when I was in college. I also had a hostel room overlooking the WBPDCL building - it was only after graduation did I figure out what the folks over there did when I had to submit a proposal to them.
 
-## What is it like working as a projects lawyer? (what kind of work, deliverables, mentorship, business development) Tips for those who want to work in this area. 
+## What is it like working as a projects lawyer? What kind of work and deliverables are there? How is mentorship and business development taught and carried out? What tips do you have for those who want to work in this area? 
 
 Trust me, it’s pretty great, else I wouldn’t be able to do it for so long! 
 
