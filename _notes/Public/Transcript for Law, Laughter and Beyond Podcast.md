@@ -37,7 +37,7 @@ Oh, and watch [this](https://www.youtube.com/watch?v=RpUJfW4WTKw&pp=ygUYYXJlIHlv
 
 Exposure. As much as you can get of it. 
 
-Please read. [Read a lot](https://chhotavakeel.github.io/note/Media-for-law-students).
+Please read. [[Media for law students]].
 
 Next - intern. Intern a lot. As much as you can, and in as many diverse places as possible. While I took every opportunity I got to intern, my one minor regret is that I didn’t diversify enough. 
 
