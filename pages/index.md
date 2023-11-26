@@ -7,4 +7,4 @@ title: Posts
 
 If you're here, we're probably friends. 
 
-This is a searchable list of all my posts - I frequently come back to these, so if you liked a particular one, I would suggest checking ever so often for updates!
+This is a searchable list of all my posts, arranged in chronological order. I rewrite frequently, so if you like any one in particular, I would suggest checking ever so often for updates!
