@@ -1,6 +1,6 @@
 ---
 feed: show
-title: Transcript for Law, Laughter and Beyond Podcast
+title: Transcript for Law, Laughter and Beyond
 date: 19-11-2023
 date modified: 27-11-2023
 ---
