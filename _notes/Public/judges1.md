@@ -12,7 +12,7 @@ I have since lost the notebook that I had maintained during that internship, but
 Eventually, near the culmination of my internship, I was formally invited to the great man's study to ask him a question.
 Imagine, for a second. You are the J-2 of the Supreme Court of India, humouring a boy who looks like he hasn't quite arrived at an age when he needs to start shaving regularly, when you're asked why the Court never apologised for _ADM Jabalpur_ - the decision amateur legal commentators frequently term the "black mark" of the Indian judiciary.
 
-The great man seemed startled. Noticing his reaction, I quickly moved on to talking about the 44th Amendment, which had effectively overruled _ADM_, and sought his opinion as to whether anything in the case actually survived, but he seemed pensive, almost wrought. I was quickly ushered out of his study, and shortly thereafter, his life.
+The great man seemed startled. Noticing his reaction, I quickly moved on to talking about the 44th amendment to the Constitution, which had effectively overruled _ADM_, and sought his opinion as to whether anything in the case actually survived, but he seemed pensive, almost wrought. I was quickly ushered out of his study, and shortly thereafter, his life.
 
 Time passed, and I resumed college, taking back nothing but memories of a few pleasant weeks spent at 6, Motilal Nehru Marg. This happened in 2016.
 
