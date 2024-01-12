@@ -17,6 +17,6 @@ The great man seemed startled. Noticing his reaction, I quickly moved on to talk
 
 Time passed, and I resumed college, taking back nothing but memories of a few pleasant weeks spent at 6, Motilal Nehru Marg. This happened in 2016.
 
-In mid-2017, a five-judge bench of the Supreme Court headed by Chief Justice J.S. Khehar passed a landmark decision recognising a fundamental right to privacy. The majority opinion, authored by Justice D.Y. Chandrachud (again, as he then was), joined by Chief Justice Khehar and Justices R.K. Agarwal and S. Abdul Nazeer, had a couple of short paragraphs, recognising _ADM Jabalpur_ as "seriously flawed" and overruling it. 
+In mid-2017, a five-judge bench of the Supreme Court headed by Chief Justice J.S. Khehar passed a landmark decision recognising a fundamental right to privacy. The majority opinion, authored by Justice D.Y. Chandrachud (again, as he then was), joined by Chief Justice Khehar and Justices R.K. Agarwal and S. Abdul Nazeer, had a couple of short paragraphs recognising _ADM Jabalpur_ as "seriously flawed" and overruling it. 
 
 Well played, sir. Well played.
