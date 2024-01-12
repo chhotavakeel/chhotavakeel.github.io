@@ -1,8 +1,8 @@
 ---
 layout: Post
-permalink: /index
+permalink: /notes
 feedformat: card
-title: All notes
+title: Notes
 ---
 
 If you're here, we're probably friends. 
