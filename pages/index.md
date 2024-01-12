@@ -2,7 +2,7 @@
 layout: Post
 permalink: /index
 feedformat: card
-title: Index
+title: All notes
 ---
 
 If you're here, we're probably friends. 
