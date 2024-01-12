@@ -2,5 +2,5 @@
 layout: Post
 permalink: /index
 feedformat: card
-title: Notes
+title: All notes
 ---
