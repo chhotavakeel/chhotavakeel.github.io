@@ -35,7 +35,7 @@ But as someone who does some degree of recruiting for my team - you really donâ€
 
 Exposure. As much as you can get of it. 
 
-Please read. [[Media for law students]].
+[[Please read]].
 
 Next - intern. Intern a lot. As much as you can, and in as many diverse places as possible. While I took every opportunity I got to intern, my one minor regret is that I didnâ€™t diversify enough. 
 
