@@ -27,11 +27,9 @@ That’s a hard question. I haven’t thought much about legal education since I
 
 > This may also come up later, but the emphasis on being able to recite sections of statutes (or landmark judgments) from memory is rarely helpful in the real world - a-ha! moments where you know the exact precedent to apply to a problem are far rarer than you would expect. Knowing how to apply the law in order to synthesise an answer for your client’s situation is a far more useful skill than simply knowing what the law says. And I don’t think we’re taught that.
 
-Which brings me to my answer - I think we need a lot more interaction with practising lawyers in law school than is currently done. I guess credit courses bridge the gap to a certain extent - I would try and make them a more regular feature, by which I mean try and incentivise willing individuals to take the same course every year. A crash course on M&A for instance, or an introduction to energy law. I know of some instances where these were done as one-off instances in the past.
+Which brings me to my answer - I think we need a lot more interaction with practising lawyers in law school than is currently done. I guess credit courses bridge the gap to a certain extent - I would try and make them a more regular feature, by which I mean try and incentivise willing individuals to delivery the same course every year. A crash course on M&A for instance, or an introduction to energy law. I know of some instances where these were done as one-off instances in the past.
 
 But as someone who does some degree of recruiting for my team - you really don’t need that as a fresher. That’s what we’re there for once you join us. There is a basic level of expectation once you join a workplace which needs to be met and the rest the seniors at your workplace are meant to take care of.
-
-Oh, and watch [this](https://www.youtube.com/watch?v=RpUJfW4WTKw&pp=ygUYYXJlIHlvdSBkZXN0aW5lZCB0byBkZWFs).
 
 ## How do you think law students can find their interests? How did you find your interests?
 
@@ -46,6 +44,8 @@ Also remember, everyone has interests - the aim is to find one that lets you ear
 > I also feel like interests are somewhat of a virtuous cycle and there’s a larger feedback loop at play there. You’re interested in something -> you spend time on it -> you get better at it - you like doing it more. Rinse and repeat.
 
 As to how I found my interest, as I said, it was purely by accident. I had no idea what electricity law was when I was in college. I also had a hostel room overlooking the WBPDCL building - it was only after graduation did I figure out what the folks over there did when I had to submit a proposal to them.
+
+Also, watch [this](https://www.youtube.com/watch?v=RpUJfW4WTKw&pp=ygUYYXJlIHlvdSBkZXN0aW5lZCB0byBkZWFs) to figure out if being a transactional lawyer is for you.
 
 ## What is it like working as a projects lawyer? What kind of work and deliverables are there? How is the access to mentorship? Is business development taught and carried out at an early stage? What tips do you have for those who want to work in this area? 
 
@@ -65,6 +65,6 @@ That being said, having good instincts as a lawyer is helpful (and that can be l
 
 > Not that rocket science is rocket science - after all, we owe a great deal of our aviation history to amateurs working out of garages.
 
-Oh, and Hidden Systems is a [fun](https://www.theverge.com/2023/3/17/23645204/hidden-systems-book-internet-water-power) dive into how the power sector works. 
+Oh, and Hidden Systems is a [fun](https://www.theverge.com/2023/3/17/23645204/hidden-systems-book-internet-water-power) dive into how the power sector works. Feel free to borrow my copy. 
 
 Cheers!
