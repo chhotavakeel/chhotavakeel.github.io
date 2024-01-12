@@ -7,7 +7,7 @@ date modified: 12-01-2024
 
 When I was a young law student, I spent a couple of weeks in New Delhi interning under Justice J.S. Khehar (as he then was). While he seemed quite busy, there was very little that I could help him with at the time - this likely still holds true today. In any case, he seemed content to let me browse through his vast personal library for the duration of my time there.
 
-I have since lost the notebook that I had maintained during that internship, but I still remember that I spent days looking for an answer in that library to something that had bothered me since I first learnt of it. Bear in mind that this was also the time that I was obsessed with the Constitution of India and fancied becoming a constitutional litigator myself. Oh, the naivete of youth!
+I have since lost the notebook that I had maintained during that internship, but I still remember the days I spent looking for an answer in that library to something that had bothered me since I first learnt of it. Bear in mind that this was also the time that I was obsessed with the Constitution of India and fancied becoming a constitutional litigator myself. Oh, the naivete of youth!
 
 Eventually, near the culmination of my internship, I was formally invited to the great man's study to ask him a question.
 Imagine, for a second. You are the J-2 of the Supreme Court of India, humouring a boy who looks like he hasn't quite arrived at an age when he needs to start shaving regularly, when you're asked why the Court never apologised for _ADM Jabalpur_ - the decision amateur legal commentators frequently term the "black mark" of the Indian judiciary.
