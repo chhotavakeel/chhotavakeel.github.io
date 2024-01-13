@@ -14,4 +14,6 @@ Read books on our justice system - its successes and failures. Read Anita Gets B
 
 If you must, watch some movies. Watch Twelve Angry Men and watch Gangajal. That cuts a fairly vast swathe across what you can expect to find in the profession. 
 
-> If I can be slightly selfish, please also read the financial papers - Mint is a good one. Read The Morning Context. Subscribe to Money Stuff. Maybe read Barbarians at the Gate and The Smartest Guys in the Room? If you don’t like reading, why are you in law school?
+If I can be slightly selfish, please also read the financial papers - Mint is a good one. Read The Morning Context. Subscribe to Money Stuff. Maybe read Barbarians at the Gate and The Smartest Guys in the Room? 
+
+> If you don’t like reading, why are you in law school?
