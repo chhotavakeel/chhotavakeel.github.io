@@ -1,6 +1,6 @@
 ---
 feed: show
-title: Are We the Baddies
+title: Are We the Baddies?
 date: 13-01-2024
 date modified: 13-01-2024
 ---
