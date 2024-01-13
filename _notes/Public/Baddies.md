@@ -3,6 +3,9 @@ feed: show
 title: Are We the Baddies?
 date: 13-01-2024
 date modified: 13-01-2024
+tags:
+  - advice
+  - corporate
 ---
 I was once helping a client out with a contract for the construction of a wall to be built around their company's upcoming manufacturing facility, when they accidentally let slip that the wall was being built well in advance of the facility.  
 

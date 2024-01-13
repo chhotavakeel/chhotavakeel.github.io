@@ -3,6 +3,8 @@ feed: show
 title: Who Judges the Judges? Pt. 1
 date: 11-01-2024
 date modified: 12-01-2024
+tags:
+  - constitution
 ---
 
 When I was a young law student, I spent a couple of weeks in New Delhi interning under Justice J.S. Khehar (as he then was). While he seemed quite busy, there was very little that I could help him with at the time - this likely still holds true today. In any case, he seemed content to let me browse through his vast personal library for the duration of my time there.

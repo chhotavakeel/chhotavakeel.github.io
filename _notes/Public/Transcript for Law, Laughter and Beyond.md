@@ -3,6 +3,8 @@ feed: show
 title: Transcript for Law, Laughter and Beyond
 date: 19-11-2023
 date modified: 27-11-2023
+tags:
+  - advice
 ---
 
 This is a rough transcript of an interview I did for [Law, Laughter and Beyond](https://open.spotify.com/show/6cBfpq43XuUCBRyVKmXpil), a podcast run by my college in conjunction with the [Vidhi Centre for Legal Policy](https://vidhilegalpolicy.in/). This description will be updated with the link of the episode I feature in once it comes out - stay tuned!

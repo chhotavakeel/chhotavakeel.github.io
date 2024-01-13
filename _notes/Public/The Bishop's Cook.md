@@ -3,6 +3,8 @@ feed: show
 title: The Bishop of Rochestor's Cook
 date: 13-01-2024
 date modified: 13-01-2024
+tags:
+  - constitution
 ---
 
 Anytime someone tries to point out the evils of *substantive* due process, I'm reminded of a story our Con Law professor had told us in the second year of law school.
