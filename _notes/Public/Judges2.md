@@ -7,7 +7,6 @@ tags:
   - constitution
   - advice
 ---
-
 One of my favourite articles, which left quite an impression on me as a young lawyer starting out my career, is this one on the then-Justice Muralidhar.
 
 [The Strange Case of the Omni Van Lawyer](https://www.barandbench.com/columns/the-maruti-omni-van-lawyer-the-guy-whose-transfer-worries-you)

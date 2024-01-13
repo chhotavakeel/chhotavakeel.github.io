@@ -6,7 +6,6 @@ date modified: 13-01-2024
 tags:
   - constitution
 ---
-
 Anytime someone tries to point out the evils of *substantive* due process, I'm reminded of a story our Con Law professor had told us in the second year of law school.
 
 The then-Bishop of Rochestor was a cruel and proud man, who had recently passed a decree that anyone caught stealing in his lands would have their right hand chopped off. While this is the realm of speculation, we shall presume that any amputation was, by a clarificatory decree, restricted to the elbow.  
