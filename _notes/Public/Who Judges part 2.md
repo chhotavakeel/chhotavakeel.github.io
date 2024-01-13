@@ -4,8 +4,9 @@ title: Who Judges the Judges? Pt. 2
 date: 14-01-2024
 date modified: 14-01-2024
 tags:
-  - constitution
   - advice
+  - constitution
+  - judges
 ---
 One of my favourite articles, which left quite an impression on me as a young lawyer starting out my career, is this one on the then-Justice Muralidhar.
 
