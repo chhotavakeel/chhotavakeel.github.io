@@ -3,11 +3,9 @@ feed: show
 title: Who Judges the Judges? Pt. 2
 date: 14-01-2024
 date modified: 14-01-2024
-tags:
-  - advice
-  - constitution
-  - judges
+tags: advice, constitution, judges
 ---
+
 One of my favourite articles, which left quite an impression on me as a young lawyer starting out my career, is this one on the then-Justice Muralidhar.
 
 [The Strange Case of the Omni Van Lawyer](https://www.barandbench.com/columns/the-maruti-omni-van-lawyer-the-guy-whose-transfer-worries-you)
