@@ -15,4 +15,4 @@ Life, my client said unexpectedly, could not always be reduced to a series of in
   
 We as lawyers can't help but treat the law as a zero sum game - Cory Doctorow puts it best [here](https://pluralistic.net/2021/02/10/duke-sucks/#devils) when he says "[t]here is a toxic strain of competitive sadism in the law, an ethic of victory through someone else's humiliating defeat". 
 
-I think that's worth remembering the next time we draft a contract with broad rights grabs against a company that can neither afford the contract, nor to walk away from it, don't you?
+I think that's worth remembering the next time we draft a contract with broad rights grabs against a company that can neither afford the contract, nor to walk away from it, don't you? 
