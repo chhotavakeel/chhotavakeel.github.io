@@ -24,7 +24,7 @@
 # Preferences (controls template behavior)
 preferences:
   homepage:
-    enabled: false
+    enabled: true
   search:
     enabled: true
   backlinks:
@@ -37,8 +37,8 @@ preferences:
 # Site Configuration
 title: chhotavakeel
 heading: " chhotavakeel"
-description: "biglaw notes by a small lawyer"
-url: "https://chhotavakeel.com"
+description: "iglaw notes by a small lawyer"
+url: "https://www.pranavbutalia.com"
 baseurl: ""
 
 # Asset Configuration
@@ -48,16 +48,14 @@ ie_css: "/assets/css/ie-target.css"
 
 # Menu Items
 menu:
-  - title: "notes"
+  - title: "Notes"
     url: "/notes"
-  - title: "jobs board"
-    url: "/jobsboard"
-  - title: "contact"
+  - title: "Contact"
     url: "/contact"
 
 # Footer
 footer:
-  copyright: "© 2026, chhotavakeel."
+  copyright: "© 2026, Pranav Butalia"
   credits:
     enabled: false
     url: "/colophon"
