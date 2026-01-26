@@ -1,10 +1,10 @@
 ---
 layout: Post
 permalink: /
-title: About me
+title: About
 --- 
 
-## About me
+## About
 
 Hi! I'm Pranav, a corporate lawyer specialising in renewable energy and social infrastructure. 
 
