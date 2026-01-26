@@ -4,15 +4,13 @@ permalink: /
 title: About me
 --- 
 
-### About me
-
 Hi! I'm Pranav, a corporate lawyer specialising in renewable energy and social infrastructure. 
 
-I'm currently a PPP consultant at the World Bank Group. Before that, I spent five years working at [Trilegal](https://trilegal.com/). My complete resume is available here.
+I currently work as a PPP consultant at the World Bank Group. Before this, I was at [Trilegal](https://trilegal.com/) for five years. You can access my resume here.
 
-### Disclaimers
+## Disclaimers
 
 (i) Nothing on this website constitutes legal advice; and <br>
-(ii) views expressed are solely my own.
+(ii) all views are my own.
 
-### [Contact](mailto:mail@pranavbutalia.com)
+## [Contact](mailto:mail@pranavbutalia.com)
