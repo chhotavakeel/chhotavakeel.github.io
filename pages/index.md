@@ -12,7 +12,7 @@ I'm currently a PPP consultant at the World Bank Group. Before that, I spent fiv
 
 ### Disclaimers
 
-(i) Nothing on this website constitutes legal advice - please seek independent legal counsel; and <br>
+(i) Nothing on this website constitutes legal advice; and <br>
 (ii) views expressed are solely my own.
 
 ### [Contact](mailto:mail@pranavbutalia.com)

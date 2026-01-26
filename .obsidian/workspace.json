@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/404.md",
-                "mode": "preview",
+                "file": "pages/Index.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "404"
+              "title": "Index"
             }
           }
         ]
@@ -105,13 +105,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/404.md",
+                "file": "pages/Index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 404"
+              "title": "Outline of Index"
             }
           }
         ]
@@ -136,9 +136,9 @@
   },
   "active": "353c312da41b359c",
   "lastOpenFiles": [
+    "pages/404.md",
     "pages/Index.md",
     "pages/Blog.md",
-    "pages/404.md",
     "assets/img/moon.svg",
     "assets/img/og-image.svg",
     "assets/img/OGImg.png",
