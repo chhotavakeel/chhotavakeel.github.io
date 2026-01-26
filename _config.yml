@@ -35,9 +35,9 @@ preferences:
     enabled: true
 
 # Site Configuration
-title: chhotavakeel
-heading: " chhotavakeel"
-description: "iglaw notes by a small lawyer"
+title: Pranav Butalia
+heading: " Pranav Butalia"
+description: "Made in India"
 url: "https://www.pranavbutalia.com"
 baseurl: ""
 
@@ -55,7 +55,7 @@ menu:
 
 # Footer
 footer:
-  copyright: "© 2026, Pranav Butalia"
+  copyright: "© 2026, Pranav Butalia."
   credits:
     enabled: false
     url: "/colophon"
@@ -92,8 +92,8 @@ plugins:
 
 # Private links (for broken wiki links)
 privatelinks:
-  title: "private note"
-  msg: "this note hasn't been published yet - be patient!"
+  title: "404"
+  msg: "This post doesn't exist yet!"
 
 # Math rendering
 katex: true
