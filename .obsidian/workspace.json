@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Blog.md",
-                "mode": "source",
+                "file": "pages/404.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Blog"
+              "title": "404"
             }
           }
         ]
@@ -105,13 +105,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/Blog.md",
+                "file": "pages/404.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Blog"
+              "title": "Outline of 404"
             }
           }
         ]
@@ -138,8 +138,16 @@
   "lastOpenFiles": [
     "pages/Index.md",
     "pages/Blog.md",
-    "pages/llms.md",
     "pages/404.md",
+    "assets/img/moon.svg",
+    "assets/img/og-image.svg",
+    "assets/img/OGImg.png",
+    "assets/img/pr.svg",
+    "assets/img/sun.svg",
+    "assets/img/icon-512.svg",
+    "assets/img/icon-192.svg",
+    "assets/img/favicon.svg",
+    "pages/llms.md",
     "pages/contact.md",
     "pages/now.md"
   ]
