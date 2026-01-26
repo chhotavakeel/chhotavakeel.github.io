@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Index.md",
+                "file": "pages/Blog.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "Blog"
             }
           }
         ]
@@ -68,8 +68,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "95319b30c7c8db8c",
@@ -106,13 +105,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/Index.md",
+                "file": "pages/Blog.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Index"
+              "title": "Outline of Blog"
             }
           }
         ]
@@ -137,10 +136,10 @@
   },
   "active": "353c312da41b359c",
   "lastOpenFiles": [
-    "pages/llms.md",
-    "pages/notes.md",
-    "pages/404.md",
     "pages/Index.md",
+    "pages/Blog.md",
+    "pages/llms.md",
+    "pages/404.md",
     "pages/contact.md",
     "pages/now.md"
   ]
