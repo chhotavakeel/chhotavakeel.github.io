@@ -17,6 +17,6 @@ I currently work as a PPP consultant at the World Bank Group. Before this, I was
 
 ## Writings
 
-I'm slowly working on adding pieces to this website. You can access them [[Blog|here]].
+I'm slowly working on adding pieces to this website. You can access them [[Blog]].
 
 ## [Contact](mailto:mail@pranavbutalia.com)
