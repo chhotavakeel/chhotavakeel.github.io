@@ -12,7 +12,7 @@ I currently work as a PPP consultant at the World Bank Group. Before this, I was
 
 ## Disclaimer
 
-Nothing on this website constitutes legal advice. All views are my own.
+Nothing here constitutes legal advice. All views are my own.
 
 ## Writings
 
