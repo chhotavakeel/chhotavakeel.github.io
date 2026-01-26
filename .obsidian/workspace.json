@@ -137,8 +137,9 @@
   "active": "353c312da41b359c",
   "lastOpenFiles": [
     "pages/404.md",
-    "pages/Blog.md",
+    "pages/Writings.md",
     "pages/Index.md",
+    "pages/llms.md",
     "assets/img/moon.svg",
     "assets/img/og-image.svg",
     "assets/img/OGImg.png",
@@ -147,7 +148,6 @@
     "assets/img/icon-512.svg",
     "assets/img/icon-192.svg",
     "assets/img/favicon.svg",
-    "pages/llms.md",
     "pages/contact.md",
     "pages/now.md"
   ]
