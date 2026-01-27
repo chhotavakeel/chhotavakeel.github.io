@@ -16,6 +16,6 @@ Nothing in here constitutes legal advice. All views are my own.
 
 ## Writing
 
-I'm slowly adding pieces to this website - existing ones can be found <a href="/notes">here</a>.
+I'm slowly adding pieces to this website. Existing ones are located <a href="/notes">here</a>.
 
 ## [Contact](mailto:mail@pranavbutalia.com)

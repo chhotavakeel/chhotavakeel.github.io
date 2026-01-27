@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Index.md",
-                "mode": "preview",
+                "file": "pages/Writing.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "Writing"
             }
           }
         ]
@@ -105,13 +105,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/Index.md",
+                "file": "pages/Writing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Index"
+              "title": "Outline of Writing"
             }
           }
         ]
@@ -136,8 +136,8 @@
   },
   "active": "353c312da41b359c",
   "lastOpenFiles": [
-    "pages/Writing.md",
     "pages/Index.md",
+    "pages/Writing.md",
     "pages/404.md",
     "pages/llms.md",
     "assets/img/moon.svg",
