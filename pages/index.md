@@ -1,7 +1,7 @@
 ---
 layout: Post
 permalink: /
-title: About
+title: About me
 --- 
 
 ## About
@@ -12,10 +12,10 @@ I currently work as a PPP consultant at the World Bank Group. Before this, I was
 
 ## Disclaimer
 
-Nothing here constitutes legal advice. All views are my own.
+Nothing in here constitutes legal advice. All views are my own.
 
-## Writings
+## Writing
 
-I'm slowly working on adding pieces to this website. Uploaded ones can be accessed <a href="/notes">here</a>.
+I'm slowly adding pieces to this website - existing ones can be found <a href="/notes">here</a>.
 
 ## [Contact](mailto:mail@pranavbutalia.com)
