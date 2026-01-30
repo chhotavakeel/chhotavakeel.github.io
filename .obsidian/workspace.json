@@ -11,10 +11,15 @@
             "id": "3f9da5607c609538",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "pages/Index.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Index"
             }
           }
         ]
@@ -120,12 +125,7 @@
     "hiddenItems": {
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
-      "canvas:Create new canvas": true,
-      "daily-notes:Open today's daily note": true,
       "templates:Insert template": true,
-      "command-palette:Open command palette": true,
-      "bases:Create new base": true,
-      "publish:Publish changes...": true,
       "float-search:Search obsidian in modal view": false
     }
   },
