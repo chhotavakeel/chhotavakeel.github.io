@@ -1,11 +1,9 @@
 /* Custom Styles */
 
 /* Back Button Styles */
+
 .back-button-container {
-  position: fixed;
-  left: 6rem;
-  top: 7rem;
-  z-index: 100;
+  margin-top: 1.5rem;
 }
 
 .back-button {
@@ -13,19 +11,10 @@
   align-items: center;
   gap: 4px;
   text-decoration: none;
+  font-size: var(--scale-sm);
 }
 
-/* Move button to left gutter on desktop */
-@media (min-width: 768px) {
-  .back-button-container {
-    position: fixed;
-    left: 2rem;
-    top: 7rem;
-    z-index: 100;
-  }
-}
-
-/* H1 Margin */
+/* Title spacing */
 h1 {
   margin-bottom: var(--space-lg);
 }
