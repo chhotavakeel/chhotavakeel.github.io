@@ -8,7 +8,7 @@ layout: Post
 
 Hi! I'm Pranav, a corporate lawyer specialising in renewable energy and social infrastructure. 
 
-I currently work as a PPP consultant at the [World Bank Group](https://www.worldbank.org/ext/en/country/india). You can access my full resume <a href="/resume">here</a>.
+I currently work as a PPP consultant at the [World Bank Group](https://www.worldbank.org/ext/en/country/india). You can see my complete resume <a href="/resume">here</a>.
 
 ## Disclaimer
 
