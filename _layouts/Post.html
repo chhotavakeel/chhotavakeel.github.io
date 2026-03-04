@@ -77,11 +77,13 @@
             {%- endif -%}
 
             <!--- Notes Layout-->
-            <h1>{{page.title}}</h1>
-                {%- include Content.html -%}
-                {%- if site.preferences.backlinks.enabled -%}
-                {%- include Backlinks.html -%}
-                {%- endif -%}
+{%- if page.content-type == "notes" and page.permalink != "/notes" -%}
+<h1>{{page.title}}</h1>
+{%- include Content.html -%}
+{%- if site.preferences.backlinks.enabled -%}
+{%- include Backlinks.html -%}
+{%- endif -%}
+{%- endif -%}
 
              <!--- Post Layout-->
              {%- if page.content-type == "post"  -%}
