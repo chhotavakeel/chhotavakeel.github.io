@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Writing.md",
+                "file": "_notes/Public/Transcript for Law, Laughter and Beyond.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Writing"
+              "title": "Transcript for Law, Laughter and Beyond"
             }
           }
         ]
@@ -85,13 +85,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/Writing.md",
+                "file": "_notes/Public/Transcript for Law, Laughter and Beyond.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Writing"
+              "title": "Outline of Transcript for Law, Laughter and Beyond"
             }
           }
         ]
@@ -106,7 +106,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "pages/Writing.md",
+                "file": "_notes/Public/Transcript for Law, Laughter and Beyond.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,7 +134,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Writing"
+              "title": "Graph of Transcript for Law, Laughter and Beyond"
             }
           }
         ]
@@ -154,11 +154,11 @@
   },
   "active": "2322b82a24c6a96f",
   "lastOpenFiles": [
+    "pages/Writing.md",
     "pages/Index.md",
     "_notes/Public/Beer wars.md",
     "_notes/Public/books.md",
     "_notes/Public/All electricity is accounting.md",
-    "pages/Writing.md",
     "_notes/Public/injunctions.md",
     "pages/Resume.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
