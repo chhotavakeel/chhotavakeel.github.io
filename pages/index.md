@@ -1,10 +1,10 @@
 ---
 permalink: /
-title: About Me
+title: About
 layout: Post
 --- 
 
-## About Me
+## About
 
 Hi! I'm Pranav, a corporate lawyer specialising in renewable energy and social infrastructure. 
 
@@ -18,4 +18,4 @@ Nothing in here constitutes legal advice. All views are my own.
 
 I'm slowly adding pieces to this website. Existing ones are located <a href="/notes">here</a>.
 
-## [Contact Me](mailto:mail@pranavbutalia.com)
+## [Contact](mailto:mail@pranavbutalia.com)
