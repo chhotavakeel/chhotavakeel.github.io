@@ -1,6 +1,6 @@
 ---
 permalink: /notes
-title: writing
+title: Writing
 layout: Post
 ---
 

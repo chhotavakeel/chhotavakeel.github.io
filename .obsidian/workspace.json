@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/resume.md",
-                "mode": "preview",
+                "file": "_notes/Public/beer-wars.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "resume"
+              "title": "beer-wars"
             }
           }
         ]
@@ -106,13 +106,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/resume.md",
+                "file": "_notes/Public/beer-wars.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of resume"
+              "title": "Outline of beer-wars"
             }
           }
         ]
@@ -134,9 +134,10 @@
   "lastOpenFiles": [
     "_notes/Public/all-electricity-is-accounting.md",
     "pages/resume.md",
+    "pages/writing.md",
+    "_notes/Public/beer-wars.md",
     "pages/index.md",
     "pages/404.md",
-    "pages/writing.md",
     "pages/llms.md",
     "pages/Index.md",
     "assets/img/moon.svg",
