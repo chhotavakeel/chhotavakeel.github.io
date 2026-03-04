@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "pages/Writing.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
@@ -141,7 +141,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -153,15 +154,15 @@
   },
   "active": "6a38251badacc97e",
   "lastOpenFiles": [
-    "pages/Index.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
+    "pages/Writing.md",
+    "pages/Index.md",
     "_notes/Public/Beer Wars.md",
     "_notes/Public/injunctions.md",
     "_notes/Public/markets.md",
     "_notes/Public/liquidity.md",
     "_notes/Public/books.md",
     "_notes/Public/electricity.md",
-    "pages/Writing.md",
     "_notes/Public/All Electricity is Accounting.md",
     "_notes/Public/Read a Lot.md",
     "_notes/Public/Quotes (tag).md",
