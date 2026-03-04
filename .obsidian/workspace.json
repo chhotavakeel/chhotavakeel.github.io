@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Public/Advice (tag).md",
+                "file": "_notes/Public/Transcript for Law Laughter and Beyond.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Advice (tag)"
+              "title": "Transcript for Law Laughter and Beyond"
             }
           }
         ]
@@ -154,16 +154,16 @@
   },
   "active": "6a38251badacc97e",
   "lastOpenFiles": [
-    "_notes/Public/All Electricity is Accounting.md",
-    "_notes/Public/Beer Wars.md",
-    "_notes/Public/Books (tag).md",
-    "_notes/Public/Electricity (tag).md",
-    "_notes/Public/Injunctions (tag).md",
-    "_notes/Public/Liquidity (tag).md",
-    "_notes/Public/Quotes (tag).md",
     "_notes/Public/Read a Lot.md",
-    "_notes/Public/Transcript for Law Laughter and Beyond.md",
+    "_notes/Public/Quotes (tag).md",
+    "_notes/Public/Liquidity (tag).md",
+    "_notes/Public/Injunctions (tag).md",
+    "_notes/Public/Electricity (tag).md",
+    "_notes/Public/Books (tag).md",
+    "_notes/Public/Beer Wars.md",
+    "_notes/Public/All Electricity is Accounting.md",
     "_notes/Public/Advice (tag).md",
+    "_notes/Public/Transcript for Law Laughter and Beyond.md",
     "pages/index.md",
     "pages/llms.md",
     "pages/404.md",

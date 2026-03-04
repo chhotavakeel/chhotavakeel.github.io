@@ -1,5 +1,5 @@
 ---
 feed: show
 title: Advice (tag)
-layout: notes
+layout: Post
 ---

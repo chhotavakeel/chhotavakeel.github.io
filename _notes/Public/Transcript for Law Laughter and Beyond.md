@@ -1,7 +1,7 @@
 ---
 feed: show
 title: Transcript for Law, Laughter and Beyond
-layout: notes
+layout: Post
 date: 19-11-2023
 date modified: 04-03-2026
 ---
