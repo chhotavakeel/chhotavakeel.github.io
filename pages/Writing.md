@@ -1,5 +1,5 @@
 ---
-title: Writing
+title: writing
 layout: Post
 permalink: /notes
 ---

@@ -1,8 +1,8 @@
 ---
 feed: show
-title: all electricity is accounting
+title: All electricity is accounting
 date: 23-10-2025
-date modified: 26-10-2025
+date modified: 04-03-2026
 tags:
   - energy
   - markets
