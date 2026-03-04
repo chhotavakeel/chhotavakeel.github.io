@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Index.md",
+                "file": "_notes/Public/all-electricity-is-accounting.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "all-electricity-is-accounting"
             }
           }
         ]
@@ -131,9 +131,9 @@
   },
   "active": "3f9da5607c609538",
   "lastOpenFiles": [
+    "pages/404.md",
     "pages/Writing.md",
     "pages/Index.md",
-    "pages/404.md",
     "pages/llms.md",
     "assets/img/moon.svg",
     "assets/img/og-image.svg",
