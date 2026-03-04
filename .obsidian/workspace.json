@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "16a90dea02022b2c",
+        "id": "439b8c94de51a106",
         "type": "tabs",
         "children": [
           {
-            "id": "3f9da5607c609538",
+            "id": "14e278065d3f1d68",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pages/resume.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "resume"
+              "title": "New tab"
             }
           }
         ]
@@ -129,15 +124,15 @@
       "float-search:Search obsidian in modal view": false
     }
   },
-  "active": "3f9da5607c609538",
+  "active": "14e278065d3f1d68",
   "lastOpenFiles": [
-    "pages/writing.md",
     "pages/index.md",
+    "pages/writing.md",
+    "pages/resume.md",
+    "pages/llms.md",
+    "pages/404.md",
     "pages/Index.md",
     "_notes/Public/all-electricity-is-accounting.md",
-    "pages/resume.md",
-    "pages/404.md",
-    "pages/llms.md",
     "assets/img/moon.svg",
     "assets/img/og-image.svg",
     "assets/img/OGImg.png",

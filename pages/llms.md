@@ -1,8 +1,8 @@
 ---
-layout: Post
 permalink: /llms
-content-type: static
 title: llms
+layout: Post
+content-type: static
 ---
 
 no large language models were harmed in the making of this site.<br><br>
