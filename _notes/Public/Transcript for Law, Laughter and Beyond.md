@@ -5,7 +5,7 @@ layout: Post
 date: 19-11-2023
 date modified: 04-03-2026
 ---
-*This is the rough transcript of an interview I did in 2023 for a podcast run by my law school in conjunction with the Vidhi Centre for Legal Policy. You can find it online [here](https://creators.spotify.com/pod/profile/law-laughter-and-beyond/episodes/Interviewing-Pranav-Butalia-e2f59be).*
+*This is the rough transcript of an interview I did in 2023 for a podcast run by my law school. You can find it online [here](https://creators.spotify.com/pod/profile/law-laughter-and-beyond/episodes/Interviewing-Pranav-Butalia-e2f59be).*
 
 ## What drove you to pursue a career in corporate law?
 
