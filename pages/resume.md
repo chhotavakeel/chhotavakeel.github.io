@@ -1,12 +1,12 @@
 ---
 layout: Post
 permalink: /resume
-title: Resume
+title: resume
 --- 
 
 ## Pranav Amadhya Butalia
 
-### Academic Qualifications
+### Education
 
 #### West Bengal National University of Juridical Sciences
 _2019_  
