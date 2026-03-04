@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Writings.md",
-                "mode": "source",
+                "file": "pages/Index.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Writings"
+              "title": "Index"
             }
           }
         ]
@@ -85,13 +85,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/Writings.md",
+                "file": "pages/Index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Writings"
+              "title": "Outline of Index"
             }
           }
         ]
@@ -106,7 +106,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "pages/Writings.md",
+                "file": "pages/Index.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,7 +134,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Writings"
+              "title": "Graph of Index"
             }
           }
         ]
@@ -154,9 +154,9 @@
   },
   "active": "e6f68af4aa40c6c8",
   "lastOpenFiles": [
-    "pages/Index.md",
-    "pages/Writings.md",
     "_notes/Public/All electricity is accounting.md",
+    "pages/Writing.md",
+    "pages/Index.md",
     "_notes/Public/Beer wars.md",
     "_notes/Public/injunctions.md",
     "pages/Resume.md",
