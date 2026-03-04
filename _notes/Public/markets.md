@@ -1,5 +1,5 @@
 ---
 feed: show
-title: Electricity (tag)
+title: markets
 layout: Post
 ---

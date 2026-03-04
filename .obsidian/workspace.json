@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Public/Transcript for Law Laughter and Beyond.md",
+                "file": "pages/Writing.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Transcript for Law Laughter and Beyond"
+              "title": "Writing"
             }
           }
         ]
@@ -85,13 +85,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/writing.md",
+                "file": "pages/Writing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of writing"
+              "title": "Outline of Writing"
             }
           }
         ]
@@ -106,7 +106,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "pages/writing.md",
+                "file": "pages/Writing.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,15 +134,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of writing"
+              "title": "Graph of Writing"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -154,23 +153,24 @@
   },
   "active": "6a38251badacc97e",
   "lastOpenFiles": [
+    "_notes/Public/Transcript for Law, Laughter and Beyond.md",
+    "_notes/Public/books.md",
+    "_notes/Public/All Electricity is Accounting.md",
+    "_notes/Public/markets.md",
+    "_notes/Public/liquidity.md",
+    "_notes/Public/injunctions.md",
+    "_notes/Public/electricity.md",
     "_notes/Public/Read a Lot.md",
     "_notes/Public/Quotes (tag).md",
-    "_notes/Public/Liquidity (tag).md",
-    "_notes/Public/Injunctions (tag).md",
-    "_notes/Public/Electricity (tag).md",
-    "_notes/Public/Books (tag).md",
-    "_notes/Public/Beer Wars.md",
-    "_notes/Public/All Electricity is Accounting.md",
     "_notes/Public/Advice (tag).md",
-    "_notes/Public/Transcript for Law Laughter and Beyond.md",
-    "pages/index.md",
-    "pages/llms.md",
+    "_notes/Public/Beer Wars.md",
     "pages/404.md",
-    "pages/writing.md",
-    "Tags",
-    "pages/resume.md",
+    "pages/Writing.md",
+    "pages/Resume.md",
+    "pages/LLMs.md",
     "pages/Index.md",
+    "_notes/Public/Books (tag).md",
+    "Tags",
     "assets/img/moon.svg",
     "assets/img/og-image.svg",
     "assets/img/OGImg.png",

@@ -1,5 +1,5 @@
 ---
 feed: show
-title: Injunctions (tag)
+title: liquidity
 layout: Post
 ---

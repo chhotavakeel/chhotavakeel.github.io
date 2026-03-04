@@ -1,5 +1,5 @@
 ---
 feed: show
-title: Advice (tag)
+title: injunctions
 layout: Post
 ---

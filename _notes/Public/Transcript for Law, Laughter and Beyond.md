@@ -19,7 +19,7 @@ To be honest, I find corporate law to be a little ’cleaner’ - by which, I me
 
 My experience at NUJS was pretty great to be honest. In general, college gives you room to make mistakes and hopefully even learn from them. I tried my hand at all the typical law school activities - mooting, debating, and so on - it wasn’t until the third year, or even later, that I realised I enjoyed ADR competitions much much more. I had the chance to attend the HSF negotiation competition as both a participant, and more recently, a judge, and both were great experiences. In general, negotiation simulations simultaneously carry higher and lower stakes than actual negotiations, but they serve as useful shorthands for the real word.
 
-*There's a beautiful [tweet](https://x.com/canpanicnow/status/1712634765147275493?s=61) that says ”Lawyers spend three years in law school just to learn to say "it depends." and you might wonder if that's time well-spent and all I can say is well, it depends on how you look at it.” - [[Quotes (tag)|I suppose my law school experience was like that]].*
+*There's a beautiful [tweet](https://x.com/canpanicnow/status/1712634765147275493?s=61) that says ”Lawyers spend three years in law school just to learn to say "it depends." and you might wonder if that's time well-spent and all I can say is well, it depends on how you look at it.” - I suppose my law school experience was like that.*
 
 ## How do you think legal education in India can be enhanced to meet the needs of students looking to become transactional lawyers?
 
@@ -35,7 +35,13 @@ But as someone who does a fair bit of recruiting for my team - you really don’
 
 Exposure. As much as you can get of it. 
 
-Read. [[Read a Lot|Read a lot]].
+Read. Often, and a lot. Then when you’re tired, read some more. Read things you agree with, and things you don’t. Sit with the discomfort - it should lead to growth.
+
+Read [[books]] on our justice system - its successes and failures. Read Anita Gets Bail by Arun Shourie and also read the Colonial Constitution by Arghya Sengupta. Read To Kill a Mockingbird. Read Zia Mody’s book. Read Madhav Khosla, and read Gautam Bhatia.
+
+If I can be slightly selfish, please also read the financial papers - Mint is good. Read The Morning Context. Subscribe to Money Stuff. Maybe read Barbarians at the Gate and The Smartest Guys in the Room?
+
+*If you don’t like reading, why are you in law school?*
 
 If you must, watch some movies. Watch Twelve Angry Men and watch Gangaajal. That cuts a fairly vast swathe across what you can expect to find in the profession.
 
@@ -65,9 +71,9 @@ Our work is divided into three buckets:
 
 On mentorship - given that it’s an area of law that requires some technical expertise, we all know and recognise that mentorship is required, and it’s fairly easy to come by. We’re a small community and are always very grateful when someone expresses an interest in joining us. Business development is also a little easier, again, since it’s a small and close-knit community.
 
-## What [[Advice (tag)|tips]] do you have for people who want to work in this field?
+## What tips do you have for people who want to work in this field?
 
-Tips on those who want to work as projects lawyers - that’s a good one! I honestly don’t think there’s anything specific - I know Legally India has a great list of [[Books (tag)|books]] for projects lawyers, although I think I’ve only read one of them so your mileage may vary. I do think being a good lawyer is important. Since today’s the World Cup final, let’s put it this way - Virat Kohli isn’t a professional tennis player but I guarantee you he‘ll be a lot better at it than the average person. 
+Tips on those who want to work as projects lawyers - that’s a good one! I honestly don’t think there’s anything specific - I know Legally India has a great list of books for projects lawyers, although I think I’ve only read one of them so your mileage may vary. I do think being a good lawyer is important. Since today’s the World Cup final, let’s put it this way - Virat Kohli isn’t a professional tennis player but I guarantee you he‘ll be a lot better at it than the average person. 
 
 The same for goes for law - if you’re a good enough lawyer, a change in practice area won’t affect you too much. Be up to speed with contract law, admin law, and interpretation of statutes - you’ll use these skills frequently, regardless of where you are or end up going. 
 
