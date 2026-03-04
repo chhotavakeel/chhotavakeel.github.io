@@ -3,16 +3,13 @@ feed: show
 title: All electricity is accounting
 date: 23-10-2025
 date modified: 04-03-2026
-tags:
-  - energy
-  - markets
 ---
 
-The story of modern electrical supply is mainly one of accounting. Electrons, like water, like to flow from source to destination. The only way to check their flow is to turn off the taps at either end. Assuming you have a source of electrons, and someone willing to pay you for them, then, if you have some means of electron transportation, a meter to assess consumption, and some sort of understanding on how much that consumption is really worth, you're in the electricity supply business, at least on a fundamental level of abstraction.
+The story of modern electrical supply is mainly one of accounting. Electrons, like water, like to flow from source to destination. The only way to check their flow is to turn off the taps at either end. Assuming you have a source of electrons, and someone willing to pay you for them, then, if you have some means of electron transportation, a meter to assess consumption, and some sort of understanding on how much that consumption is really worth, you're in the [[Electricity (tag)|electricity]] supply business, at least on a fundamental level of abstraction.
 
 Except things aren't quite so straightforward. People in the electron-source owning business typically also aren't allowed to be in the electron transportation business. This is done to prevent monopolisation. The latter is usually carried out by a dedicated "distribution company". By entering into supply agreements with a large number of electron source owners, and subsequently agreeing to provide electrons on tap to whoever needs them, distribution companies effectively act as aggregators of market supply and demand.
 
-That's not too bad, i can hear you saying - distribution companies take on demand risk, and so they should naturally be compensated for it. Unfortunately, distribution companies are also exposed to supply-side risks, which are usually much worse, since sources of electrons tend to react badly to annoying real-world stimuli like geopolitics and the climate.
+That's not too bad, I can hear you saying - distribution companies take on demand risk, and so they should naturally be compensated for it. Unfortunately, distribution companies are also exposed to supply-side risks, which are usually much worse, since sources of electrons tend to react badly to annoying real-world stimuli like geopolitics and the climate.
 
 And so, distribution companies act like mini-auction houses, matching demand to available, cost-effective, sources of supply. The cheapest electrons get utilised first, followed by the next-cheapest, and so on, until either all demand, or all available supply, gets exhausted. This process repeats itself several times a day.
 
@@ -23,7 +20,7 @@ At this point, we now have three distinct layers of accounting:
 (ii) for price discovery of flowing electrons; and  
 (iii) for not-flowing electrons?
 
-The last one is especially significant because it tells us that not only is there a price on electricity, but also a price on not having it *now*. Effectively, by treating electricity like any other commodity, and not taking immediate physical delivery, you can expect to realise some financial value. This is of course, Commodities 101, and so, electricity markets. Or not-electricity markets?
+The last one is especially significant because it tells us that not only is there a price on electricity, but also a price on not having it *now*. Effectively, by treating electricity like any other commodity, and not taking immediate physical delivery, you can expect to realise some financial value. This is of course, Commodities 101, and so, electricity [[Markets (tag)|markets]]. Or not-electricity markets?
 
 Like all markets, not-electricity markets need buyers and sellers to agree on prices. Standard marketplace conventions apply - if it's cheaper to buy not-electricity elsewhere[^2], then no trade happens. Similarly, indirect network effects exist - having a large pool of buyers on your marketplace attracts more sellers there, and vice versa. This leads to better (well, more accurate) not-electricity prices. This is a good thing for you! Now, even more people will be incentivised to use your marketplace, leading to even more accurate not-electricity prices, and allowing you to collect even more in transaction fees.
 

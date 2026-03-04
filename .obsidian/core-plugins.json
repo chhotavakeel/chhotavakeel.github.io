@@ -6,7 +6,7 @@
   "backlink": false,
   "canvas": false,
   "outgoing-link": false,
-  "tag-pane": true,
+  "tag-pane": false,
   "footnotes": false,
   "properties": false,
   "page-preview": true,

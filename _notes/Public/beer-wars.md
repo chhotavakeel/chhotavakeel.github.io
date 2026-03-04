@@ -3,18 +3,15 @@ feed: show
 title: Beer wars
 date: 02-11-2025
 date modified: 04-03-2026
-tags:
-  - liquidity
-  - injunctions
 ---
 
 If you think about it, the alcohol manufacturing business is really the getting-alcohol-into-bloodstreams business with more paperwork and logistics. Moving down the value chain can reduce these constraints, and so, if you're a brewing company, you should probably run a chain of pubs on the side. The pubs provide you with a captive market for your brews as well as a diversified income stream.
 
-In fact, you don't even need to start your own chain for this - you can just buy one off the market. Or can you? Things like pub chains tend to exist at the very lowest end of the liquidity spectrum, which is probably why you can't walk into a bar and buy it outright.
+In fact, you don't even need to start your own chain for this - you can just buy one off the market. Or can you? Things like pub chains tend to exist at the very lowest end of the [[Liquidity (tag)|liquidity]] spectrum, which is probably why you can't walk into a bar and buy it outright.
 
 The Delhi High Court kind of agrees with me? Last month, it issued an [injunction](https://delhihighcourt.nic.in/app/showlogo/1761044929_ca132dea8300eafe_jis_4432025.pdf/2025) preventing a craft brewery's investors from selling the shares of a pub chain owned by the brewery which were pledged to them. 
 
-In theory, getting an injunction - an emergency court order preventing a party from enforcing its contractual rights against you - requires showing that:  
+In theory, getting an [[Injunctions (tag)]] - an emergency court order preventing a party from enforcing its contractual rights against you - requires showing that:  
 (i) the other party likely lacks the right to proceed against you;  
 (ii) you'll suffer more if the right is exercised than your counterparty will if it's not; and  
 (iii) you'll be put to irreparable harm if the injunction isn't granted.
