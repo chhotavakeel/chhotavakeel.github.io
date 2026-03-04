@@ -1,5 +1,5 @@
 ---
 feed: show
-title: liquidity
-layout: books
+title: books
+layout: Post
 ---

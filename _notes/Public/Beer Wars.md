@@ -8,7 +8,7 @@ date modified: 04-03-2026
 
 If you think about it, the alcohol manufacturing business is really the getting-alcohol-into-bloodstreams business with more paperwork and logistics. Moving down the value chain can reduce these constraints, and so, if you're a brewing company, you should probably run a chain of pubs on the side. The pubs provide you with a captive market for your brews as well as a diversified income stream.
 
-In fact, you don't even need to start your own chain for this - you can just buy one off the market. Or can you? Things like pub chains tend to exist at the very lowest end of the [[liquidity|liquidity]] spectrum, which is probably why you can't walk into a bar and buy it outright.
+In fact, you don't even need to start your own chain for this - you can just buy one off the market. Or can you? Things like pub chains tend to exist at the very lowest end of the [[liquidity]] spectrum, which is probably why you can't walk into a bar and buy it outright.
 
 The Delhi High Court kind of agrees with me? Last month, it issued an [injunction](https://delhihighcourt.nic.in/app/showlogo/1761044929_ca132dea8300eafe_jis_4432025.pdf/2025) preventing a craft brewery's investors from selling the shares of a pub chain owned by the brewery which were pledged to them. 
 
