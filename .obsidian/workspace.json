@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Public/Beer wars.md",
+                "file": "_notes/Public/All electricity is accounting.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Beer wars"
+              "title": "All electricity is accounting"
             }
           }
         ]
@@ -85,13 +85,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Public/Beer wars.md",
+                "file": "_notes/Public/All electricity is accounting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Beer wars"
+              "title": "Outline of All electricity is accounting"
             }
           }
         ]
@@ -106,7 +106,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "_notes/Public/Beer wars.md",
+                "file": "_notes/Public/All electricity is accounting.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,7 +134,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Beer wars"
+              "title": "Graph of All electricity is accounting"
             }
           }
         ]
@@ -154,8 +154,8 @@
   },
   "active": "e6f68af4aa40c6c8",
   "lastOpenFiles": [
-    "_notes/Public/injunctions.md",
     "_notes/Public/Beer wars.md",
+    "_notes/Public/injunctions.md",
     "pages/Resume.md",
     "pages/Index.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
