@@ -1,7 +1,7 @@
 ---
 permalink: /resume.html
 title: Resume
-layout: Post
+layout: page
 content-type: static
 ---
 
@@ -17,9 +17,7 @@ I work with the Bank's Global Education Practice to structure and negotiate PPP 
 
 #### Trilegal
 
-##### Secondee Lawyer
-
-O2 Power  
+##### Secondee Lawyer, O2 Power
 
 _May 2024 – August 2024_  
 
@@ -28,17 +26,13 @@ I was seconded to a key client to support them during their fundraise, where I:
 (ii) developed a standard template for all power purchase agreements; and  
 (iii) liaised with government officials on behalf of the client.
 
-##### Senior Associate
-
-Energy and Infrastructure Practice Group  
+##### Senior Associate, Energy and Infrastructure Practice Group
 
 _April 2023 - August 2024_  
 
 As a senior member of the team, in addition to my duties as an associate, I had a larger role in the firm's recruitment, retention and training initiatives and was also a key contributor to overall team strategy, management and direction. My role as a lawyer also became more supervisory.
 
-##### Associate
-
-Energy and Infrastructure Practice Group  
+##### Associate, Energy and Infrastructure Practice Group
 
 _December 2020 - March 2023_  
 
@@ -47,9 +41,7 @@ As part of Trilegal's Band 1 energy and infrastructure practice group, my respon
 (ii) carrying out due diligence on companies in the energy and infrastructure sectors; and  
 (iii) advising clients on compliance with sectoral laws and policies.
 
-##### Associate
-
-Dispute Resolution Practice Group  
+##### Associate, Dispute Resolution Practice Group
 
 _May 2019 - November 2020_  
 
