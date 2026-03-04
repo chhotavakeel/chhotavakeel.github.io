@@ -1,7 +1,7 @@
 ---
 layout: Post
 permalink: /resume
-title: resume
+title: Resume
 --- 
 
 ## Pranav Amadhya Butalia
