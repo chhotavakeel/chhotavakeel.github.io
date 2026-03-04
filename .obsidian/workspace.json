@@ -106,12 +106,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "pages/resume.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of resume"
             }
           }
         ]
@@ -132,10 +133,10 @@
   "active": "14e278065d3f1d68",
   "lastOpenFiles": [
     "pages/index.md",
-    "pages/writing.md",
-    "pages/resume.md",
-    "pages/llms.md",
     "pages/404.md",
+    "pages/resume.md",
+    "pages/writing.md",
+    "pages/llms.md",
     "pages/Index.md",
     "_notes/Public/all-electricity-is-accounting.md",
     "assets/img/moon.svg",
