@@ -55,11 +55,11 @@
         <div>
             {%- include Nav.html -%}
 
-{%- if page.content-type == "notes" and page.permalink != "/notes" -%}
-<div class="back-button-container">
-  <a class="back-button" href="/notes">&larr; Back</a>
-</div>
-{%- endif -%}
+            {%- if page.content-type == "notes" and page.permalink != "/notes" -%}
+            <div class="back-button-container">
+            <a class="back-button" href="/notes">&larr; Back</a>
+            </div>
+            {%- endif -%}
             
             <!-- Homepage Layout-->
             {%- if page.permalink == "/" -%}
