@@ -1,6 +1,7 @@
 ---
 feed: show
-title: Read a lot
+title: Read a Lot
+layout: notes
 date: 19-11-2023
 date modified: 04-03-2026
 ---
