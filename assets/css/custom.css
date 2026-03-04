@@ -8,30 +8,17 @@
 .back-button {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-xs);
-  color: var(--text);
-  text-decoration: none;
-  font-size: var(--scale-sm);
-  transition: all 0.2s ease;
-}
-
-.back-button:hover {
-  color: var(--text);
+  gap: 4px;
   text-decoration: none;
 }
 
-.back-button svg {
-  width: 14px;
-  height: 14px;
-}
-
+/* Move button to left gutter on desktop */
 @media (min-width: 768px) {
   .back-button-container {
     position: fixed;
-    left: 8rem;
-    top: 8rem;
+    left: 2rem;
+    top: 7rem;
     z-index: 100;
-    margin-bottom: 0;
   }
 }
 
