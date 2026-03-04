@@ -5,19 +5,9 @@ layout: Post
 content-type: static
 ---
 
-### Education
-
-#### West Bengal National University of Juridical Sciences
-B.A. LL.B. (Hons.)  
-_2019_
-
-#### Delhi Public School R.K. Puram, New Delhi
-All India Senior School Certificate Examination  
-_2014_
-
 ### Professional Experience
 
-#### The World Bank
+#### The World Bank Group
 
 ##### Consultant
 
@@ -56,3 +46,13 @@ As part of Trilegal's Band 1 energy and infrastructure practice group, my respon
 _May 2019 - November 2020_  
 
 My role in Trilegal's dispute resolution practice group involved acting on a variety of contentious and non-contentious mandates for clients in the energy and infrastructure sectors, including representing them in proceedings before courts, arbitral tribunals and regulatory bodies.
+
+### Education
+
+#### West Bengal National University of Juridical Sciences
+B.A. LL.B. (Hons.)  
+_2019_
+
+#### Delhi Public School R.K. Puram, New Delhi
+All India Senior School Certificate Examination  
+_2014_
