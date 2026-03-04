@@ -1,5 +1,5 @@
 ---
 feed: show
 title: Liquidity (tag)
-layout: note
+layout: notes
 ---

@@ -1,7 +1,7 @@
 ---
 feed: show
 title: All Electricity is Accounting
-layout: note
+layout: notes
 date: 23-10-2025
 date modified: 04-03-2026
 ---

@@ -1,7 +1,7 @@
 ---
 feed: show
 title: Transcript for Law, Laughter and Beyond
-layout: note
+layout: notes
 date: 19-11-2023
 date modified: 04-03-2026
 ---
@@ -35,7 +35,7 @@ But as someone who does a fair bit of recruiting for my team - you really don’
 
 Exposure. As much as you can get of it. 
 
-Read. [[read-a-lot|Read a lot]].
+Read. [[Read a Lot|Read a lot]].
 
 If you must, watch some movies. Watch Twelve Angry Men and watch Gangaajal. That cuts a fairly vast swathe across what you can expect to find in the profession.
 
