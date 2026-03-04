@@ -6,9 +6,7 @@ layout: Post
 
 ## About
 
-Hi! I'm Pranav, a corporate lawyer specialising in renewable energy and social infrastructure. 
-
-I currently work as a PPP consultant at the [World Bank Group](https://www.worldbank.org/ext/en/country/india). Before this, I was at Trilegal for five years. You can see my complete resume <a href="/resume">here</a>.
+Hi! I'm Pranav, a corporate lawyer specialising in renewable energy and social infrastructure. I currently work as a PPP consultant at the [World Bank Group](https://www.worldbank.org/ext/en/country/india). Before this, I was at Trilegal for five years. You can see my complete resume <a href="/resume">here</a>.
 
 ## Disclaimers
 
