@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Public/test.md",
+                "file": "_notes/Public/State of the renewable energy union.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "test"
+              "title": "State of the renewable energy union"
             }
           }
         ]
@@ -68,13 +68,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Public/test.md",
+                "file": "_notes/Public/State of the renewable energy union.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of test"
+              "title": "Outline of State of the renewable energy union"
             }
           }
         ]
@@ -89,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "_notes/Public/test.md",
+                "file": "_notes/Public/State of the renewable energy union.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -117,7 +117,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of test"
+              "title": "Graph of State of the renewable energy union"
             }
           }
         ]
@@ -137,13 +137,13 @@
   },
   "active": "2322b82a24c6a96f",
   "lastOpenFiles": [
-    "_notes/Public/State of the renewable energy union.md",
-    "_notes/Public/test.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
-    "_notes/Public/State of the renewable energy union 2026.md",
-    "pages/Writing.md",
+    "_notes/Public/State of the renewable energy union.md",
     "_notes/Public/All electricity is accounting.md",
     "_notes/Public/Beer wars.md",
+    "_notes/Public/test.md",
+    "_notes/Public/State of the renewable energy union 2026.md",
+    "pages/Writing.md",
     "_notes/Public/books.md",
     "_notes/Public/electricity.md",
     "_notes/Public/injunctions.md",
