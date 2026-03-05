@@ -10,13 +10,13 @@ date modified: 05-03-2026
 
 And so, we live in interesting times, where the fate of the world's largest oil shipping lane[^1] hangs in the balance. Which puts [[renewable energy]] in an interesting spot if you ask me.
 
-Ideally, the conflict ends this week, and without any major repercussions. And then congratulations - the world got a jump scare but oil flows continue, making it business as usual. Hopefully, everyone now sees the wisdom in continuing to increase renewables' share in their energy mix - this time, to reduce dependence on oil imports. I think this makes the energy transition a national security concern, rather than a sustainability issue. Which is a good thing!
+Ideally, the conflict ends this week, and without any major repercussions. And then congratulations - the world got a jump scare but oil flows continue, making it business as usual. Hopefully, everyone now sees greater wisdom in continuing to increase renewables' share in the energy mix - this time, to reduce dependence on oil imports. I think this makes the energy transition a national security concern, rather than a sustainability issue. Which is a good thing!
 
 If the conflict is a prolonged one, then yes, while oil is [voluminous and oozy and poisonous and flammable and smelly](https://www.bloomberg.com/news/newsletters/2020-04-20/money-stuff-there-s-nowhere-to-put-the-oil), it also powers things that transport other things. And people. And so, because you need oil for transportation, and there isn't enough oil to go around anymore, oil becomes more expensive. This makes transportation more expensive, which, in turn, makes everything much more expensive.
 
 How does your central bank respond? By raising interest rates, hoping that an increase in borrowing costs discourages spending and lowers [[market]] demand. Unfortunately, this also has the unintended consequence of reducing investment in sunrise and/or capital-intensive sectors[^2] since driving up the cost of capital makes cheaper, more lucrative investments more attractive.
 
-And so, even if you have the political will to add on more renewable energy, you suddenly lack the financial capacity to do so.
+And so, even if you have the political will to add on more renewable energy, you suddenly lack the financial capability to do so.
 
 Which is unfortunate. And that, ladies and gentlemen, is the State of the Renewable Energy Union in 2026.
 

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "73ff421a9cf99002",
+        "id": "c74e95ac328e06d6",
         "type": "tabs",
         "children": [
           {
-            "id": "7a63a2bc80347d3a",
+            "id": "6da95199d594f630",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -151,7 +151,7 @@
       "float-search:Search obsidian in modal view": false
     }
   },
-  "active": "7a63a2bc80347d3a",
+  "active": "6da95199d594f630",
   "lastOpenFiles": [
     "_notes/Public/State of the Renewable Energy Union 2026.md",
     "_notes/Public/Beer Wars.md",
