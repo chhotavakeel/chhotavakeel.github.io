@@ -1,6 +1,6 @@
 ---
 feed: show
-title: State of the renewable energy union 2026 1
+title: State of the renewable energy union
 layout: Post
 date: 03-04-2026
 date modified: 05-03-2026
