@@ -5,7 +5,7 @@ layout: Post
 content-type: static
 ---
 
-### Professional experience
+### Professional Experience
 
 #### The World Bank Group
 

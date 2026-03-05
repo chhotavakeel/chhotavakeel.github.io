@@ -1,6 +1,6 @@
 ---
 feed: show
-title: Beer wars
+title: Beer Wars
 layout: Post
 date: 02-11-2025
 date modified: 04-03-2026
