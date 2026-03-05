@@ -1,5 +1,5 @@
 ---
-feed: show
+feed: hide
 title: books
 layout: Post
 ---

@@ -7,5 +7,15 @@
       "key": "G"
     }
   ],
-  "graph:open": []
+  "graph:open": [],
+  "global-search:open": [],
+  "float-search:search-obsidian-globally": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ]
 }

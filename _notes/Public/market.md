@@ -1,5 +1,5 @@
 ---
 feed: hide
-title: liquidity
+title: market
 layout: Post
 ---
