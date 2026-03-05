@@ -39,6 +39,6 @@ India's Securities and Exchange Board [certainly](https://www.sebi.gov.in/sebi_d
 
 The jokes write themselves. The public official responsible for overseeing free and fair markets leaked information to their astrologer? That's two people really bad at their jobs! On the other hand, I suppose that sophisticated financial crime by unlikely suspects points to an increase in general financial literacy? That's some consolation, I guess!
 
-[^1]: Usually through minimum offtake obligations or take-or-pay contracts.
+[^1]: *Usually through minimum offtake obligations or take-or-pay contracts.*
 
-[^2]: Or if it's cheaper to produce not-electricity yourself, provided that your market-procured not-electricity isn't giving you any other benefits.
+[^2]: *Or if it's cheaper to produce not-electricity yourself, provided that your market-procured not-electricity isn't giving you any other benefits.*

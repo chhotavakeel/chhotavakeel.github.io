@@ -22,6 +22,6 @@ And so, even if you have the political will to add on more renewable energy, you
 
 Which is unfortunate. And that, ladies and gentlemen, is the State of the Renewable Energy Union in 2026.
 
-[^1]: 20% of the world's global oil consumption flows through the Iran-controlled Strait of Hormuz every year.
+[^1]: *20% of the world's global oil consumption flows through the Iran-controlled Strait of Hormuz every year.*
 
-[^2]: Of which renewable energy is both.
+[^2]: *Of which renewable energy is both.*

@@ -81,6 +81,6 @@ The same for goes for law - if you’re a good enough lawyer, a change in practi
 
 That being said, having good instincts as a lawyer is helpful (and that can be learnt), but all you really need is a keen eye for detail and to be willing to work hard and learn - it’s not rocket science! 
 
-Not that rocket science is rocket science either - after all, we owe a great deal of our aviation history to amateurs working out of garages.
+*Not that rocket science is rocket science either - after all, we owe a great deal of our aviation history to amateurs working out of garages.*
 
 Cheers!

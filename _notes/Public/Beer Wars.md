@@ -23,4 +23,4 @@ In practice, getting an injunction _mainly_ requires you to establish irreparabl
 
 And so, if you were the brewery's lawyer, I hope you told the court that forcing your client to part with an irreplaceable and highly illiquid asset that's responsible for a third of their top line would lead to even more payment defaults. It's a great line of argument to take! They should hang it in the louvre, now that there's space.
 
-[^1]: Typically on account of difficulties in valuation.
+[^1]: *Typically on account of difficulties in valuation.*
