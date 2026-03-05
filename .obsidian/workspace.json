@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "26f51abba0b8c294",
+        "id": "e811ed41cab93d3b",
         "type": "tabs",
         "children": [
           {
-            "id": "2322b82a24c6a96f",
+            "id": "7040905595c978d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -47,6 +47,23 @@
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
+          },
+          {
+            "id": "718bf471244f2069",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
           }
         ]
       }
@@ -69,13 +86,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Public/State of the Renewable Energy Union 2026.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of State of the Renewable Energy Union 2026"
+              "title": "Outline"
             }
           }
         ]
@@ -90,7 +106,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "_notes/Public/State of the Renewable Energy Union 2026.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -118,7 +133,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of State of the Renewable Energy Union 2026"
+              "title": "Graph view"
             }
           }
         ]
@@ -136,13 +151,13 @@
       "float-search:Search obsidian in modal view": false
     }
   },
-  "active": "2322b82a24c6a96f",
+  "active": "7040905595c978d2",
   "lastOpenFiles": [
+    "_notes/Public/Beer Wars.md",
+    "_notes/Public/State of the Renewable Energy Union 2026.md",
     "_notes/Public/All Electricity is Accounting.md",
     "pages/Resume.md",
-    "_notes/Public/Beer Wars.md",
     "_notes/Public/renewable energy.md",
-    "_notes/Public/State of the Renewable Energy Union 2026.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
     "_notes/Public/test.md",
     "pages/Writing.md",
