@@ -6,7 +6,7 @@ date: 03-03-2026
 date modified: 05-03-2026
 ---
 
-"[[All Electricity is Accounting]]", I'd said some time ago. And while I suppose that's still true, the process of getting to the [[electricity]] stage is looking a little more uncertain. "*Electron sources tend to react badly to annoying real-world stimuli like geopolitics and the environment*", I'd written at the time, and that's sort of a truism if you think about it. 
+"[[All Electricity is Accounting]]", I'd said some time ago. And while I suppose that's still largely true, the process of getting to the [[electricity]] stage is getting a little more uncertain. "*Electron sources tend to react badly to annoying real-world stimuli like geopolitics and the environment*", I'd written at the time, and that's sort of a truism if you think about it. 
 
 As we speak, there's some sort of armed conflict going on between the United States and Iran, which may or may not involve [[oil]], prediction markets, and the Armageddon. And so, we live in interesting times, where the fate of the world's largest oil shipping lane[^1] hangs in the balance. Which puts [[renewable energy]] in an interesting spot if you ask me.
 

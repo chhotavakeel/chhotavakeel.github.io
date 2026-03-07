@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c74e95ac328e06d6",
+        "id": "2ed3202610cc4541",
         "type": "tabs",
         "children": [
           {
-            "id": "6da95199d594f630",
+            "id": "a4eb2942577f82db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Public/renewable energy.md",
+                "file": "_notes/Public/State of the Renewable Energy Union 2026.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "renewable energy"
+              "title": "State of the Renewable Energy Union 2026"
             }
           }
         ]
@@ -150,15 +150,15 @@
       "float-search:Search obsidian in modal view": false
     }
   },
-  "active": "6da95199d594f630",
+  "active": "a4eb2942577f82db",
   "lastOpenFiles": [
+    "_notes/Public/renewable energy.md",
     "_notes/Public/oil.md",
     "_notes/Public/market.md",
     "_notes/Public/liquidity.md",
     "_notes/Public/injunctions.md",
     "_notes/Public/electricity.md",
     "_notes/Public/books.md",
-    "_notes/Public/renewable energy.md",
     "_notes/Public/State of the Renewable Energy Union 2026.md",
     "_notes/Public/Beer Wars.md",
     "_notes/Public/All Electricity is Accounting.md",
