@@ -16,7 +16,7 @@ If the conflict is a prolonged one, then yes, while oil is [voluminous and oozy 
 
 How does your central bank respond? 
 
-By raising interest rates, hoping that an increase in borrowing costs discourages spending and reduces [[market]] demand. Unfortunately, this also has the unintended consequence of reducing investment in sunrise and/or capital-intensive sectors[^2] since driving up the cost of capital makes cheaper, more lucrative investments more attractive.
+By raising interest rates, hoping that an increase in borrowing costs discourages spending and reduces [[market]] demand. Unfortunately, this also has the unintended consequence of reducing investment in sunrise and/or capital-intensive sectors[^2] - driving up the cost of capital makes cheaper, more lucrative investments more attractive.
 
 And so, even if you have the political will to add on more renewable energy, you suddenly lack the financial capability to do so. 
 
