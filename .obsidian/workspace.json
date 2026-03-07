@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Public/Beer Wars.md",
+                "file": "_notes/Public/books.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Beer Wars"
+              "title": "books"
             }
           }
         ]
@@ -152,10 +152,10 @@
   },
   "active": "6da95199d594f630",
   "lastOpenFiles": [
+    "_notes/Public/Beer Wars.md",
     "_notes/Public/State of the Renewable Energy Union 2026.md",
     "_notes/Public/All Electricity is Accounting.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
-    "_notes/Public/Beer Wars.md",
     "pages/Resume.md",
     "_notes/Public/renewable energy.md",
     "_notes/Public/test.md",
