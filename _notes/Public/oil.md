@@ -3,4 +3,4 @@ feed: hide
 title: oil
 layout: Post
 ---
-This is a tag page. Notes carrying this tag are set out below.
+This is a tag page. Notes with this tag are set out below.
