@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Index.md",
+                "file": "pages/Contact.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "Contact"
             }
           }
         ]
@@ -152,11 +152,12 @@
   },
   "active": "46a6ee0c218e04d8",
   "lastOpenFiles": [
-    "_notes/Public/oil.md",
-    "pages/Contact.md",
-    "pages/Writing.md",
-    "pages/Resume.md",
     "pages/Index.md",
+    "pages/Resume.md",
+    "pages/LLMs.md",
+    "pages/Contact.md",
+    "_notes/Public/oil.md",
+    "pages/Writing.md",
     "_notes/Public/liquidity.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
     "_notes/Public/State of the Renewable Energy Union 2026.md",
@@ -173,7 +174,6 @@
     "_notes/Public/Quotes (tag).md",
     "_notes/Public/Advice (tag).md",
     "pages/404.md",
-    "pages/LLMs.md",
     "_notes/Public/Books (tag).md",
     "Tags",
     "assets/img/moon.svg",
