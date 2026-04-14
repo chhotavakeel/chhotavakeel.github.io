@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Contact.md",
+                "file": "pages/Index.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Contact"
+              "title": "Index"
             }
           }
         ]
@@ -152,15 +152,15 @@
   },
   "active": "46a6ee0c218e04d8",
   "lastOpenFiles": [
+    "_notes/Public/oil.md",
+    "pages/Contact.md",
     "pages/Writing.md",
     "pages/Resume.md",
-    "pages/Contact.md",
     "pages/Index.md",
     "_notes/Public/liquidity.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
     "_notes/Public/State of the Renewable Energy Union 2026.md",
     "_notes/Public/renewable energy.md",
-    "_notes/Public/oil.md",
     "_notes/Public/market.md",
     "_notes/Public/injunctions.md",
     "_notes/Public/electricity.md",

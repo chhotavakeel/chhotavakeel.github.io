@@ -6,14 +6,7 @@ layout: Post
 
 ## About
 
-Hi! I'm Pranav, an incoming student at the London Business School. 
-
-In the past, I was: 
-
-(i) a corporate lawyer specialising in renewable energy and social infrastructure; and 
-(ii) a PPP advisor at the World Bank Group. 
-
-You can go through my entire resume <a href="/resume">here</a>!
+Hi! I'm Pranav, an incoming student at the London Business School. In the past, I was: (i) a corporate lawyer specialising in renewable energy and social infrastructure; and (ii) a PPP advisor to the World Bank Group. You can go through my entire resume <a href="/resume">here</a>!
 
 ## Disclaimer
 
