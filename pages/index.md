@@ -6,9 +6,14 @@ layout: Post
 
 ## About
 
-Hi! I'm Pranav, a corporate lawyer specialising in renewable energy and social infrastructure. 
+Hi! I'm Pranav, an incoming student at the London Business School. 
 
-I currently work as a PPP consultant at the [World Bank Group](https://www.worldbank.org/ext/en/country/india). You can go through my resume <a href="/resume">here</a>.
+In the past, I was: 
+
+(i) a corporate lawyer specialising in renewable energy and social infrastructure; and 
+(ii) a PPP advisor at the World Bank Group. 
+
+You can go through my entire resume <a href="/resume">here</a>!
 
 ## Disclaimer
 
@@ -16,6 +21,6 @@ Nothing in here constitutes legal advice. All views are my own.
 
 ## Writing
 
-I'm slowly adding pieces to this website. Existing ones are located <a href="/notes">here</a>.
+I'm slowly adding pieces to this website. Existing ones can be accessed <a href="/notes">here</a>.
 
-## [Contact](mailto:mail@pranavbutalia.com)
+## <a href="/contact">Contact</a>

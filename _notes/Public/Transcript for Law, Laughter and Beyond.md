@@ -43,7 +43,7 @@ If I can be slightly selfish, please also read the financial papers - Mint is go
 
 *If you don’t like reading, why are you in law school?*
 
-If you must, watch some movies. Watch Twelve Angry Men and watch Gangaajal. That cuts a fairly vast swathe across what you can expect to find in the profession.
+If you must, watch some movies. Watch Twelve Angry Men and watch *Gangaajal*. That cuts a fairly vast swathe across what you can expect to find in the profession.
 
 Next - intern. Intern a lot. As much as you can, and in as many diverse places as possible. While I took every opportunity I got to intern, my one minor regret is that I didn’t diversify enough. 
 
