@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Contact.md",
+                "file": "pages/Resume.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Contact"
+              "title": "Resume"
             }
           }
         ]
@@ -152,10 +152,10 @@
   },
   "active": "46a6ee0c218e04d8",
   "lastOpenFiles": [
+    "pages/Contact.md",
     "pages/Index.md",
     "pages/Resume.md",
     "pages/LLMs.md",
-    "pages/Contact.md",
     "_notes/Public/oil.md",
     "pages/Writing.md",
     "_notes/Public/liquidity.md",
