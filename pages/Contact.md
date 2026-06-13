@@ -10,4 +10,4 @@ I greatly enjoy talking to people. You can always reach out to me [here](mailto:
 ## Things to keep in mind
 
 (i) I usually respond within 48 hours. <br>
-(ii) Expect responses at odd hours - I do my best work at night.
+(ii) I do my best work at night - expect mails at odd hours.

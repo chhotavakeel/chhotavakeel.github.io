@@ -10,7 +10,7 @@ Hi! I'm Pranav, an incoming MBA student at the [London Business School](https://
 
 ## Work
 
-<a href="/deals">These</a> are some of the mandates that I've worked on. These days, I mainly draft bespoke contracts and tender documents and advise on special situations.
+<a href="/deals">These</a> are some of the mandates I've worked on. These days, I mainly draft bespoke contracts and tender documents and sometimes advise on special situations.
 
 ## Writing
 
