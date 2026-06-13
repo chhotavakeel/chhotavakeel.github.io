@@ -6,14 +6,11 @@ content-type: static
 ---
 
 <div id="txn-experience">
-  <header class="tx-head">
-    <span id="tx-count">0</span> mandates. <span class="tx-hint">Filter by type, sector, or search.</span>
-  </header>
 
   <div class="tx-controls">
     <div class="tx-search">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
-      <input id="tx-q" type="search" placeholder="Search." aria-label="Search transactions" autocomplete="off">
+      <input id="tx-q" type="search" placeholder="Search" aria-label="Search transactions" autocomplete="off">
     </div>
     <div class="tx-cats" id="tx-cats" role="group" aria-label="Filter by transaction type"></div>
     <label class="tx-sectorwrap">
