@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Resume.md",
-                "mode": "source",
+                "file": "pages/Beliefs.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Resume"
+              "title": "Beliefs"
             }
           }
         ]
@@ -152,12 +152,15 @@
   },
   "active": "556f4d5c3db677a7",
   "lastOpenFiles": [
-    "pages/Writings.md",
-    "pages/Index.md",
-    "pages/404.md",
-    "pages/Contact.md",
     "pages/LLMs.md",
+    "pages/Index.md",
+    "pages/Deals.md",
+    "pages/Beliefs.md",
+    "pages/404.md",
     "pages/Resume.md",
+    "pages/Writing.md",
+    "_notes/Public/Beer Wars.md",
+    "_notes/Public/All Electricity is Accounting.md",
     "_notes/Public/oil.md",
     "_notes/Public/liquidity.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
@@ -167,8 +170,6 @@
     "_notes/Public/injunctions.md",
     "_notes/Public/electricity.md",
     "_notes/Public/books.md",
-    "_notes/Public/Beer Wars.md",
-    "_notes/Public/All Electricity is Accounting.md",
     "_notes/Public/test.md",
     "assets/css/custom.css",
     "_notes/Public/Read a Lot.md",
