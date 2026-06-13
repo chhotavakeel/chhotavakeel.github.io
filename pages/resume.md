@@ -5,6 +5,26 @@ layout: Post
 content-type: static
 ---
 
+### Education
+
+#### London Business School
+
+Masters of Business Administration
+
+_Ongoing_
+
+#### West Bengal National University of Juridical Sciences
+
+B.A. LL.B. (Hons.)
+
+_2019_
+
+#### Delhi Public School, R.K. Puram
+
+All India Senior School Certificate Examination
+
+_2014_
+
 ### Experience
 
 #### The World Bank Group
@@ -34,23 +54,3 @@ As part of Trilegal's Energy and Infrastructure practice, my responsibilities in
 _June 2019 - March 2023_
 
 My role as an associate saw me acting on a variety of contentious and non-contentious mandates for clients in the energy and infrastructure sectors, including representing them in proceedings before courts, arbitral tribunals, and regulatory bodies.
-
-### Education
-
-#### London Business School
-
-##### Masters of Business Administration
-
-_Ongoing_
-
-#### West Bengal National University of Juridical Sciences
-
-##### B.A. LL.B. (Hons.)
-
-_2019_
-
-#### Delhi Public School, R.K. Puram
-
-##### All India Senior School Certificate Examination
-
-_2014_
