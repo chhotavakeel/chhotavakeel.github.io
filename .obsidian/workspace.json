@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Index.md",
+                "file": "pages/Deals.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "Deals"
             }
           }
         ]
@@ -152,8 +152,8 @@
   },
   "active": "9f9f13370efb8c39",
   "lastOpenFiles": [
-    "pages/Contact.md",
     "pages/Index.md",
+    "pages/Contact.md",
     "pages/Resume.md",
     "pages/Writing.md",
     "_notes/Public/electricity.md",
