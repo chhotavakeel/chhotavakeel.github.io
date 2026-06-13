@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "95319b30c7c8db8c",
@@ -153,13 +154,13 @@
   "active": "9f9f13370efb8c39",
   "lastOpenFiles": [
     "pages/Contact.md",
+    "pages/Index.md",
     "pages/Resume.md",
     "pages/Writing.md",
     "_notes/Public/electricity.md",
     "_notes/Public/books.md",
     "_notes/Public/Beer Wars.md",
     "_notes/Public/All Electricity is Accounting.md",
-    "pages/Index.md",
     "pages/404.md",
     "pages/LLMs.md",
     "pages/Index.md.sb-14029782-0BlEsN",
