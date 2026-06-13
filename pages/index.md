@@ -14,6 +14,6 @@ Hi! I'm Pranav, an incoming MBA student at the [London Business School](https://
 
 ## Writing
 
-I occasionally write about <a href="/notes">energy and infrastructure</a>. I'm proudest of <a href="/notes/all-electricity-is-accounting">All Electricity is Accounting</a>.
+I occasionally write about energy and infrastructure <a href="/notes">here</a>.
 
 ## <a href="/contact">Contact</a>

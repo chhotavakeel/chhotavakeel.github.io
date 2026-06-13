@@ -9,5 +9,5 @@ I greatly enjoy talking to people. You can always reach me [here](mailto:mail@pr
 
 ## Things to keep in mind
 
-(i) I usually respond fast.
+(i) I usually respond fast. <br>
 (ii) I work late nights - expect responses at odd hours.
