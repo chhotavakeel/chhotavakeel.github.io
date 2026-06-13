@@ -12,4 +12,8 @@ Hi! I'm Pranav, an incoming MBA student at the [London Business School](https://
 
 <a href="/deals">These</a> are some of the mandates I've worked on previously. I'm now mostly engaged to draft bespoke contracts and tender documents and advise on special situations.
 
+## Writing
+
+I XX.
+
 ## <a href="/contact">Contact</a>
