@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e222eb03301e7de6",
+        "id": "612018a091379c23",
         "type": "tabs",
         "children": [
           {
-            "id": "556f4d5c3db677a7",
+            "id": "9f9f13370efb8c39",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pages/Contact.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Contact"
+              "title": "New tab"
             }
           }
         ]
@@ -150,14 +145,15 @@
       "float-search:Search obsidian in modal view": false
     }
   },
-  "active": "556f4d5c3db677a7",
+  "active": "9f9f13370efb8c39",
   "lastOpenFiles": [
     "pages/Index.md",
-    "pages/Contact.md",
-    "pages/404.md",
     "pages/LLMs.md",
+    "pages/Index.md.sb-14029782-0BlEsN",
     "pages/Deals.md",
     "pages/Resume.md",
+    "pages/Contact.md",
+    "pages/404.md",
     "pages/Writing.md",
     "_notes/Public/Beer Wars.md",
     "_notes/Public/All Electricity is Accounting.md",
