@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Writing.md",
+                "file": "pages/Index.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Writing"
+              "title": "Index"
             }
           }
         ]
@@ -153,17 +153,17 @@
   "active": "9f9f13370efb8c39",
   "lastOpenFiles": [
     "pages/Contact.md",
+    "pages/Resume.md",
+    "pages/Writing.md",
     "_notes/Public/electricity.md",
     "_notes/Public/books.md",
     "_notes/Public/Beer Wars.md",
     "_notes/Public/All Electricity is Accounting.md",
     "pages/Index.md",
     "pages/404.md",
-    "pages/Writing.md",
     "pages/LLMs.md",
     "pages/Index.md.sb-14029782-0BlEsN",
     "pages/Deals.md",
-    "pages/Resume.md",
     "_notes/Public/oil.md",
     "_notes/Public/liquidity.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
