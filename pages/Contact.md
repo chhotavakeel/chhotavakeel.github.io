@@ -9,6 +9,5 @@ I greatly enjoy talking to people. You can always reach me [here](mailto:mail@pr
 
 ## Things to keep in mind
 
-(i) My inbox is my to-do list. 
-(ii) I usually respond fast.
-(iii) I keep odd hours and work asynchronously - expect late-night responses.
+(i) I usually respond fast.
+(ii) I work late nights - expect responses at odd hours.

@@ -4,4 +4,5 @@ title: Writing
 layout: Post
 ---
 
-Standard disclaimers: (i) not legal advice; and (ii) all views own.
+(i) Not legal advice; and 
+(ii) all views are my own.
