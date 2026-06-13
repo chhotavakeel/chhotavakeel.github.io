@@ -1,13 +1,13 @@
 ---
 permalink: /deals.html
-title: Selected deals
+title: Deals
 layout: Post
 content-type: static
 ---
 
 <div id="txn-experience">
   <header class="tx-head">
-    <span id="tx-count">0</span> mandates. <span class="tx-hint">Filter by type, sector, or search.</span></p>
+    <span id="tx-count">0</span> mandates. <span class="tx-hint">Filter by type, sector, or search.</span>
   </header>
 
   <div class="tx-controls">
