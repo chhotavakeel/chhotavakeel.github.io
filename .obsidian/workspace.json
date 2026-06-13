@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Beliefs.md",
+                "file": "pages/Contact.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Beliefs"
+              "title": "Contact"
             }
           }
         ]
@@ -152,11 +152,11 @@
   },
   "active": "556f4d5c3db677a7",
   "lastOpenFiles": [
-    "pages/LLMs.md",
     "pages/Index.md",
-    "pages/Deals.md",
-    "pages/Beliefs.md",
+    "pages/Contact.md",
     "pages/404.md",
+    "pages/LLMs.md",
+    "pages/Deals.md",
     "pages/Resume.md",
     "pages/Writing.md",
     "_notes/Public/Beer Wars.md",
