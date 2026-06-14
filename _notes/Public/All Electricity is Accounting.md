@@ -5,7 +5,6 @@ layout: Post
 date: 23-10-2025
 date modified: 04-03-2026
 ---
-
 The story of modern electrical supply is mainly one of accounting. Electrons, like water, like to flow from source to destination. The only way to check their flow is to turn off the taps at either end. Assuming you have a source of electrons, and someone willing to pay you for them, then, if you have some means of electron transportation, a meter to assess consumption, and some sort of understanding on how much that consumption is really worth, you're in the [[electricity]] supply business, at least on a fundamental level of abstraction.
 
 Except things aren't quite so straightforward. People in the electron-source owning business typically also aren't allowed to be in the electron transportation business. This is done to prevent monopolisation. The latter is usually carried out by a dedicated "distribution company". By entering into supply agreements with a large number of electron source owners, and subsequently agreeing to provide electrons on tap to whoever needs them, distribution companies effectively act as aggregators of [[market]] supply and demand.
@@ -33,7 +32,7 @@ you're guilty of insider trading. Don't do this! This is a bad thing!
 
 Hypothetically speaking, if you're a sensitive-commodity markets regulator, you'd probably want uniform commodity pricing across marketplaces. This would, however, make all your marketplaces start competing on service quality and fees, instead of underlying commodity prices, and wipe out all network effects.
 
-Assuming you're okay with that, is your decision to couple commodity prices across marketplaces material non-public information? 
+Assuming you're okay with that, is your decision to couple commodity prices across marketplaces material non-public information?
 
 India's Securities and Exchange Board [certainly](https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/interim_order_ie1.pdf) seems to think so. They also think you shouldn't text your former student about it, let him attend a closed-doors meeting about it, or encourage him, his parents, sibling, friend, friend's siblings, friend's sibling's wife, and astrologer, to buy puts on the country's only listed power exchange right before you announce your move, in a week-long trade that earns all participants slightly under 20 million dollars in cumulative profit despite them having never traded in derivatives, that particular stock, or indeed, any stock, ever before.
 

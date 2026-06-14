@@ -16,7 +16,7 @@ Public domain only.
   </div>
 
   <ol class="tx-list" id="tx-list"></ol>
-  <p class="tx-empty" id="tx-empty" hidden>No mandates match those filters. <button type="button" id="tx-clear">Clear filters</button></p>
+  <p class="tx-empty" id="tx-empty" hidden>No matches. <button type="button" id="tx-clear">Clear filters</button></p>
 </div>
 
 <script>
