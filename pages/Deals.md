@@ -5,7 +5,7 @@ layout: Post
 content-type: static
 ---
 
-All of these are either disclosable or already in the public domain.
+All of these are disclosable or already in the public domain.
 
 <div id="txn-experience">
   <div class="tx-controls">
@@ -21,7 +21,7 @@ All of these are either disclosable or already in the public domain.
 
 <script>
 (function () {
-  var DATA = [{"client": "AB Mauri India", "blurb": "Development of its USD 137 million, 257-acre greenfield yeast manufacturing facility.", "cats": ["Contract"], "sectors": ["Manufacturing"], "subs": ["Drafting"]}, {"client": "Actis", "blurb": "Sale of Sprng Energy, its renewable energy platform having a cumulative capacity of 2.9 GWp, to Shell Overseas Investment B.V. for USD 1.5 billion.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Sell-side"]}, {"client": "Aequs", "blurb": "Obtaining the Ministry of Power's approval for the subdistribution of power by industrial park developers across India.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Policy"]}, {"client": "Asian Infrastructure Investment Bank", "blurb": "USD 58.4 million investment into an OTPP-backed Indian infrastructure investment trust housing eight solar projects with a cumulative capacity of 1.54 GWp.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side"]}, {"client": "Asianet", "blurb": "Challenging a USD 69 million demand for enhanced license fees following the Supreme Court of India decision upholding the Department of Telecommunications’ definition of adjusted gross revenue.", "cats": ["Litigation"], "sectors": ["Telecommunication"], "subs": []}, {"client": "Brookfield Asset Management", "blurb": "Acquisition of a controlling stake in CleanMax Enviro Energy Solutions for USD 360 million.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side"]}, {"client": "Brookfield Asset Management", "blurb": "Procuring a stay order from the Andhra Pradesh High Court against a directive by the state government retrospectively altering tariffs for 7.5 GW of wind and solar projects leading to a potential revenue loss of USD 1.29 billion for affected power generators.", "cats": ["Litigation"], "sectors": ["Renewable energy"], "subs": ["Writ"]}, {"client": "Brookfield Asset Management", "blurb": "Overturning its disqualification from a tender for the development of a 400 MW solar project.", "cats": ["Litigation"], "sectors": ["Renewable energy"], "subs": ["Writ"]}, {"client": "Brookfield Renewables", "blurb": "USD 1 billion debt investment in the Avaada Group’s 4 GW portfolio.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side", "Debt"]}, {"client": "Brookfield Renewables", "blurb": "Proposed acquisition of SoftBank's 5 GW Indian renewable energy project portfolio valued at USD 3.5 billion.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side"]}, {"client": "Copenhagen Infrastructure Partners", "blurb": "USD 100 million equity investment in a platform with AMPin Energy Transition for the development of 1.7 GWp of renewable energy projects across India.", "cats": ["Advisory", "Contract"], "sectors": ["Renewable energy"], "subs": ["Buy-side", "Review"]}, {"client": "Cube Highways", "blurb": "USD 29 million acquisition of 147 kilometres of road assets from KNR Constructions Limited.", "cats": ["Due diligence", "Contract"], "sectors": ["Roads"], "subs": ["Buy-side", "Drafting"]}, {"client": "Digivate Labs", "blurb": "Development of its AI-driven bid evaluation platform.", "cats": ["Advisory"], "sectors": ["Artificial intelligence"], "subs": ["Review"]}, {"client": "Egis India", "blurb": "Dispute with the Delhi Metro Rail Corporation regarding the proposed descoping of its design consultancy services valued at USD 3 million.", "cats": ["Advisory"], "sectors": ["Mass rapid transit"], "subs": ["Review"]}, {"client": "Fourth Partner Energy", "blurb": "Sale of I-RECs generated from its 150 MWp wind and solar project portfolio to Meta Inc.", "cats": ["Contract"], "sectors": ["Renewable energy"], "subs": ["Review"]}, {"client": "GE Energy Financial Services", "blurb": "Acquisition of a 49% stake in a 150 MW wind project from Continuum Energy for USD 30 million.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side"]}, {"client": "International Finance Corporation", "blurb": "Structuring and drafting tender documents for the first independent power project in Fiji under the domestic PPP framework.", "cats": ["Due diligence", "Contract"], "sectors": ["Renewable energy"], "subs": ["Structuring", "Drafting"]}, {"client": "International Finance Corporation", "blurb": "Structuring and drafting tender documents for the first wastewater treatment plant in Bangladesh under the domestic PPP framework.", "cats": ["Due diligence", "Contract"], "sectors": ["WASH"], "subs": ["Structuring", "Drafting"]}, {"client": "Noida International Airport Limited", "blurb": "Standardisation of its purchase order templates for the supply of goods and services.", "cats": ["Contract"], "sectors": ["Airports"], "subs": ["Review"]}, {"client": "NTPC", "blurb": "Harmonising the change in control restrictions set out in its tender documents.", "cats": ["Contract"], "sectors": ["Renewable energy"], "subs": ["Review"]}, {"client": "O2 Power", "blurb": "Regulatory and commercial structuring of interstate renewable energy projects in India.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Structuring"]}, {"client": "Oil India Limited", "blurb": "Augmentation of its 660-kilometre white oil product transportation pipeline from 1.72 MMTPA to 5.50 MMTPA.", "cats": ["Contract"], "sectors": ["Oil and gas"], "subs": ["Review"]}, {"client": "Power Exchange of India Limited", "blurb": "Submission of comments to the Central Electricity Regulatory Commission on proposed amendments to the Power Market Regulations  impacting 56.6 billion kWh of trading volume.", "cats": ["Advisory"], "sectors": ["Electricity"], "subs": ["Policy"]}, {"client": "Rain CII Carbon", "blurb": "Proceedings challenging the arbitrary enforcement of import quotas by the Directorate General of Foreign Trade impacting the import of 144,000 MT of raw petroleum coke.", "cats": ["Litigation"], "sectors": ["Manufacturing"], "subs": ["Writ"]}, {"client": "Saudi Aramco", "blurb": "Proposed acquisition of a stake in the chemicals and refining business of Reliance Industries Limited.", "cats": ["Due diligence"], "sectors": ["Oil and gas"], "subs": ["Buy-side"]}, {"client": "Sembcorp Green Infra", "blurb": "Proposed acquisition of Mytrah Energy's 1.75 GW renewable energy portfolio valued at USD 1.1 billion.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side"]}, {"client": "Shell India", "blurb": "Comprehensive review of the Indian offshore wind policy framework potentially impacting 70 GW of future offshore wind development.", "cats": ["Advisory"], "sectors": ["Offshore wind"], "subs": ["Policy"]}, {"client": "Tata Power", "blurb": "Successfully contesting the state of Himachal Pradesh's imposition of approximately USD 6 million in damages for premature withdrawal from a hydropower project.", "cats": ["Litigation"], "sectors": ["Hydropower"], "subs": ["Arbitration"]}, {"client": "The Government of Madhya Pradesh", "blurb": "Regulatory structuring of its International Finance Corporation-funded 600 MW solar park.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Structuring"]}, {"client": "The Karnataka Electricity Regulatory Commission", "blurb": "Proposing amendments to the regulations governing verification of captive power projects in the state.", "cats": ["Advisory"], "sectors": ["Electricity"], "subs": ["Policy"]}, {"client": "The Ministry of Heavy Industries, Government of India", "blurb": "Reviewing the tender documents for the Production Linked Incentive scheme for Advanced Chemistry Cells with a cumulative subsidy disbursement of USD 431 million.", "cats": ["Contract"], "sectors": ["e-Mobility"], "subs": ["Review"]}, {"client": "The Ministry of New and Renewable Energy, Government of India", "blurb": "Resolving ambiguities in the domestic content mandate for solar modules.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Policy"]}, {"client": "The Ministry of Power, Government of India", "blurb": "Issue of clarificatory amendments to India's captive power framework.", "cats": ["Advisory"], "sectors": ["Electricity"], "subs": ["Policy"]}, {"client": "The Wind Independent Power Producers Association", "blurb": "Submission of comments to the Central Electricity Regulatory Commission on proposed amendments to India’s power transmission regime.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Policy"]}, {"client": "The World Bank Group", "blurb": "Structuring and negotiating the PPP aspects of a USD 830 million credit facility being extended to the Government of India for a revamp of the country’s vocational training ecosystem.", "cats": ["Due diligence", "Contract"], "sectors": ["Social infrastructure"], "subs": ["Structuring", "Drafting"]}, {"client": "United Nations Environment Programme", "blurb": "Drafting template tender documents for the construction and development of district cooling infrastructure in India.", "cats": ["Contract"], "sectors": ["Cooling"], "subs": ["Drafting"]}];
+  var DATA = [{"client": "AB Mauri India", "blurb": "Development of its USD 137 million, 257-acre greenfield yeast manufacturing facility.", "cats": ["Contract"], "sectors": ["Manufacturing"], "subs": ["Drafting"]}, {"client": "Actis", "blurb": "Sale of Sprng Energy, its renewable energy platform having a cumulative capacity of 2.9 GWp, to Shell Overseas Investment B.V. for USD 1.5 billion.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Sell-side"]}, {"client": "Aequs", "blurb": "Obtaining the Ministry of Power's approval for the subdistribution of power by industrial park developers across India.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Policy"]}, {"client": "Asian Infrastructure Investment Bank", "blurb": "USD 58.4 million investment into an OTPP-backed Indian infrastructure investment trust housing eight solar projects with a cumulative capacity of 1.54 GWp.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side"]}, {"client": "Asianet", "blurb": "Challenging a USD 69 million demand for enhanced license fees following the Supreme Court of India decision upholding the Department of Telecommunications’ definition of adjusted gross revenue.", "cats": ["Litigation"], "sectors": ["Telecommunication"], "subs": []}, {"client": "Brookfield Asset Management", "blurb": "Acquisition of a controlling stake in CleanMax Enviro Energy Solutions for USD 360 million.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side"]}, {"client": "Brookfield Asset Management", "blurb": "Procuring a stay order from the Andhra Pradesh High Court against a directive by the state government retrospectively altering tariffs for 7.5 GW of wind and solar projects leading to a potential revenue loss of USD 1.29 billion for affected power generators.", "cats": ["Litigation"], "sectors": ["Renewable energy"], "subs": ["Writ"]}, {"client": "Brookfield Asset Management", "blurb": "Overturning its disqualification from a tender for the development of a 400 MW solar project.", "cats": ["Litigation"], "sectors": ["Renewable energy"], "subs": ["Writ"]}, {"client": "Brookfield Renewables", "blurb": "USD 1 billion debt investment in the Avaada Group’s 4 GW portfolio.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side", "Debt"]}, {"client": "Brookfield Renewables", "blurb": "Proposed acquisition of SoftBank's 5 GW Indian renewable energy project portfolio valued at USD 3.5 billion.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side"]}, {"client": "Copenhagen Infrastructure Partners", "blurb": "USD 100 million equity investment in a platform with AMPin Energy Transition for the development of 1.7 GWp of renewable energy projects across India.", "cats": ["Advisory", "Contract"], "sectors": ["Renewable energy"], "subs": ["Buy-side", "Review"]}, {"client": "Cube Highways", "blurb": "USD 29 million acquisition of 147 kilometres of road assets from KNR Constructions Limited.", "cats": ["Due diligence", "Contract"], "sectors": ["Roads"], "subs": ["Buy-side", "Drafting"]}, {"client": "Digivate Labs", "blurb": "Development of its AI-driven bid evaluation platform.", "cats": ["Advisory"], "sectors": ["Artificial intelligence"], "subs": ["Review"]}, {"client": "Egis India", "blurb": "Dispute with the Delhi Metro Rail Corporation regarding the proposed descoping of its design consultancy services valued at USD 3 million.", "cats": ["Advisory"], "sectors": ["Mass rapid transit"], "subs": ["Review"]}, {"client": "Fourth Partner Energy", "blurb": "Sale of I-RECs generated from its 150 MWp wind and solar project portfolio to Meta Inc.", "cats": ["Contract"], "sectors": ["Renewable energy"], "subs": ["Review"]}, {"client": "GE Energy Financial Services", "blurb": "Acquisition of a 49% stake in a 150 MW wind project from Continuum Energy for USD 30 million.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side"]}, {"client": "Government of Madhya Pradesh", "blurb": "Regulatory structuring of its International Finance Corporation-funded 600 MW solar park.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Structuring"]}, {"client": "International Finance Corporation", "blurb": "Structuring and drafting tender documents for the first independent power project in Fiji under the domestic PPP framework.", "cats": ["Due diligence", "Contract"], "sectors": ["Renewable energy"], "subs": ["Structuring", "Drafting"]}, {"client": "International Finance Corporation", "blurb": "Structuring and drafting tender documents for the first wastewater treatment plant in Bangladesh under the domestic PPP framework.", "cats": ["Due diligence", "Contract"], "sectors": ["WASH"], "subs": ["Structuring", "Drafting"]}, {"client": "Karnataka Electricity Regulatory Commission", "blurb": "Proposing amendments to the regulations governing verification of captive power projects in the state.", "cats": ["Advisory"], "sectors": ["Electricity"], "subs": ["Policy"]}, {"client": "Ministry of Heavy Industries, Government of India", "blurb": "Reviewing the tender documents for the Production Linked Incentive scheme for Advanced Chemistry Cells with a cumulative subsidy disbursement of USD 431 million.", "cats": ["Contract"], "sectors": ["e-Mobility"], "subs": ["Review"]}, {"client": "Ministry of New and Renewable Energy, Government of India", "blurb": "Resolving ambiguities in the domestic content mandate for solar modules.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Policy"]}, {"client": "Ministry of Power, Government of India", "blurb": "Issue of clarificatory amendments to India's captive power framework.", "cats": ["Advisory"], "sectors": ["Electricity"], "subs": ["Policy"]}, {"client": "Noida International Airport Limited", "blurb": "Standardisation of its purchase order templates for the supply of goods and services.", "cats": ["Contract"], "sectors": ["Airports"], "subs": ["Review"]}, {"client": "NTPC", "blurb": "Harmonising the change in control restrictions set out in its tender documents.", "cats": ["Contract"], "sectors": ["Renewable energy"], "subs": ["Review"]}, {"client": "O2 Power", "blurb": "Regulatory and commercial structuring of interstate renewable energy projects in India.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Structuring"]}, {"client": "Oil India Limited", "blurb": "Augmentation of its 660-kilometre white oil product transportation pipeline from 1.72 MMTPA to 5.50 MMTPA.", "cats": ["Contract"], "sectors": ["Oil and gas"], "subs": ["Review"]}, {"client": "Power Exchange of India Limited", "blurb": "Submission of comments to the Central Electricity Regulatory Commission on proposed amendments to the Power Market Regulations  impacting 56.6 billion kWh of trading volume.", "cats": ["Advisory"], "sectors": ["Electricity"], "subs": ["Policy"]}, {"client": "Rain CII Carbon", "blurb": "Proceedings challenging the arbitrary enforcement of import quotas by the Directorate General of Foreign Trade impacting the import of 144,000 MT of raw petroleum coke.", "cats": ["Litigation"], "sectors": ["Manufacturing"], "subs": ["Writ"]}, {"client": "Saudi Aramco", "blurb": "Proposed acquisition of a stake in the chemicals and refining business of Reliance Industries Limited.", "cats": ["Due diligence"], "sectors": ["Oil and gas"], "subs": ["Buy-side"]}, {"client": "Sembcorp Green Infra", "blurb": "Proposed acquisition of Mytrah Energy's 1.75 GW renewable energy portfolio valued at USD 1.1 billion.", "cats": ["Due diligence"], "sectors": ["Renewable energy"], "subs": ["Buy-side"]}, {"client": "Shell India", "blurb": "Comprehensive review of the Indian offshore wind policy framework potentially impacting 70 GW of future offshore wind development.", "cats": ["Advisory"], "sectors": ["Offshore wind"], "subs": ["Policy"]}, {"client": "Tata Power", "blurb": "Successfully contesting the state of Himachal Pradesh's imposition of approximately USD 6 million in damages for premature withdrawal from a hydropower project.", "cats": ["Litigation"], "sectors": ["Hydropower"], "subs": ["Arbitration"]}, {"client": "The World Bank Group", "blurb": "Structuring and negotiating the PPP aspects of a USD 830 million credit facility being extended to the Government of India for a revamp of the country’s vocational training ecosystem.", "cats": ["Due diligence", "Contract"], "sectors": ["Social infrastructure"], "subs": ["Structuring", "Drafting"]}, {"client": "United Nations Environment Programme", "blurb": "Drafting template tender documents for the construction and development of district cooling infrastructure in India.", "cats": ["Contract"], "sectors": ["Cooling"], "subs": ["Drafting"]}, {"client": "Wind Independent Power Producers Association", "blurb": "Submission of comments to the Central Electricity Regulatory Commission on proposed amendments to India’s power transmission regime.", "cats": ["Advisory"], "sectors": ["Renewable energy"], "subs": ["Policy"]}];
   var state = { cat: "All", sector: "All", q: "" };
 
   var elList   = document.getElementById("tx-list");
@@ -271,7 +271,7 @@ All of these are either disclosable or already in the public domain.
 #txn-experience .tx-cat {
   font: inherit;
   font-family: inherit;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   cursor: pointer;
   padding: 0.35rem 0.7rem;
   border-radius: 0.25rem;
@@ -282,43 +282,48 @@ All of these are either disclosable or already in the public domain.
 }
 
 #txn-experience .tx-cat:hover {
-  border-color: var(--brand);
-  color: var(--brand);
+  border-color: var(--title);
+  color: var(--title);
 }
 
 #txn-experience .tx-cat .tx-cat-n {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 400;
   opacity: 0.65;
   margin-left: 0.1rem;
 }
 
 #txn-experience .tx-cat.is-on {
-  background: var(--brand);
-  border-color: var(--brand);
-  color: white;
+  background: var(--title);
+  border-color: var(--title);
+  color: var(--bg);
+}
+
+#txn-experience .tx-cat.is-on:hover {
+  background: var(--text);
+  border-color: var(--text);
 }
 
 #txn-experience .tx-cat.is-on .tx-cat-n {
-  color: rgba(255, 255, 255, 0.85);
-  opacity: 1;
+  color: var(--bg);
+  opacity: 0.7;
 }
 
 #txn-experience .tx-sector-chip {
   font: inherit;
   font-family: inherit;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-style: italic;
   cursor: pointer;
   padding: 0.35rem 0.7rem;
   border-radius: 0.25rem;
-  border: 1px solid var(--brand);
-  background: color-mix(in srgb, var(--brand) 12%, transparent);
-  color: var(--brand);
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  color: var(--title);
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
 #txn-experience .tx-sector-chip[hidden] {
@@ -326,8 +331,9 @@ All of these are either disclosable or already in the public domain.
 }
 
 #txn-experience .tx-sector-chip:hover {
-  background: var(--brand);
-  color: white;
+  background: var(--title);
+  border-color: var(--title);
+  color: var(--bg);
 }
 
 #txn-experience .tx-sector-chip-x {
@@ -362,12 +368,13 @@ All of these are either disclosable or already in the public domain.
 }
 
 #txn-experience .tx-cat-eyebrow {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   margin: 0 0 0.4rem;
   line-height: 1.3;
+  color: var(--text);
 }
 
 #txn-experience .tx-eyebrow-link {
@@ -377,22 +384,24 @@ All of these are either disclosable or already in the public domain.
   font-weight: inherit;
   text-transform: inherit;
   letter-spacing: inherit;
-  color: var(--brand);
+  color: inherit;
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: color 0.2s;
 }
 
-#txn-experience .tx-eyebrow-link:hover {
-  opacity: 0.7;
+#txn-experience .tx-eyebrow-link:hover,
+#txn-experience .tx-eyebrow-link:focus-visible {
+  color: var(--brand);
   text-decoration: underline;
   text-underline-offset: 3px;
+  outline: none;
 }
 
 #txn-experience .tx-eyebrow-sep {
-  color: var(--brand);
+  color: var(--text);
   opacity: 0.5;
   margin: 0 0.1rem;
 }
@@ -419,7 +428,7 @@ All of these are either disclosable or already in the public domain.
 }
 
 #txn-experience .tx-client {
-  font-size: 1.05rem;
+  font-size: 0.933rem;
   font-weight: 600;
   margin: 0;
   line-height: 1.3;
@@ -466,8 +475,8 @@ All of these are either disclosable or already in the public domain.
 #txn-experience .tx-blurb {
   margin: 0 0 0.8rem;
   color: var(--text);
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.933rem;
+  line-height: 1.65;
 }
 
 #txn-experience .tx-tags {
@@ -480,7 +489,7 @@ All of these are either disclosable or already in the public domain.
 #txn-experience .tx-tag {
   font: inherit;
   font-family: inherit;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   line-height: 1;
   padding: 0.35rem 0.55rem;
   border-radius: 0.25rem;
@@ -499,24 +508,23 @@ All of these are either disclosable or already in the public domain.
 #txn-experience .tx-expand-all {
   font: inherit;
   font-family: inherit;
-  font-size: 0.85rem;
-  color: var(--brand);
+  font-size: 0.8rem;
+  color: var(--text);
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.35rem 0.2rem;        /* vertical padding matches filter buttons */
-  margin-left: auto;              /* pushes self + anything after it to the right */
+  padding: 0.35rem 0.2rem;
+  margin-left: auto;
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  opacity: 0.85;
-  transition: opacity 0.2s;
+  transition: color 0.2s;
   white-space: nowrap;
 }
 
 #txn-experience .tx-expand-all:hover,
 #txn-experience .tx-expand-all:focus-visible {
-  opacity: 1;
+  color: var(--brand);
   outline: none;
 }
 
@@ -540,25 +548,22 @@ All of these are either disclosable or already in the public domain.
 #txn-experience .tx-empty button {
   font: inherit;
   font-size: 0.9rem;
-  color: var(--brand);
+  color: var(--text);
   background: none;
   border: none;
   cursor: pointer;
   text-decoration: underline;
+  text-underline-offset: 3px;
   padding: 0;
+  transition: color 0.2s;
+}
+
+#txn-experience .tx-empty button:hover {
+  color: var(--brand);
 }
 
 /* ---- Mobile ---- */
 @media (max-width: 560px) {
-  #txn-experience .tx-cat {
-    font-size: 0.82rem;
-    padding: 0.3rem 0.55rem;
-  }
-
-  #txn-experience .tx-tag {
-    font-size: 0.76rem;
-  }
-
   /* On mobile, let expand-all sit inline with the filter buttons instead of being
      pushed to the right edge of an otherwise empty line. */
   #txn-experience .tx-expand-all {
