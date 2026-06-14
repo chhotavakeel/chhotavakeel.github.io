@@ -9,7 +9,7 @@ date modified: 14-06-2026
 
 ## 1. What drove you to pursue a career in corporate law?
 
-You know, I honestly think that this is the first time I’m realising that I have, in fact, pursued a career in corporate law. In any case, it happened quite by accident - life really is what happens when you’re busy making other plans. I was always interested in litigating, and joined the Dispute Resolution team at Trilegal when I graduated. The partner I was working with at the time also took up [[electricity]] law disputes (which are before a specialised set of bodies) and I found that body of law interesting enough to switch internally, full-time, to the transactional side of affairs. I was also extremely lucky to have found people who helped me immensely along my journey.
+You know, I honestly think that this is the first time I’m realising that I have, in fact, pursued a career in corporate law. In any case, it happened quite by accident - life really is what happens when you’re busy making other plans. I was always interested in litigating, and joined the [Dispute Resolution](https://trilegal.com/expertises/dispute-resolution-and-arbitration/) team at [Trilegal](https://trilegal.com/) when I graduated. The partner I was working with at the time also took up [[electricity]] law disputes (which are before a specialised set of bodies) and I found that body of law interesting enough to switch internally, full-time, to the transactional side of affairs. I was also extremely lucky to have found people who helped me immensely along my journey.
 
 As to why I joined a firm, it was always seen as the ultimate culmination of the law school journey, and so I suppose that’s what I did - I think in law school, we have a tendency not to think what comes after that pre-placement offer or day zero placement. It took me some time to realise that your career is a marathon, and not a sprint.
 
@@ -17,7 +17,7 @@ To be honest, I find corporate law to be a little ’cleaner’ - by which, I me
 
 ## 2. How was your experience at NUJS? What were some activities that allowed you to develop your skillset?
 
-My experience at NUJS was pretty great to be honest. In general, college gives you room to make mistakes and hopefully even learn from them. I tried my hand at all the typical law school activities - mooting, debating, and so on - it wasn’t until the third year, or even later, that I realised I enjoyed alternate dispute resolution competitions much much more. I had the chance to attend the Herbert Smith Freehills International Negotiation Competition both as a participant, and more recently, a judge, and both were great experiences. In general, negotiation simulations simultaneously carry higher and lower stakes than actual negotiations, but they serve as useful shorthands for the real word.
+My experience at [NUJS](https://www.nujs.edu/) was pretty great to be honest. In general, college gives you room to make mistakes and hopefully even learn from them. I tried my hand at all the typical law school activities - mooting, debating, and so on - it wasn’t until the third year, or even later, that I realised I enjoyed alternate dispute resolution competitions much much more. I had the chance to attend the Herbert Smith Freehills International Negotiation Competition both as a [participant](https://nludelhi.ac.in/4th-hsf-nlu-delhi-international-negotiation-competition-sept-8-10-2017/), and more recently, a [judge](https://www.hsfkramer.com/insights/2023-08/hsf-nlu-delhi-international-negotiation-competition), and both were great experiences. In general, negotiation simulations simultaneously carry higher and lower stakes than actual negotiations, but they serve as useful shorthands for the real word.
 
 There's a beautiful tweet which said ”*Lawyers spend three years in law school just to learn to say "it depends." and you might wonder if that's time well-spent and all I can say is well, it depends on how you look at it.*” - I suppose my law school experience was like that.
 
@@ -49,7 +49,7 @@ Next - intern. Intern a lot. As much as you can, and in as many diverse places a
 
 Also remember, everyone has interests - the aim is to find one that lets you earn a living. And there are more than enough instances of that - I know of people from law school who have gone on to become successful artists, sports lawyers, and even philosophy professors.
 
-I also feel like interests are somewhat of a virtuous cycle and that there’s a larger feedback loop at play. You’re interested in something -> you spend time on it -> you get better at it - you like it more. Rinse and repeat.
+I also feel like interests are somewhat of a virtuous cycle and that there’s a larger feedback loop at play. You’re interested in something -> you spend time on it -> you get better at it -> you like it more. Rinse and repeat.
 
 As to how I found my interest, like I said, it was purely by accident. I had no idea what electricity law was when I was in law school. I, did, however, have a room overlooking the local electricity distribution company's building - it was only after graduation that I found out what the folks over there actually did.
 
