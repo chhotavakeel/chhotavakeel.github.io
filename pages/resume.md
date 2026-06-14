@@ -5,75 +5,151 @@ layout: Post
 content-type: static
 ---
 
-<style> .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; } .sec-head { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin: 0 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #e5e5e5; } .sec-head-gap { margin-top: 2rem; } .role { margin-bottom: 1.5rem; } .role-title { font-size: 0.9rem; font-weight: 600; margin: 0; } .role-period { font-size: 0.75rem; color: #aaa; margin-top: 2px; } .role-org { font-size: 0.8rem; color: #777; margin-top: 1px; } .role-desc { font-size: 0.8rem; color: #555; margin-top: 6px; line-height: 1.65; } .edu-item { margin-bottom: 1rem; } .edu-degree { font-size: 0.9rem; font-weight: 600; margin: 0; } .edu-year { font-size: 0.75rem; color: #aaa; margin-top: 2px; } .edu-school { font-size: 0.8rem; color: #777; margin-top: 1px; } .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; } .tag { font-size: 0.7rem; color: #555; background: #f4f4f4; border: 1px solid #e5e5e5; border-radius: 20px; padding: 3px 9px; } .clients { font-size: 0.8rem; color: #555; line-height: 1.9; } @media (max-width: 500px) { .two-col { grid-template-columns: 1fr; } } </style> <div class="two-col"> <div> <div class="sec-head">Experience</div>
+<style>
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 1rem;
+    align-items: start;
+  }
+  .sec-head {
+    font-size: 0.7rem;
+    font-weight: var(--weight-bold);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin: 0 0 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .two-col > div > .sec-head:not(:first-child) {
+    margin-top: 2rem;
+  }
+  .role, .edu-item {
+    margin-bottom: 1.5rem;
+  }
+  .role-title, .edu-degree {
+    font-size: var(--scale-sm);
+    font-weight: var(--weight-bold);
+    color: var(--title);
+  }
+  .role-period, .edu-year {
+    font-size: var(--scale-xs);
+    color: var(--text);
+    margin-top: 2px;
+    font-style: italic;
+  }
+  .role-org, .edu-school {
+    font-size: var(--scale-xs);
+    color: var(--text);
+    margin-top: 1px;
+  }
+  .role-desc {
+    font-size: var(--scale-sm);
+    color: var(--text);
+    margin-top: 6px;
+    line-height: 1.65;
+  }
+  .position {
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 560px) {
+    .two-col { grid-template-columns: 1fr; gap: 1rem; }
+  }
+</style>
 
-```
-<div class="role">
-  <div class="role-title">PPP Consultant — The World Bank Group</div>
-  <div class="role-period">Dec 2024 – Present</div>
-  <div class="role-desc">Helping the Bank's Education and Skills Practice structure and negotiate the PPP aspects of their loans in the South Asian Region.</div>
+<div class="two-col">
+  <div>
+    <div class="sec-head">Education</div>
+
+    <div class="edu-item">
+      <div class="edu-degree">London Business School</div>
+      <div class="edu-school">Masters of Business Administration</div>
+      <div class="edu-year">Ongoing</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-degree">West Bengal National University of Juridical Sciences</div>
+      <div class="edu-school">B.A. LL.B. (Hons.)</div>
+      <div class="edu-year">2019</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-degree">Delhi Public School, R.K. Puram, New Delhi</div>
+      <div class="edu-school">All India Senior School Certificate Examination</div>
+      <div class="edu-year">2014</div>
+    </div>
+
+    <div class="sec-head">Volunteering</div>
+
+    <div class="role">
+      <div class="role-title">[Organisation name]</div>
+      <div class="role-org">[Position or role]</div>
+      <div class="role-period">2023 - Present</div>
+    </div>
+
+    <div class="role">
+      <div class="role-title">[Organisation name]</div>
+      <div class="role-org">[Position or role]</div>
+      <div class="role-period">2021 - 2024</div>
+    </div>
+
+    <div class="role">
+      <div class="role-title">[Organisation name]</div>
+      <div class="role-org">[Position or role]</div>
+      <div class="role-period">2020 - 2022</div>
+    </div>
+
+    <div class="role">
+      <div class="role-title">[Organisation name]</div>
+      <div class="role-org">[Position or role]</div>
+      <div class="role-period">2019 - 2021</div>
+    </div>
+
+    <div class="role">
+      <div class="role-title">[Organisation name]</div>
+      <div class="role-org">[Position or role]</div>
+      <div class="role-period">2017 - 2019</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="sec-head">Experience</div>
+
+    <div class="role">
+      <div class="role-title">The World Bank Group</div>
+      <div class="role-org">PPP Consultant</div>
+      <div class="role-period">Dec 2024 - Present</div>
+      <div class="role-desc">I help the Bank's Education and Skills Practice structure and negotiate the PPP aspects of their loans in the South Asian Region.</div>
+    </div>
+
+    <div class="role">
+      <div class="role-title">Trilegal</div>
+
+      <div class="position">
+        <div class="role-org">Secondee Lawyer, O2 Power</div>
+        <div class="role-period">May 2024 - Aug 2024</div>
+        <div class="role-desc">I was seconded to a key client to support them during their fundraise. During my time there, I collaborated with and advised the in-house legal team on regulatory, contractual, and compliance issues.</div>
+      </div>
+
+      <div class="position">
+        <div class="role-org">Senior Associate, Energy and Infrastructure</div>
+        <div class="role-period">Apr 2023 - Aug 2024</div>
+        <div class="role-desc">As a senior member of the team, in addition to my duties as an associate, I had a larger role in the firm's recruitment, retention and training initiatives and was also a key contributor to overall team strategy, management and direction. My role as a lawyer also became more supervisory.</div>
+      </div>
+
+      <div class="position">
+        <div class="role-org">Associate, Energy and Infrastructure</div>
+        <div class="role-period">Dec 2020 - Mar 2023</div>
+        <div class="role-desc">As part of the Energy and Infrastructure practice group, my responsibilities included: (i) drafting, reviewing, and negotiating concession agreements, power purchase agreements, engineering, procurement, and construction contracts, and operation and maintenance agreements; (ii) carrying out due diligence on companies in the energy and infrastructure sectors; and (iii) advising clients on compliance with sectoral laws and policies.</div>
+      </div>
+
+      <div class="position">
+        <div class="role-org">Associate, Dispute Resolution</div>
+        <div class="role-period">Jun 2019 - Nov 2020</div>
+        <div class="role-desc">My role in the Dispute Resolution practice group saw me acting on a variety of contentious and non-contentious mandates for clients in the energy and infrastructure sectors, including representing them in proceedings before courts, arbitral tribunals, and regulatory bodies.</div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="role">
-  <div class="role-title">Secondee Lawyer, O2 Power — Trilegal</div>
-  <div class="role-period">May 2024 – Aug 2024</div>
-  <div class="role-desc">Seconded to a Temasek &amp; EQT-funded renewable energy platform during their fundraise. Advised the in-house team on regulatory, contractual, and compliance issues; drafted standard PPA templates; and liaised with government officials.</div>
-</div>
-
-<div class="role">
-  <div class="role-title">Senior Associate — Trilegal</div>
-  <div class="role-period">Apr 2023 – Aug 2024</div>
-  <div class="role-org">Energy and Infrastructure Practice Group</div>
-  <div class="role-desc">Drafting, reviewing, and negotiating concession agreements, PPAs, EPC contracts, and O&amp;M agreements; due diligence on energy and infrastructure companies; advising on sectoral compliance.</div>
-</div>
-
-<div class="role">
-  <div class="role-title">Associate — Trilegal</div>
-  <div class="role-period">Jun 2019 – Mar 2023</div>
-  <div class="role-org">Energy and Infrastructure / Dispute Resolution</div>
-  <div class="role-desc">Contentious and non-contentious mandates for clients in the energy and infrastructure sectors, including representation before courts, arbitral tribunals, and regulatory bodies.</div>
-</div>
-```
-
-</div> <div> <div class="sec-head">Education</div>
-
-```
-<div class="edu-item">
-  <div class="edu-degree">Masters of Business Administration</div>
-  <div class="edu-year">Ongoing</div>
-  <div class="edu-school">London Business School</div>
-</div>
-
-<div class="edu-item">
-  <div class="edu-degree">B.A. LL.B. (Hons.)</div>
-  <div class="edu-year">2019</div>
-  <div class="edu-school">West Bengal National University of Juridical Sciences</div>
-</div>
-
-<div class="edu-item">
-  <div class="edu-degree">All India Senior School Certificate Examination</div>
-  <div class="edu-year">2014</div>
-  <div class="edu-school">Delhi Public School, R.K. Puram, New Delhi</div>
-</div>
-
-<div class="sec-head sec-head-gap">Sectors</div>
-<div class="tags">
-  <span class="tag">Renewable energy</span>
-  <span class="tag">Infrastructure &amp; PPP</span>
-  <span class="tag">Oil &amp; gas</span>
-  <span class="tag">Hydropower</span>
-  <span class="tag">Offshore wind</span>
-  <span class="tag">E-mobility</span>
-  <span class="tag">Manufacturing</span>
-  <span class="tag">Technology</span>
-  <span class="tag">Airports</span>
-  <span class="tag">Ports</span>
-</div>
-
-<div class="sec-head sec-head-gap">Select clients</div>
-<div class="clients">
-  The World Bank Group · IFC · Asian Infrastructure Investment Bank · Brookfield · Actis · Shell · Saudi Aramco · Copenhagen Infrastructure Partners · GE Energy Financial Services · Sembcorp · Statkraft · NTPC · Oil India Limited · Noida International Airport · Ministry of Heavy Industries · Ministry of New and Renewable Energy · Government of Madhya Pradesh · Serentica Renewables · Radiance Renewables · Fourth Partner Energy
-</div>
-```
-
-</div> </div>
