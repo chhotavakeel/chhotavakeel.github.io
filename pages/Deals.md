@@ -54,6 +54,13 @@ All of these are disclosable or already in the public domain.
   elExpandAll.textContent = "Expand all";
   elCats.appendChild(elExpandAll);
 
+  // Flex-break: zero-width on wide screens, 100% on narrow — forces chip to its own row
+  var elFlexBreak = document.createElement("div");
+  elFlexBreak.className = "tx-flex-break";
+  elFlexBreak.setAttribute("aria-hidden", "true");
+  elFlexBreak.hidden = true;
+  elCats.appendChild(elFlexBreak);
+
   // Active sector chip — sits after expand-all so chip ends up rightmost when present
   var elSectorChip = document.createElement("button");
   elSectorChip.type = "button";
@@ -89,9 +96,11 @@ All of these are disclosable or already in the public domain.
     if (s === "All") {
       elSectorChip.hidden = true;
       elSectorChip.innerHTML = "";
+      elFlexBreak.hidden = true;
     } else {
       elSectorChip.innerHTML = esc(s) + '<span class="tx-sr"> – clear sector filter</span>';
       elSectorChip.hidden = false;
+      elFlexBreak.hidden = false;
     }
     render();
     if (s !== "All") {
@@ -294,8 +303,7 @@ All of these are disclosable or already in the public domain.
 }
 
 #txn-experience .tx-cat:hover {
-  border-color: var(--brand);
-  color: var(--brand);
+  background: color-mix(in srgb, var(--brand) 8%, transparent);
 }
 
 #txn-experience .tx-cat .tx-cat-n {
@@ -313,8 +321,6 @@ All of these are disclosable or already in the public domain.
 }
 
 #txn-experience .tx-cat.is-on:hover {
-  border-color: var(--brand);
-  color: var(--brand);
   background: color-mix(in srgb, var(--brand) 8%, transparent);
 }
 
@@ -329,21 +335,39 @@ All of these are disclosable or already in the public domain.
   font-size: 0.8rem;
   font-style: italic;
   cursor: pointer;
-  padding: 0.35rem 0.2rem;
-  border: none;
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--brand);
   background: transparent;
   color: var(--brand);
-  transition: opacity 0.2s;
+  transition: background 0.15s;
 }
 
 #txn-experience .tx-sector-chip[hidden] {
   display: none;
 }
 
+/* Flex line-break: invisible on wide screens; on splitscreen/mobile forces chip to its own row */
+#txn-experience .tx-flex-break {
+  flex-basis: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#txn-experience .tx-flex-break[hidden] {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #txn-experience .tx-flex-break {
+    flex-basis: 100%;
+  }
+}
+
 #txn-experience .tx-sector-chip:hover {
-  opacity: 0.7;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  background: color-mix(in srgb, var(--brand) 8%, transparent);
 }
 
 #txn-experience .tx-sr {
