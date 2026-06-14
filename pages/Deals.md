@@ -98,7 +98,7 @@ All of these are disclosable or already in the public domain.
       elSectorChip.innerHTML = "";
       elFlexBreak.hidden = true;
     } else {
-      elSectorChip.innerHTML = esc(s) + '<span class="tx-sr"> – clear sector filter</span>';
+      elSectorChip.innerHTML = esc(s) + ' <span class="tx-sector-chip-x" aria-hidden="true">×</span><span class="tx-sr"> – clear sector filter</span>';
       elSectorChip.hidden = false;
       elFlexBreak.hidden = false;
     }
@@ -340,6 +340,9 @@ All of these are disclosable or already in the public domain.
   border: 1px solid var(--brand);
   background: transparent;
   color: var(--brand);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   transition: background 0.15s;
 }
 
@@ -368,6 +371,13 @@ All of these are disclosable or already in the public domain.
 
 #txn-experience .tx-sector-chip:hover {
   background: color-mix(in srgb, var(--brand) 8%, transparent);
+}
+
+#txn-experience .tx-sector-chip-x {
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1;
+  opacity: 0.7;
 }
 
 #txn-experience .tx-sr {
