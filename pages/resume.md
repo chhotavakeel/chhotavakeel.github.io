@@ -9,10 +9,17 @@ content-type: static
   .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    grid-template-areas:
+      "edu exp"
+      "vol exp";
+    gap: 2rem 2.5rem;
     margin-top: 1rem;
     align-items: start;
   }
+  .cv-edu { grid-area: edu; }
+  .cv-exp { grid-area: exp; }
+  .cv-vol { grid-area: vol; }
+
   .sec-head {
     font-size: 0.7rem;
     font-weight: var(--weight-bold);
@@ -22,9 +29,6 @@ content-type: static
     margin: 0 0 1rem;
     padding-bottom: 0.4rem;
     border-bottom: 1px solid var(--border);
-  }
-  .two-col > div > .sec-head:not(:first-child) {
-    margin-top: 2rem;
   }
   .role, .edu-item {
     margin-bottom: 1.5rem;
@@ -55,12 +59,19 @@ content-type: static
     margin-top: 1.25rem;
   }
   @media (max-width: 560px) {
-    .two-col { grid-template-columns: 1fr; gap: 1rem; }
+    .two-col {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "edu"
+        "exp"
+        "vol";
+      gap: 1rem;
+    }
   }
 </style>
 
 <div class="two-col">
-  <div>
+  <section class="cv-edu">
     <div class="sec-head">Education</div>
 
     <div class="edu-item">
@@ -80,41 +91,9 @@ content-type: static
       <div class="edu-school">All India Senior School Certificate Examination</div>
       <div class="edu-year">2014</div>
     </div>
+  </section>
 
-    <div class="sec-head">Volunteering</div>
-
-    <div class="role">
-      <div class="role-title">[Organisation name]</div>
-      <div class="role-org">[Position or role]</div>
-      <div class="role-period">2023 - Present</div>
-    </div>
-
-    <div class="role">
-      <div class="role-title">[Organisation name]</div>
-      <div class="role-org">[Position or role]</div>
-      <div class="role-period">2021 - 2024</div>
-    </div>
-
-    <div class="role">
-      <div class="role-title">[Organisation name]</div>
-      <div class="role-org">[Position or role]</div>
-      <div class="role-period">2020 - 2022</div>
-    </div>
-
-    <div class="role">
-      <div class="role-title">[Organisation name]</div>
-      <div class="role-org">[Position or role]</div>
-      <div class="role-period">2019 - 2021</div>
-    </div>
-
-    <div class="role">
-      <div class="role-title">[Organisation name]</div>
-      <div class="role-org">[Position or role]</div>
-      <div class="role-period">2017 - 2019</div>
-    </div>
-  </div>
-
-  <div>
+  <section class="cv-exp">
     <div class="sec-head">Experience</div>
 
     <div class="role">
@@ -151,5 +130,39 @@ content-type: static
         <div class="role-desc">My role in the Dispute Resolution practice group saw me acting on a variety of contentious and non-contentious mandates for clients in the energy and infrastructure sectors, including representing them in proceedings before courts, arbitral tribunals, and regulatory bodies.</div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section class="cv-vol">
+    <div class="sec-head">Volunteering</div>
+
+    <div class="role">
+      <div class="role-title">[Organisation name]</div>
+      <div class="role-org">[Position or role]</div>
+      <div class="role-period">2023 - Present</div>
+    </div>
+
+    <div class="role">
+      <div class="role-title">[Organisation name]</div>
+      <div class="role-org">[Position or role]</div>
+      <div class="role-period">2021 - 2024</div>
+    </div>
+
+    <div class="role">
+      <div class="role-title">[Organisation name]</div>
+      <div class="role-org">[Position or role]</div>
+      <div class="role-period">2020 - 2022</div>
+    </div>
+
+    <div class="role">
+      <div class="role-title">[Organisation name]</div>
+      <div class="role-org">[Position or role]</div>
+      <div class="role-period">2019 - 2021</div>
+    </div>
+
+    <div class="role">
+      <div class="role-title">[Organisation name]</div>
+      <div class="role-org">[Position or role]</div>
+      <div class="role-period">2017 - 2019</div>
+    </div>
+  </section>
 </div>
