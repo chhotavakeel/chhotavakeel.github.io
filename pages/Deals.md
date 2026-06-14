@@ -6,10 +6,9 @@ content-type: static
 ---
 
 <div id="txn-experience">
-
   <div class="tx-controls">
     <div class="tx-search">
-      <input id="tx-q" type="search" placeholder="Search" autocomplete="on">
+      <input id="tx-q" type="search" placeholder="Search" autocomplete="off">
     </div>
     <div class="tx-cats" id="tx-cats" role="group" aria-label="Filter by sector"></div>
   </div>
@@ -26,7 +25,6 @@ content-type: static
   var elList   = document.getElementById("tx-list");
   var elCats   = document.getElementById("tx-cats");
   var elQ      = document.getElementById("tx-q");
-  var elCount  = document.getElementById("tx-count");
   var elEmpty  = document.getElementById("tx-empty");
 
   // Count sectors and sort by frequency desc, then alphabetically
@@ -122,7 +120,6 @@ content-type: static
 
   function render() {
     var hits = DATA.filter(matches);
-    elCount.textContent = hits.length;
     elList.innerHTML = "";
     elEmpty.hidden = hits.length !== 0;
 
@@ -165,30 +162,6 @@ content-type: static
 #txn-experience {
   max-width: 48rem;
   margin: 0;
-}
-
-#txn-experience .tx-head-block {
-  margin-bottom: 2rem;
-}
-
-#txn-experience .tx-title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--title);
-  margin: 0 0 0.5rem;
-  line-height: 1.3;
-}
-
-#txn-experience .tx-sub {
-  font-size: 0.95rem;
-  color: var(--text);
-  margin: 0;
-  line-height: 1.5;
-}
-
-#txn-experience .tx-sub #tx-count {
-  font-weight: 600;
-  color: var(--title);
 }
 
 /* ---- Controls ---- */
