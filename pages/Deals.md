@@ -10,13 +10,13 @@ All of these are disclosable or already in the public domain.
 <div id="txn-experience">
   <div class="tx-controls">
     <div class="tx-search">
-      <input id="tx-q" class="search-input" type="search" placeholder="Search client or matter…" autocomplete="off">
+      <input id="tx-q" class="search-input" type="search" placeholder="Search" autocomplete="off">
     </div>
     <div class="tx-cats" id="tx-cats" role="group" aria-label="Filter by transaction type"></div>
   </div>
 
   <ol class="tx-list" id="tx-list"></ol>
-  <p class="tx-empty" id="tx-empty" hidden>No mandates match those filters. <button type="button" id="tx-clear">Clear filters</button></p>
+  <p class="tx-empty" id="tx-empty" hidden>No matches.<button type="button" id="tx-clear">Clear filters</button></p>
 </div>
 
 <script>
@@ -306,18 +306,20 @@ All of these are disclosable or already in the public domain.
 }
 
 #txn-experience .tx-cat.is-on {
-  background: var(--title);
-  border-color: var(--title);
-  color: var(--bg);
+  background: transparent;
+  border-color: var(--brand);
+  color: var(--brand);
+  font-weight: 600;
 }
 
 #txn-experience .tx-cat.is-on:hover {
-  background: var(--text);
-  border-color: var(--text);
+  border-color: var(--brand);
+  color: var(--brand);
+  background: color-mix(in srgb, var(--brand) 8%, transparent);
 }
 
 #txn-experience .tx-cat.is-on .tx-cat-n {
-  color: var(--bg);
+  color: var(--brand);
   opacity: 0.7;
 }
 
@@ -329,9 +331,9 @@ All of these are disclosable or already in the public domain.
   cursor: pointer;
   padding: 0.35rem 0.7rem;
   border-radius: 0.25rem;
-  border: 1px solid var(--border);
-  background: var(--bg2);
-  color: var(--title);
+  border: 1px solid var(--brand);
+  background: color-mix(in srgb, var(--brand) 12%, transparent);
+  color: var(--brand);
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -343,9 +345,9 @@ All of these are disclosable or already in the public domain.
 }
 
 #txn-experience .tx-sector-chip:hover {
-  background: var(--title);
-  border-color: var(--title);
-  color: var(--bg);
+  background: var(--brand);
+  border-color: var(--brand);
+  color: white;
 }
 
 #txn-experience .tx-sector-chip-x {
@@ -573,10 +575,10 @@ All of these are disclosable or already in the public domain.
 
 /* ---- Mobile ---- */
 @media (max-width: 560px) {
-  /* On mobile, let expand-all sit inline with the filter buttons instead of being
-     pushed to the right edge of an otherwise empty line. */
+  /* On mobile, expand-all flows inline rather than being pushed to the right,
+     but keep a clear gap so it doesn't sit on top of the last filter button. */
   #txn-experience .tx-expand-all {
-    margin-left: 0;
+    margin-left: 1rem;
   }
 }
 
