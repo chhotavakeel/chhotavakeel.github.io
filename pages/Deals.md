@@ -8,7 +8,7 @@ content-type: static
 <div id="txn-experience">
   <div class="tx-controls">
     <div class="tx-search">
-      <input id="tx-q" class="search-input" type="search" placeholder="Search" autocomplete="off">
+      <input id="tx-q" class="search-input" type="search" placeholder="Search client or matter…" autocomplete="off">
     </div>
     <div class="tx-cats" id="tx-cats" role="group" aria-label="Filter by transaction type"></div>
   </div>
@@ -66,9 +66,10 @@ content-type: static
     state.sector = s;
     if (s === "All") {
       elSectorChip.hidden = true;
+      elSectorChip.innerHTML = "";
     } else {
-      elSectorChip.hidden = false;
       elSectorChip.innerHTML = esc(s) + ' <span class="tx-sector-chip-x" aria-hidden="true">×</span><span class="tx-sr">Clear sector filter</span>';
+      elSectorChip.hidden = false;
     }
     render();
     if (s !== "All") {
@@ -159,6 +160,18 @@ content-type: static
   position: relative;
 }
 
+#txn-experience .tx-search input[type="search"]::-webkit-search-cancel-button,
+#txn-experience .tx-search input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#txn-experience .tx-search input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
 #txn-experience .tx-cats {
   display: flex;
   flex-wrap: wrap;
@@ -216,6 +229,10 @@ content-type: static
   align-items: center;
   gap: 0.4rem;
   transition: background 0.2s, color 0.2s;
+}
+
+#txn-experience .tx-sector-chip[hidden] {
+  display: none;
 }
 
 #txn-experience .tx-sector-chip:hover {
