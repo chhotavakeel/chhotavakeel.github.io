@@ -5,12 +5,12 @@ layout: Post
 content-type: static
 ---
 
-XX
+Public domain only.
 
 <div id="txn-experience">
   <div class="tx-controls">
     <div class="tx-search">
-      <input id="tx-q" class="search-input" type="search" placeholder="Search client or matter…" autocomplete="off">
+      <input id="tx-q" class="search-input" type="search" placeholder="Search" autocomplete="off">
     </div>
     <div class="tx-cats" id="tx-cats" role="group" aria-label="Filter by transaction type"></div>
   </div>
