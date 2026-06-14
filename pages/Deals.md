@@ -16,7 +16,7 @@ All of these are disclosable or already in the public domain.
   </div>
 
   <ol class="tx-list" id="tx-list"></ol>
-  <p class="tx-empty" id="tx-empty" hidden>No matches.<button type="button" id="tx-clear">Clear filters</button></p>
+  <p class="tx-empty" id="tx-empty" hidden>No matches. <button type="button" id="tx-clear">Clear filters</button></p>
 </div>
 
 <script>
@@ -90,7 +90,7 @@ All of these are disclosable or already in the public domain.
       elSectorChip.hidden = true;
       elSectorChip.innerHTML = "";
     } else {
-      elSectorChip.innerHTML = esc(s) + ' <span class="tx-sector-chip-x" aria-hidden="true">×</span><span class="tx-sr">Clear sector filter</span>';
+      elSectorChip.innerHTML = esc(s) + '<span class="tx-sr"> – clear sector filter</span>';
       elSectorChip.hidden = false;
     }
     render();
@@ -294,8 +294,8 @@ All of these are disclosable or already in the public domain.
 }
 
 #txn-experience .tx-cat:hover {
-  border-color: var(--title);
-  color: var(--title);
+  border-color: var(--brand);
+  color: var(--brand);
 }
 
 #txn-experience .tx-cat .tx-cat-n {
@@ -329,15 +329,11 @@ All of these are disclosable or already in the public domain.
   font-size: 0.8rem;
   font-style: italic;
   cursor: pointer;
-  padding: 0.35rem 0.7rem;
-  border-radius: 0.25rem;
-  border: 1px solid var(--brand);
-  background: color-mix(in srgb, var(--brand) 12%, transparent);
+  padding: 0.35rem 0.2rem;
+  border: none;
+  background: transparent;
   color: var(--brand);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  transition: opacity 0.2s;
 }
 
 #txn-experience .tx-sector-chip[hidden] {
@@ -345,16 +341,9 @@ All of these are disclosable or already in the public domain.
 }
 
 #txn-experience .tx-sector-chip:hover {
-  background: var(--brand);
-  border-color: var(--brand);
-  color: white;
-}
-
-#txn-experience .tx-sector-chip-x {
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1;
   opacity: 0.7;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 #txn-experience .tx-sr {
