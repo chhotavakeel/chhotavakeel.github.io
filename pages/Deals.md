@@ -303,7 +303,7 @@ All of these are disclosable or already in the public domain.
 }
 
 #txn-experience .tx-cat:hover {
-  background: color-mix(in srgb, var(--brand) 8%, transparent);
+  background: var(--bg2);
 }
 
 #txn-experience .tx-cat .tx-cat-n {
