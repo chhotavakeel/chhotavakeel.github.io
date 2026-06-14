@@ -35,7 +35,13 @@ But as someone who does a fair bit of recruiting for my team - you really don’
 
 Exposure. As much as you can get of it.
 
-Read. [[Read a lot]].
+Read. Read a lot. When you’re tired of reading, read some more. Read things you agree with, and things you don’t. Sit with the discomfort - it should lead to growth.
+
+Read books on our justice system - its successes and failures. Read Anita Gets Bail by Arun Shourie and also read the Colonial Constitution by Arghya Sengupta. Read Gautam Bhatia. Maybe read Barbarians at the Gate and The Smartest Guys in the Room?
+
+If I can be slightly selfish, please also read the financial papers - Mint is good. Read The Morning Context too?
+
+If you don’t like reading, why are you in law school?
 
 If you must, watch some movies. Watch Twelve Angry Men and watch *Gangaajal*. That cuts a fairly vast swathe across what you can expect to find in the profession.
 

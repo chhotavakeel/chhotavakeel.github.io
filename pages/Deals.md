@@ -5,7 +5,7 @@ layout: Post
 content-type: static
 ---
 
-Public domain only.
+All of these are disclosable or already in the public domain.
 
 <div id="txn-experience">
   <div class="tx-controls">

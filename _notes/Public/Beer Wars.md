@@ -20,6 +20,6 @@ Honestly, I find these criteria a little strange. Figuring out whether one party
 
 In practice, getting an injunction _mainly_ requires you to establish irreparable harm. Here, a useful rule of thumb is that if a harm can be quantified in monetary terms, it's likely not irreparable because you can always be paid for it. This rules out getting injunctions on things like money, debts, and liquid securities. Conversely, if you can't arrive at a dollar amount for your loss[^1], you're in luck! I hope you own a NASCAR team, a one-of-a-kind diamond, or Twitter.
 
-And so, if you were the brewery's lawyer, I hope you told the court that forcing your client to part with an irreplaceable and highly illiquid asset that's responsible for a third of their top line would lead to even more payment defaults. It's a great line of argument to take! They should hang it in the louvre, now that there's space.
+And so, if you were the brewery's lawyer, I hope you told the court that forcing your client to part with an irreplaceable and highly illiquid asset that's responsible for a third of their top line would lead to even more payment defaults. It's a great line of argument to take! They should hang it in the Louvre, now that there's space.
 
-[^1]: *Typically on account of difficulties in valuation.*
+[^1]: *Typically on account of difficulties in asset valuation.*
