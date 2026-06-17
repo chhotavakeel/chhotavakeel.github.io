@@ -198,7 +198,7 @@ Information worth remembering. Items marked with a star have shaped how I think.
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--brand);
+  color: var(--text);
   margin: 0 0 0.25rem;
   line-height: 1.3;
 }

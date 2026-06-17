@@ -6,3 +6,5 @@ _notes/.obsidian
 _notes/Public/.obsidian
 vendor/
 .bundle/
+.claude/
+.obsidian/

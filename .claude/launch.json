@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "jekyll",
-      "runtimeExecutable": "/Users/pranav/.gem/ruby/2.6.0/bin/bundle",
-      "runtimeArgs": ["exec", "jekyll", "serve", "--port", "4000"],
+      "runtimeExecutable": "/Users/pranav/Documents/GitHub/chhotavakeel.github.io/.claude/serve.sh",
+      "runtimeArgs": [],
       "port": 4000
     }
   ]
