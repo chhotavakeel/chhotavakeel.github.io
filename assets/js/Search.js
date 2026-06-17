@@ -69,7 +69,7 @@
     
     async function getSearchData(dataUrl) {
         let response = await fetch(dataUrl);
-        let responseText = response.text();
+        let responseText = await response.text();
         return responseText;
     }
 

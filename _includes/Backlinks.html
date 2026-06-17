@@ -22,12 +22,7 @@
     {%- endif -%}
 {%- endfor -%}
 {%- if link_count > 0 -%}
-{%- assign wiki_link_title = '[' | append: page.title | append: ']' -%}
-{%- assign display_class = 'hide' -%}
-{%- if site.preferences.backlinks.enabled -%}
-{%- assign display_class = 'show' -%}
-{%- endif -%}
-<div class="links-section {{display_class}}" id="jekyll-seamless-backlinks">
+<div class="links-section" id="jekyll-seamless-backlinks">
     <h6>Links to this note</h6>
     <ul class="links-grid">
         {%- for note in site.notes -%}
