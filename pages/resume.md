@@ -97,13 +97,13 @@ content-type: static
 
       <div class="role">
         <div class="role-title">[Organisation name]</div>
-        <div class="role-org">[Position or role]</div>
-        <div class="role-period">2023 - Present</div>
+        <div class="role-org">Judge</div>
+        <div class="role-period">2026</div>
       </div>
 
       <div class="role">
-        <div class="role-title">[Organisation name]</div>
-        <div class="role-org">[Position or role]</div>
+        <div class="role-title">All for Law</div>
+        <div class="role-org">Mentor</div>
         <div class="role-period">2021 - 2024</div>
       </div>
 

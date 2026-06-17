@@ -1,5 +1,5 @@
 ---
-permalink: /deals.html
+permalink: /transactions.html
 title: Deals
 layout: Post
 content-type: static
