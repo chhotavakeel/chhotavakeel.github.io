@@ -115,7 +115,7 @@ Information worth remembering. Starred items have shaped how I think.
 
       li.innerHTML =
         '<p class="lib-card-eyebrow">' + esc(tags[0] || '') + (starred ? '<span class="lib-card-star" title="Starred">★</span>' : '') + '</p>' +
-        '<h3 class="lib-card-title">' + esc(d.Title) + '</h3>' +
+        '<h3 class="lib-card-title">' + (d.Link ? '<a href="' + esc(d.Link) + '" target="_blank" rel="noopener noreferrer">' + esc(d.Title) + '</a>' : esc(d.Title)) + '</h3>' +
         '<div class="lib-card-author">' + esc(d.Author) + '</div>' +
         (d.Notes ? '<p class="lib-card-notes">' + esc(d.Notes) + '</p>' : '') +
         '<div class="lib-tags"><span class="lib-tag lib-tag--type">' + esc(d.Type) + '</span>' + extraChips + '</div>';
@@ -183,6 +183,11 @@ Information worth remembering. Starred items have shaped how I think.
   list-style: none;
 }
 
+.lib-card-title a { color: var(--brand); text-decoration: none; }
+.lib-card-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.lib-card-notes a { color: var(--brand); text-underline-offset: 3px; }
+a.lib-tag--link { color: var(--brand); font-weight: var(--weight-bold); text-decoration: none; }
+a.lib-tag--link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .lib-card-title {
   font-size: var(--scale-base);
   font-weight: var(--weight-bold);
