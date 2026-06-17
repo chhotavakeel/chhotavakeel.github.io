@@ -11,21 +11,3 @@
     </a>
   </div>
 </nav>
-
-<script>
-  const hamburger = document.querySelector('.hamburger');
-  const dropdown = document.querySelector('.dropdown');
-
-  hamburger.addEventListener('click', function (e) {
-    e.stopPropagation();
-    this.classList.toggle('active');
-    dropdown.classList.toggle('active');
-  });
-
-  document.addEventListener('click', function (e) {
-    if (!e.target.closest('.dropdown')) {
-      hamburger.classList.remove('active');
-      dropdown.classList.remove('active');
-    }
-  });
-</script>

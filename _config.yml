@@ -42,18 +42,10 @@ url: "https://www.pranavbutalia.com"
 baseurl: ""
 
 # Asset Configuration
-apple_touch_icon: "/assets/img/profile.png"
+apple_touch_icon: "/assets/img/pr.svg"
 favicon: "/assets/img/pr.svg"
+og_image: "/assets/img/pr.svg"
 css_file: "/assets/css/style.css"
-ie_css: "/assets/css/ie-target.css"
-
-# Menu Items
-menu:
-  - title: "Notes"
-    url: "/notes"
-  - title: "Contact"
-    url: "/contact"
-
 # Footer
 footer:
   copyright: "© 2026, Pranav Butalia."
@@ -90,11 +82,6 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-
-# Private links (for broken wiki links)
-privatelinks:
-  title: "404"
-  msg: "This post doesn't exist yet!"
 
 # Math rendering
 katex: true
