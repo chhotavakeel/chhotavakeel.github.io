@@ -5,7 +5,7 @@ layout: Post
 content-type: static
 ---
 
-Information worth remembering. Items marked with a star have shaped how I think.
+Information worth remembering. Starred items have shaped how I think.
 
 <div class="lib-controls" id="lib-cats" role="group" aria-label="Filter by type"></div>
 
