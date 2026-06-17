@@ -1,11 +1,11 @@
 ---
 permalink: /transactions.html
-title: Deals
+title: Transactions
 layout: Post
 content-type: static
 ---
 
-All of these are disclosable or already in the public domain.
+You can find most of these in the public domain.
 
 <div id="txn-experience">
   <div class="tx-controls">

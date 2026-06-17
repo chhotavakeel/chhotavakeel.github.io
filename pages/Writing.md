@@ -4,4 +4,4 @@ title: Writing
 layout: Post
 ---
 
-Not legal advice - all views are my own.
+Not legal advice. Views own.

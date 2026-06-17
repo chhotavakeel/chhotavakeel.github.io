@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/index.md",
+                "file": "pages/Index.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Index"
             }
           }
         ]
@@ -152,14 +152,24 @@
   },
   "active": "db2dab3d12988dc6",
   "lastOpenFiles": [
-    "pages/Transactions.md",
     "pages/Resume.md",
     "pages/Index.md",
+    "pages/Writing.md",
+    "pages/Library.md",
+    "_site/library.html",
+    "_site/li.html",
+    "pages/Transactions.md",
+    "_site/transactions.html",
+    "_site/dealsheet.html",
+    "_site/reading.html",
+    "_data/library.csv",
+    "_data",
+    "_data/writing.csv",
+    "_layouts/Home.html",
     "_notes/Public/State of the renewable energy union 2026.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
     "pages/Ways of working.md",
     "_notes/Public/All electricity is accounting.md",
-    "pages/Writing.md",
     "_notes/Public/renewable energy.md",
     "_notes/Public/Read a lot.md",
     "_notes/Public/books.md",
@@ -173,12 +183,10 @@
     "pages/LLMs.md",
     "pages/Index.md.sb-14029782-0BlEsN",
     "_notes/Public/test.md",
-    "assets/css/custom.css",
     "_notes/Public/Read a Lot.md",
     "_notes/Public/Quotes (tag).md",
     "_notes/Public/Advice (tag).md",
     "_notes/Public/Books (tag).md",
-    "Tags",
     "assets/img/moon.svg",
     "assets/img/og-image.svg",
     "assets/img/OGImg.png",
@@ -186,8 +194,6 @@
     "assets/img/sun.svg",
     "assets/img/icon-512.svg",
     "assets/img/icon-192.svg",
-    "assets/img/favicon.svg",
-    "pages/contact.md",
-    "pages/now.md"
+    "assets/img/favicon.svg"
   ]
 }
