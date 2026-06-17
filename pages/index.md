@@ -14,6 +14,6 @@ Hi! I'm Pranav, an incoming MBA student at the <a href="https://www.london.edu/"
 
 ## Media
 
-<a href="/library">Here</a> are some thoughts I find myself referencing frequently. I also occasionally write <a href="/notes">mine</a> down.
+<a href="/library">Here</a> are some thoughts I find myself frequently referencing. I also occasionally write <a href="/notes">mine</a> down.
 
 ## [Contact](mailto:mail@pranavbutalia.com)
