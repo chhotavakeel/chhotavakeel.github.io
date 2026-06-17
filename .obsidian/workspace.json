@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Resume.md",
+                "file": "pages/index.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Resume"
+              "title": "index"
             }
           }
         ]
@@ -153,10 +153,10 @@
   "active": "db2dab3d12988dc6",
   "lastOpenFiles": [
     "pages/Transactions.md",
+    "pages/Resume.md",
     "pages/Index.md",
     "_notes/Public/State of the renewable energy union 2026.md",
     "_notes/Public/Transcript for Law, Laughter and Beyond.md",
-    "pages/Resume.md",
     "pages/Ways of working.md",
     "_notes/Public/All electricity is accounting.md",
     "pages/Writing.md",
