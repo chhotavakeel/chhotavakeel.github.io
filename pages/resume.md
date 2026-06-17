@@ -96,33 +96,33 @@ content-type: static
       <div class="sec-head">Volunteering</div>
 
       <div class="role">
-        <div class="role-title">[Organisation name]</div>
-        <div class="role-org">Judge</div>
+        <div class="role-title">Monroe E. Price Media Law Moot Court Competition</div>
+        <div class="role-org">Judge, South Asia Rounds</div>
         <div class="role-period">2026</div>
       </div>
 
       <div class="role">
         <div class="role-title">All for Law</div>
         <div class="role-org">Mentor</div>
-        <div class="role-period">2021 - 2024</div>
+        <div class="role-period">2021 - 2025</div>
       </div>
 
       <div class="role">
-        <div class="role-title">[Organisation name]</div>
-        <div class="role-org">[Position or role]</div>
-        <div class="role-period">2020 - 2022</div>
+        <div class="role-title">Herbert Smith Freehills Kramer-NLU Delhi International Negotiation Competition</div>
+        <div class="role-org">Judge</div>
+        <div class="role-period">2023</div>
       </div>
 
       <div class="role">
-        <div class="role-title">[Organisation name]</div>
-        <div class="role-org">[Position or role]</div>
-        <div class="role-period">2019 - 2021</div>
+        <div class="role-title">NLIU Justice R.K. Tankha Memorial International Arbitration Moot</div>
+        <div class="role-org">Judge</div>
+        <div class="role-period">2021</div>
       </div>
 
       <div class="role">
-        <div class="role-title">[Organisation name]</div>
-        <div class="role-org">[Position or role]</div>
-        <div class="role-period">2017 - 2019</div>
+        <div class="role-title">NLIU-Link Legal National Client Counselling Competition</div>
+        <div class="role-org">Judge</div>
+        <div class="role-period">2020</div>
       </div>
     </section>
   </div>
