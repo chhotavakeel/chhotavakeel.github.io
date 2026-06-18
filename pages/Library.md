@@ -23,6 +23,17 @@ Information worth retaining. Starred items have shaped how I think.
   var elCats  = document.getElementById('lib-cats');
   var elEmpty = document.getElementById('lib-empty');
 
+  function mdLinks(s) {
+    var parts = String(s ?? '').split(/(\[[^\]]+\]\(https?:\/\/[^)]+\))/g);
+    return parts.map(function (part, i) {
+      if (i % 2 === 1) {
+        var m = part.match(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/);
+        return '<a href="' + esc(m[2]) + '" target="_blank" rel="noopener noreferrer">' + esc(m[1]) + '</a>';
+      }
+      return esc(part);
+    }).join('');
+  }
+
   function esc(s) {
     return String(s ?? '').replace(/[&<>"']/g, function (c) {
       return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
@@ -117,7 +128,7 @@ Information worth retaining. Starred items have shaped how I think.
         '<p class="lib-card-eyebrow">' + esc(tags[0] || '') + (starred ? '<span class="lib-card-star" title="Starred">★</span>' : '') + '</p>' +
         '<h3 class="lib-card-title">' + (d.Link ? '<a href="' + esc(d.Link) + '" target="_blank" rel="noopener noreferrer">' + esc(d.Title) + '</a>' : esc(d.Title)) + '</h3>' +
         '<div class="lib-card-author">' + esc(d.Author) + '</div>' +
-        (d.Notes ? '<p class="lib-card-notes">' + esc(d.Notes) + '</p>' : '') +
+        (d.Notes ? '<p class="lib-card-notes">' + mdLinks(d.Notes) + '</p>' : '') +
         '<div class="lib-tags"><span class="lib-tag lib-tag--type">' + esc(d.Type) + '</span>' + extraChips + '</div>';
 
       elGrid.appendChild(li);
