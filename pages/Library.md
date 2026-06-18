@@ -30,7 +30,7 @@ Information worth retaining. Starred items have shaped how I think.
         var m = part.match(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/);
         return '<a href="' + esc(m[2]) + '" target="_blank" rel="noopener noreferrer">' + esc(m[1]) + '</a>';
       }
-      return esc(part);
+      return esc(part).replace(/\*(.*?)\*/g, '<em>$1</em>');
     }).join('');
   }
 
