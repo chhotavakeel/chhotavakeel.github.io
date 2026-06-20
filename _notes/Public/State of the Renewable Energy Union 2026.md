@@ -6,9 +6,9 @@ date: 2026-03-03
 date modified: 06-04-2026
 category: Renewable Energy
 ---
-[[All Electricity is Accounting]], I'd said some time ago. And while I suppose that's still largely true, the process of actually getting to the [[electricity]] stage is looking more uncertain by the day. "*Electron sources tend to react badly to annoying real-world stimuli like geopolitics and the environment*", I'd written at the time, and that's sort of a truism if you think about it.
+[[All Electricity is Accounting]], I'd said some time ago. And while I suppose that's still largely true, the process of actually getting to the [[Electricity]] stage is looking more uncertain by the day. "*Electron sources tend to react badly to annoying real-world stimuli like geopolitics and the environment*", I'd written at the time, and that's sort of a truism if you think about it.
 
-As we speak, there's some sort of armed conflict going on between the United States and Iran, which may or may not involve [[oil]], prediction markets, and the Armageddon. And so, we live in interesting times, where the fate of the world's largest oil shipping lane[^1] hangs in the balance. Which puts [[renewable energy]] in an interesting spot if you ask me.
+As we speak, there's some sort of armed conflict going on between the United States and Iran, which may or may not involve [[Oil]], prediction markets, and the Armageddon. And so, we live in interesting times, where the fate of the world's largest oil shipping lane[^1] hangs in the balance. Which puts [[Renewable Energy]] in an interesting spot if you ask me.
 
 Ideally, the conflict ends this week, and without any major repercussions. And then congratulations - the world got a jump scare, oil flows continue, and it's business as usual. Hopefully, nations now see the wisdom in continuing to increase renewables' share in their energy mix - this time, to reduce dependence on oil imports. I think this makes the energy transition a national security concern, rather than a sustainability issue. Which is generally a good thing!
 
@@ -16,7 +16,7 @@ If the conflict is a prolonged one, then yes, while oil is [voluminous and oozy 
 
 How does your central bank respond?
 
-By raising interest rates, hoping that an increase in borrowing costs discourages spending and lowers [[market]] demand. Unfortunately, this also has the unintended consequence of pulling back investment from sunrise and/or capital-intensive sectors[^2] since driving up the cost of capital makes cheaper, more lucrative investments much more compelling.
+By raising interest rates, hoping that an increase in borrowing costs discourages spending and lowers [[Market]] demand. Unfortunately, this also has the unintended consequence of pulling back investment from sunrise and/or capital-intensive sectors[^2] since driving up the cost of capital makes cheaper, more lucrative investments much more compelling.
 
 And so, even if you have the political will to add on more renewable energy, you suddenly lack the financial capability to do so.
 

@@ -1,6 +1,7 @@
 ---
 feed: hide
-title: liquidity
+title: Liquidity
 layout: Post
+tag: true
 ---
-This is a tag page. Notes with this tag are set out below.
+Notes tagged liquidity are set out below.

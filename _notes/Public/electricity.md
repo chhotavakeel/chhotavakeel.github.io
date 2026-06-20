@@ -1,6 +1,7 @@
 ---
 feed: hide
-title: electricity
+title: Electricity
 layout: Post
+tag: true
 ---
-This is a tag page. Notes with this tag are set out below.
+Notes tagged electricity are set out below.

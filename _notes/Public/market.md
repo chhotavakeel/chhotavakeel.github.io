@@ -1,6 +1,7 @@
 ---
 feed: hide
-title: market
+title: Market
 layout: Post
+tag: true
 ---
-This is a tag page. Notes with this tag are set out below.
+Notes tagged market are set out below.

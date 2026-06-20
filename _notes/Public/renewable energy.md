@@ -1,6 +1,7 @@
 ---
 feed: hide
-title: renewable energy
+title: Renewable Energy
 layout: Post
+tag: true
 ---
-This is a tag page. Notes with this tag are set out below.
+Notes tagged renewable energy are set out below.

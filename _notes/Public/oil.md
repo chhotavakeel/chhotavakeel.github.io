@@ -1,6 +1,7 @@
 ---
 feed: hide
-title: oil
+title: Oil
 layout: Post
+tag: true
 ---
-This is a tag page. Notes with this tag are set out below.
+Notes tagged oil are set out below.
