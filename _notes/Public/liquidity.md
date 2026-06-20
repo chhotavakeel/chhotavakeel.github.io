@@ -4,4 +4,4 @@ title: Liquidity
 layout: Post
 tag: true
 ---
-Notes tagged liquidity are set out below.
+Posts tagged liquidity are set out below.

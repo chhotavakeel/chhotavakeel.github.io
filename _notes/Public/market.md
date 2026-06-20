@@ -4,4 +4,4 @@ title: Market
 layout: Post
 tag: true
 ---
-Notes tagged market are set out below.
+Posts tagged market are set out below.
