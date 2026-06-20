@@ -22,7 +22,7 @@ You can find most of these in the public domain.
 <script>
 (function () {
   var DATA = [{% for row in site.data.transactions %}{"client":{{ row.client | jsonify }},"blurb":{{ row.blurb | jsonify }},"cats":{{ row.cats | split: "|" | jsonify }},"sectors":{{ row.sectors | split: "|" | jsonify }},"subs":{{ row.subs | split: "|" | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}];
-  var state = { cats: [], sector: "All", q: "" };
+  var state = { cats: [], sector: "All", subs: [], q: "" };
 
   var elList   = document.getElementById("tx-list");
   var elCats   = document.getElementById("tx-cats");
@@ -32,7 +32,7 @@ You can find most of these in the public domain.
   (function init() {
 
   // Transaction filter row (top)
-  var CAT_ORDER = ["Due diligence", "Advisory", "Contract", "Litigation"];
+  var CAT_ORDER = ["Advisory", "Contract", "Due Diligence", "Litigation"];
 
   function catCount(c) {
     return c === "All" ? DATA.length : DATA.filter(function (r) { return r.cats.indexOf(c) > -1; }).length;
@@ -71,6 +71,11 @@ You can find most of these in the public domain.
   elSectorChip.addEventListener("click", function () { setSector("All"); });
   elCats.appendChild(elSectorChip);
 
+  // Active sub chips — one per selected sub-category, sits after the sector chip
+  var elSubChips = document.createElement("span");
+  elSubChips.className = "tx-sub-chips";
+  elCats.appendChild(elSubChips);
+
   function toggleCat(c) {
     if (c === "All") {
       state.cats = [];
@@ -93,30 +98,62 @@ You can find most of these in the public domain.
     });
   }
 
+  function syncFlexBreak() {
+    elFlexBreak.hidden = state.sector === "All" && state.subs.length === 0;
+  }
+
   function setSector(s) {
     state.sector = s;
     if (s === "All") {
       elSectorChip.hidden = true;
       elSectorChip.innerHTML = "";
-      elFlexBreak.hidden = true;
     } else {
       elSectorChip.innerHTML = esc(s) + ' <span class="tx-sector-chip-x" aria-hidden="true">×</span><span class="tx-sr"> – clear sector filter</span>';
       elSectorChip.hidden = false;
-      elFlexBreak.hidden = false;
     }
+    syncFlexBreak();
     render();
     if (s !== "All") {
       elCats.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
   }
 
+  function syncSubChips() {
+    elSubChips.innerHTML = "";
+    state.subs.forEach(function (s) {
+      var chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "tx-sector-chip tx-sub-chip";
+      chip.innerHTML = esc(s) + ' <span class="tx-sector-chip-x" aria-hidden="true">×</span><span class="tx-sr"> – clear ' + esc(s) + ' filter</span>';
+      chip.addEventListener("click", function () { toggleSub(s); });
+      elSubChips.appendChild(chip);
+    });
+    syncFlexBreak();
+  }
+
+  function toggleSub(s) {
+    var idx = state.subs.indexOf(s);
+    if (idx >= 0) state.subs.splice(idx, 1);
+    else state.subs.push(s);
+    syncSubChips();
+    render();
+    elCats.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  function clearSubs() {
+    state.subs = [];
+    syncSubChips();
+    render();
+  }
+
   elQ.addEventListener("input", function () { state.q = elQ.value.trim().toLowerCase(); render(); });
 
   document.getElementById("tx-clear").addEventListener("click", function () {
-    state = { cats: [], sector: "All", q: "" };
+    state = { cats: [], sector: "All", subs: [], q: "" };
     elQ.value = "";
     syncCatButtons();
     setSector("All");
+    clearSubs();
   });
 
   function esc(s) {
@@ -128,6 +165,7 @@ You can find most of these in the public domain.
   function matches(r) {
     if (state.cats.length > 0 && !state.cats.some(function (c) { return r.cats.indexOf(c) >= 0; })) return false;
     if (state.sector !== "All" && r.sectors.indexOf(state.sector) === -1) return false;
+    if (state.subs.length > 0 && !state.subs.every(function (s) { return r.subs.indexOf(s) >= 0; })) return false;
     if (state.q) {
       var hay = (r.client + " " + r.blurb + " " + r.sectors.join(" ") + " " + r.subs.join(" ") + " " + r.cats.join(" ")).toLowerCase();
       if (hay.indexOf(state.q) === -1) return false;
@@ -150,7 +188,8 @@ You can find most of these in the public domain.
         return '<span class="tx-tag tx-tag--cat">' + esc(c) + "</span>";
       }).join("");
       var subTags = r.subs.map(function (s) {
-        return '<span class="tx-tag">' + esc(s) + "</span>";
+        var on = state.subs.indexOf(s) >= 0;
+        return '<button type="button" class="tx-tag' + (on ? " is-active" : "") + '" data-sub="' + esc(s) + '">' + esc(s) + "</button>";
       }).join("");
       li.innerHTML =
         '<p class="tx-cat-eyebrow">' + sectorEyebrow + "</p>" +
@@ -174,6 +213,14 @@ You can find most of these in the public domain.
       btn.addEventListener("click", function (e) {
         e.stopPropagation();
         setSector(btn.dataset.sector);
+      });
+    });
+
+    // Wire sub tag clicks
+    Array.prototype.forEach.call(elList.querySelectorAll("[data-sub]"), function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        toggleSub(btn.dataset.sub);
       });
     });
 
@@ -204,9 +251,9 @@ You can find most of these in the public domain.
   }
 
   // Sets every visible entry's expansion state. Called after render().
-  // Rule: search non-empty → all expanded; otherwise → all collapsed.
+  // Rule: search non-empty or a sub-category filter active → all expanded; otherwise → all collapsed.
   function applyExpansionState() {
-    var open = state.q.length > 0;
+    var open = state.q.length > 0 || state.subs.length > 0;
     Array.prototype.forEach.call(elList.querySelectorAll(".tx-item"), function (li) {
       li.classList.toggle("is-open", open);
       var toggle = li.querySelector(".tx-item-toggle");
@@ -349,6 +396,10 @@ You can find most of these in the public domain.
   transition: background 0.15s;
 }
 
+#txn-experience .tx-sector-chip:hover {
+  background: color-mix(in srgb, var(--brand) 8%, transparent);
+}
+
 #txn-experience .tx-sector-chip[hidden] {
   display: none;
 }
@@ -372,8 +423,23 @@ You can find most of these in the public domain.
   }
 }
 
-#txn-experience .tx-sector-chip:hover {
-  background: color-mix(in srgb, var(--brand) 8%, transparent);
+#txn-experience .tx-sub-chips {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+#txn-experience .tx-sub-chip {
+  font-style: normal;
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: #fff;
+  transition: opacity 0.15s;
+}
+
+#txn-experience .tx-sub-chip:hover {
+  background: var(--brand);
+  opacity: 0.85;
 }
 
 #txn-experience .tx-sector-chip-x {
@@ -538,6 +604,31 @@ You can find most of these in the public domain.
   font-weight: 600;
   color: var(--title);
 }
+
+/* Sub tags are clickable filters; cat tags (above) stay static.
+   Unselected = outline (signals "clickable filter"); selected = solid fill. */
+#txn-experience button.tx-tag {
+  cursor: pointer;
+  border: 1px solid var(--brand);
+  background: transparent;
+  color: var(--brand);
+  transition: background 0.15s, color 0.15s;
+}
+
+#txn-experience button.tx-tag:hover {
+  background: color-mix(in srgb, var(--brand) 12%, transparent);
+}
+
+#txn-experience button.tx-tag.is-active {
+  background: var(--brand);
+  color: #fff;
+}
+
+#txn-experience button.tx-tag.is-active:hover {
+  background: var(--brand);
+  opacity: 0.85;
+}
+
 
 /* ---- Expand-all toggle (inline in filter row, pushed right) ---- */
 #txn-experience .tx-expand-all {
