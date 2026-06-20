@@ -321,6 +321,22 @@ td {
   color: var(--text);
 }
 
+.search-input {
+  width: 100%;
+  padding: var(--space-sm);
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+  font-size: var(--scale-base);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--brand);
+}
+
 /* Feed styles */
 .related-wrapper {
   display: flex;
