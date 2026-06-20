@@ -441,26 +441,61 @@ td {
 }
 
 /* Feed styles */
-.notelist-feed {
-  border-bottom: 1px solid var(--border);
-  padding: var(--space-sm) 0;
-  transition: background 0.3s ease;
+.related-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
 }
 
-.notelist-feed:hover {
-  background: var(--bg2);
+.notelist-feed {
+  border-bottom: none;
+  padding: 0;
 }
 
 .notelist-feed a {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  align-items: baseline;
+  gap: var(--space-xs);
   text-decoration: none;
   color: inherit;
+  padding: var(--space-xs) 0;
 }
 
-.notelist-feed p {
-  color: var(--title);
-  margin-bottom: 0;
+.notelist-feed-date {
+  font-size: var(--scale-sm);
+  color: var(--text);
+  opacity: 0.7;
+}
+
+.notelist-feed-title {
+  min-width: 0;
   font-size: var(--scale-base);
   font-weight: var(--weight-medium);
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.notelist-feed a:hover .notelist-feed-title {
+  color: var(--brand);
+}
+
+.notelist-feed-category {
+  font-size: var(--scale-sm);
+  color: var(--text);
+  opacity: 0.7;
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .notelist-feed a {
+    grid-template-columns: 70px 1fr;
+  }
+
+  .notelist-feed-category {
+    display: none;
+  }
 }
 
 

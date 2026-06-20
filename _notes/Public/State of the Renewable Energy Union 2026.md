@@ -1,11 +1,12 @@
 ---
 feed: show
-title: State of the renewable energy union 2026
+title: State of the Renewable Energy Union 2026
 layout: Post
-date: 03-03-2026
+date: 2026-03-03
 date modified: 06-04-2026
+category: Renewable Energy
 ---
-[[All electricity is accounting]], I'd said some time ago. And while I suppose that's still largely true, the process of actually getting to the [[electricity]] stage is looking more uncertain by the day. "*Electron sources tend to react badly to annoying real-world stimuli like geopolitics and the environment*", I'd written at the time, and that's sort of a truism if you think about it.
+[[All Electricity is Accounting]], I'd said some time ago. And while I suppose that's still largely true, the process of actually getting to the [[electricity]] stage is looking more uncertain by the day. "*Electron sources tend to react badly to annoying real-world stimuli like geopolitics and the environment*", I'd written at the time, and that's sort of a truism if you think about it.
 
 As we speak, there's some sort of armed conflict going on between the United States and Iran, which may or may not involve [[oil]], prediction markets, and the Armageddon. And so, we live in interesting times, where the fate of the world's largest oil shipping lane[^1] hangs in the balance. Which puts [[renewable energy]] in an interesting spot if you ask me.
 

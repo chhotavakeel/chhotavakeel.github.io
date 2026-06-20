@@ -4,13 +4,24 @@
 
 .back-button-container {
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .back-button {
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  color: var(--text);
   text-decoration: none;
   font-size: var(--scale-sm);
+  transition: color 0.2s ease;
+}
+
+.back-button svg {
+  display: block;
+}
+
+.back-button:hover {
+  color: var(--brand);
 }
 

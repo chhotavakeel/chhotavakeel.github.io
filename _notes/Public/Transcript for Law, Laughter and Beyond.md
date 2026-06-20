@@ -2,8 +2,9 @@
 feed: show
 title: Transcript for Law, Laughter and Beyond
 layout: Post
-date: 19-11-2023
+date: 2023-11-19
 date modified: 14-06-2026
+category: Interview
 ---
 *This is the rough transcript of an interview I did in 2023 for a podcast run by my law school. You can find it [here](https://creators.spotify.com/pod/profile/law-laughter-and-beyond/episodes/Interviewing-Pranav-Butalia-e2f59be).*
 

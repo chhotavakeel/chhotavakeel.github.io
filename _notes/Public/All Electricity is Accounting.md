@@ -1,9 +1,10 @@
 ---
 feed: show
-title: All electricity is accounting
+title: All Electricity is Accounting
 layout: Post
-date: 23-10-2025
+date: 2025-10-23
 date modified: 04-03-2026
+category: Electricity
 ---
 The story of modern electrical supply is mainly one of accounting. Electrons, like water, like to flow from source to destination. The only way to check their flow is to turn off the taps at either end. Assuming you have a source of electrons, and someone willing to pay you for them, then, if you have some means of electron transportation, a meter to assess consumption, and some sort of understanding on how much that consumption is really worth, you're in the [[electricity]] supply business, at least on a fundamental level of abstraction.
 

@@ -1,5 +1,5 @@
 ---
-permalink: /notes
+permalink: /writing
 title: Writing
 layout: Post
 ---

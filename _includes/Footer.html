@@ -26,13 +26,7 @@
     root.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
   }
-  
-  // Initial theme
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    setTheme(savedTheme);
-  }
-  
+
   themeToggle.addEventListener('click', function() {
     root.classList.add('theme-transition');
     body.classList.add('theme-transition');
