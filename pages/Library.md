@@ -44,13 +44,14 @@ Information worth retaining. Starred items have shaped how I think.
     return (d.Tags || '').split(',').map(function (t) { return t.trim(); }).filter(Boolean);
   }
 
-  // Collect unique tags in order of first appearance
+  // Collect unique tags, alphabetically
   var allTags = [];
   DATA.forEach(function (d) {
     parseTags(d).forEach(function (t) {
       if (allTags.indexOf(t) === -1) allTags.push(t);
     });
   });
+  allTags.sort(function (a, b) { return a.toLowerCase().localeCompare(b.toLowerCase()); });
 
   function tagCount(tag) {
     return tag === 'All' ? DATA.length : DATA.filter(function (d) { return parseTags(d).indexOf(tag) !== -1; }).length;
