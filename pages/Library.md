@@ -41,9 +41,7 @@ Information worth retaining. Starred items have shaped how I think.
   }
 
   function parseTags(d) {
-    return (d.Tags || '').split(',').map(function (t) { return t.trim(); }).filter(Boolean).sort(function (a, b) {
-      return a.toLowerCase().localeCompare(b.toLowerCase());
-    });
+    return (d.Tags || '').split(',').map(function (t) { return t.trim(); }).filter(Boolean);
   }
 
   // Collect unique tags, alphabetically
