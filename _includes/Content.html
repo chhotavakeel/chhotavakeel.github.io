@@ -75,15 +75,17 @@ document.addEventListener('DOMContentLoaded', function() {
                         link.href = foundNote.url;
                         link.textContent = foundNote.tag ? linkText.toLowerCase() : linkText;
                         link.className = 'wiki-link';
-                        
-                        // Add hover preview functionality
-                        link.addEventListener('mouseenter', function() {
-                            showPreview(this, foundNote.title, foundNote.excerpt);
-                        });
-                        
-                        link.addEventListener('mouseleave', function() {
-                            hidePreview();
-                        });
+
+                        // Add hover preview functionality (skip for tag pages)
+                        if (!foundNote.tag) {
+                            link.addEventListener('mouseenter', function() {
+                                showPreview(this, foundNote.title, foundNote.excerpt);
+                            });
+
+                            link.addEventListener('mouseleave', function() {
+                                hidePreview();
+                            });
+                        }
                     } else {
                         // Note doesn't exist - create a placeholder
                         link.href = 'javascript:void(0)';

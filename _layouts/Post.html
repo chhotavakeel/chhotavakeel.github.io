@@ -77,19 +77,7 @@
             {%- endif -%}
 
             <!--- Notes Layout-->
-{%- if page.content-type == "notes" and page.tag -%}
-<h1>{{page.title}}</h1>
-{%- include Content.html -%}
-{%- if site.preferences.backlinks.enabled -%}
-{%- include Backlinks.html -%}
-{%- endif -%}
-{%- elsif page.content-type == "notes" -%}
-<div class="back-button-container">
-    <a class="back-button" href="{{ site.baseurl }}/writing">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
-        <span>Writing</span>
-    </a>
-</div>
+{%- if page.content-type == "notes" -%}
 <h1>{{page.title}}</h1>
 {%- include Content.html -%}
 {%- if site.preferences.backlinks.enabled -%}
