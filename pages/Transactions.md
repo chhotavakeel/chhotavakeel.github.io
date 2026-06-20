@@ -22,7 +22,9 @@ You can find most of these in the public domain.
 <script>
 (function () {
   var DATA = [{% for row in site.data.transactions %}{"client":{{ row.client | jsonify }},"blurb":{{ row.blurb | jsonify }},"cats":{{ row.cats | split: "|" | jsonify }},"sectors":{{ row.sectors | split: "|" | jsonify }},"subs":{{ row.subs | split: "|" | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}];
+  DATA.forEach(function (r, i) { r._id = i; });
   var state = { cats: [], sector: "All", subs: [], q: "" };
+  var openSet = {}; // row._id -> true, persists each card's manual open/closed state across re-renders
 
   var elList   = document.getElementById("tx-list");
   var elCats   = document.getElementById("tx-cats");
@@ -181,6 +183,7 @@ You can find most of these in the public domain.
     hits.forEach(function (r) {
       var li = document.createElement("li");
       li.className = "tx-item";
+      li.dataset.id = r._id;
       var sectorEyebrow = r.sectors.map(function (s) {
         return '<button type="button" class="tx-eyebrow-link" data-sector="' + esc(s) + '">' + esc(s) + "</button>";
       }).join('<span class="tx-eyebrow-sep"> · </span>');
@@ -247,20 +250,24 @@ You can find most of these in the public domain.
     li.classList.toggle("is-open", open);
     var toggle = li.querySelector(".tx-item-toggle");
     if (toggle) toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    if (open) openSet[li.dataset.id] = true;
+    else delete openSet[li.dataset.id];
     updateExpandAllButton();
   }
 
   // Sets every visible entry's expansion state. Called after render().
-  // Rule: search non-empty or a sub-category filter active → all expanded; otherwise → all collapsed.
+  // Rule: search non-empty or a sub-category filter active → force all open (transient, doesn't touch openSet);
+  // otherwise each card keeps whatever open/closed state the user last set, across any filter change.
   function applyExpansionState() {
-    var open = state.q.length > 0 || state.subs.length > 0;
+    var forceOpen = state.q.length > 0 || state.subs.length > 0;
     Array.prototype.forEach.call(elList.querySelectorAll(".tx-item"), function (li) {
+      var open = forceOpen || !!openSet[li.dataset.id];
       li.classList.toggle("is-open", open);
       var toggle = li.querySelector(".tx-item-toggle");
       if (toggle) toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
-    // Hide expand-all button while search is active (search owns the state)
-    elExpandAll.hidden = open;
+    // Hide expand-all button while search or a sub-category filter is active (both own the open state)
+    elExpandAll.hidden = forceOpen;
     updateExpandAllButton();
   }
 
@@ -290,6 +297,8 @@ You can find most of these in the public domain.
       li.classList.toggle("is-open", openAll);
       var toggle = li.querySelector(".tx-item-toggle");
       if (toggle) toggle.setAttribute("aria-expanded", openAll ? "true" : "false");
+      if (openAll) openSet[li.dataset.id] = true;
+      else delete openSet[li.dataset.id];
     });
     updateExpandAllButton();
   });

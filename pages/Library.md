@@ -190,7 +190,15 @@ Information worth retaining. Starred items have shaped how I think.
   flex-direction: column;
   gap: 0.45rem;
   list-style: none;
+  min-height: 14rem;
 }
+.lib-card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.lib-tags { margin-top: auto; }
 
 .lib-card-title a { color: var(--brand); text-decoration: none; }
 .lib-card-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
