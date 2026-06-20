@@ -108,9 +108,6 @@ Information worth retaining. Starred items have shaped how I think.
     var rows = DATA.filter(matches);
 
     rows.sort(function (a, b) {
-      var as = a.Starred === 'Y';
-      var bs = b.Starred === 'Y';
-      if (as !== bs) return as ? -1 : 1;
       return (a.Title || '').toLowerCase().localeCompare((b.Title || '').toLowerCase());
     });
 
