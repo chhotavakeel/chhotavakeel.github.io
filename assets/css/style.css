@@ -388,22 +388,10 @@ td {
 @media (max-width: 480px) {
   .notelist-feed a {
     grid-template-columns: 70px 1fr;
-    grid-template-areas:
-      "date title"
-      ".    cat";
-  }
-
-  .notelist-feed-date {
-    grid-area: date;
-  }
-
-  .notelist-feed-title {
-    grid-area: title;
   }
 
   .notelist-feed-category {
-    grid-area: cat;
-    text-align: left;
+    display: none;
   }
 }
 

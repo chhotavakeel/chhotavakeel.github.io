@@ -24,7 +24,9 @@ You can find most of these in the public domain.
   var DATA = [{% for row in site.data.transactions %}{"client":{{ row.client | jsonify }},"blurb":{{ row.blurb | jsonify }},"cats":{{ row.cats | split: "|" | jsonify }},"sectors":{{ row.sectors | split: "|" | jsonify }},"subs":{{ row.subs | split: "|" | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}];
   DATA.forEach(function (r, i) { r._id = i; });
   var state = { cats: [], sector: "All", subs: [], q: "" };
-  var openSet = {}; // row._id -> true, persists each card's manual open/closed state across re-renders
+  var catsAutoSelected = false; // true when state.cats was set by autoActivateCat(), not a manual click
+  var openSet = {}; // row._id -> true, persists each card's manually-set open/closed state across re-renders
+  var forcedSet = {}; // row._id -> true, cards force-opened by the sub-cat filter
 
   var elList   = document.getElementById("tx-list");
   var elCats   = document.getElementById("tx-cats");
@@ -36,8 +38,20 @@ You can find most of these in the public domain.
   // Transaction filter row (top)
   var CAT_ORDER = ["Advisory", "Contract", "Due Diligence", "Litigation"];
 
+  // Counts against entries matching sector/subs/search, ignoring the cats filter itself —
+  // so the number shown is "how many results this cat would include," not "how many are shown now."
   function catCount(c) {
-    return c === "All" ? DATA.length : DATA.filter(function (r) { return r.cats.indexOf(c) > -1; }).length;
+    var pool = DATA.filter(function (r) { return matches(r, true); });
+    return c === "All" ? pool.length : pool.filter(function (r) { return r.cats.indexOf(c) > -1; }).length;
+  }
+
+  function syncCatCounts() {
+    Array.prototype.forEach.call(elCats.querySelectorAll(".tx-cat"), function (b) {
+      var cat = b.dataset.cat;
+      if (!cat) return;
+      var n = b.querySelector(".tx-cat-n");
+      if (n) n.textContent = "(" + catCount(cat) + ")";
+    });
   }
   ["All"].concat(CAT_ORDER).forEach(function (c) {
     var b = document.createElement("button");
@@ -79,6 +93,7 @@ You can find most of these in the public domain.
   elCats.appendChild(elSubChips);
 
   function toggleCat(c) {
+    catsAutoSelected = false; // a manual click always overrides any auto-derived selection
     if (c === "All") {
       state.cats = [];
     } else {
@@ -104,6 +119,12 @@ You can find most of these in the public domain.
     elFlexBreak.hidden = state.sector === "All" && state.subs.length === 0;
   }
 
+  // Collapses every card, no exceptions — manually opened or filter-opened alike.
+  function collapseAll() {
+    openSet = {};
+    forcedSet = {};
+  }
+
   function setSector(s) {
     state.sector = s;
     if (s === "All") {
@@ -114,6 +135,8 @@ You can find most of these in the public domain.
       elSectorChip.hidden = false;
     }
     syncFlexBreak();
+    collapseAll();
+    autoActivateCat();
     render();
     if (s !== "All") {
       elCats.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -135,9 +158,12 @@ You can find most of these in the public domain.
 
   function toggleSub(s) {
     var idx = state.subs.indexOf(s);
-    if (idx >= 0) state.subs.splice(idx, 1);
+    var deselecting = idx >= 0;
+    if (deselecting) state.subs.splice(idx, 1);
     else state.subs.push(s);
     syncSubChips();
+    if (deselecting) collapseAll();
+    autoActivateCat();
     render();
     elCats.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
@@ -145,10 +171,16 @@ You can find most of these in the public domain.
   function clearSubs() {
     state.subs = [];
     syncSubChips();
+    collapseAll();
+    autoActivateCat();
     render();
   }
 
-  elQ.addEventListener("input", function () { state.q = elQ.value.trim().toLowerCase(); render(); });
+  elQ.addEventListener("input", function () {
+    state.q = elQ.value.trim().toLowerCase();
+    autoActivateCat();
+    render();
+  });
 
   document.getElementById("tx-clear").addEventListener("click", function () {
     state = { cats: [], sector: "All", subs: [], q: "" };
@@ -164,8 +196,8 @@ You can find most of these in the public domain.
     });
   }
 
-  function matches(r) {
-    if (state.cats.length > 0 && !state.cats.some(function (c) { return r.cats.indexOf(c) >= 0; })) return false;
+  function matches(r, skipCats) {
+    if (!skipCats && state.cats.length > 0 && !state.cats.some(function (c) { return r.cats.indexOf(c) >= 0; })) return false;
     if (state.sector !== "All" && r.sectors.indexOf(state.sector) === -1) return false;
     if (state.subs.length > 0 && !state.subs.every(function (s) { return r.subs.indexOf(s) >= 0; })) return false;
     if (state.q) {
@@ -175,8 +207,32 @@ You can find most of these in the public domain.
     return true;
   }
 
+  // If narrowing by sector/sub-cat (ignoring the cats filter itself) leaves only one distinct
+  // cat among the matches, select that cat filter automatically — it's already implied by the
+  // narrower filters, so this just surfaces it. Never overrides a cat the user picked by hand;
+  // reverts itself once the result set is no longer narrow enough to imply a single cat.
+  function autoActivateCat() {
+    var pool = DATA.filter(function (r) { return matches(r, true); });
+    var catsUnion = {};
+    pool.forEach(function (r) {
+      r.cats.forEach(function (c) { catsUnion[c] = true; });
+    });
+    var distinctCats = Object.keys(catsUnion);
+    var isNarrow = distinctCats.length > 0 && distinctCats.length < CAT_ORDER.length;
+    if (pool.length > 0 && isNarrow && (state.cats.length === 0 || catsAutoSelected)) {
+      state.cats = distinctCats;
+      catsAutoSelected = true;
+      syncCatButtons();
+    } else if (catsAutoSelected && (!isNarrow || pool.length === 0)) {
+      state.cats = [];
+      catsAutoSelected = false;
+      syncCatButtons();
+    }
+  }
+
   function render() {
-    var hits = DATA.filter(matches);
+    syncCatCounts();
+    var hits = DATA.filter(function (r) { return matches(r); });
     elList.innerHTML = "";
     elEmpty.hidden = hits.length !== 0;
 
@@ -243,31 +299,42 @@ You can find most of these in the public domain.
     applyExpansionState();
   }
 
-  // Per-entry toggle
+  // True if a card is already shown open for reasons that have nothing to do with a manual click
+  // (active search, active sub-cat filter, or this id's own forced-open record).
+  function isImpliedOpen(id) {
+    return state.q.length > 0 || state.subs.length > 0 || !!forcedSet[id];
+  }
+
+  // Per-entry toggle. Only records a genuine manual open into openSet — clicking a card that's
+  // already open because of search/sub-cat filtering doesn't pin it open beyond that filter.
   function toggleItem(li) {
     if (!li) return;
     var open = !li.classList.contains("is-open");
     li.classList.toggle("is-open", open);
     var toggle = li.querySelector(".tx-item-toggle");
     if (toggle) toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    if (open) openSet[li.dataset.id] = true;
-    else delete openSet[li.dataset.id];
+    var id = li.dataset.id;
+    if (open && !isImpliedOpen(id)) openSet[id] = true;
+    else if (!open) delete openSet[id];
     updateExpandAllButton();
   }
 
   // Sets every visible entry's expansion state. Called after render().
-  // Rule: search non-empty or a sub-category filter active → force all open (transient, doesn't touch openSet);
-  // otherwise each card keeps whatever open/closed state the user last set, across any filter change.
+  // Rule: search non-empty or a sub-category filter active → force all open. The sub-cat-driven
+  // force-open is persisted in forcedSet (separate from openSet, the manual-click record) so a card
+  // stays open after that filter is removed, without it being mistaken for a deliberate manual expand.
+  // Search-driven force-open stays fully transient — clearing the search reverts to whatever was open before.
   function applyExpansionState() {
-    var forceOpen = state.q.length > 0 || state.subs.length > 0;
+    var searchOpen = state.q.length > 0;
+    var subsOpen = state.subs.length > 0;
+    var forceOpen = searchOpen || subsOpen;
     Array.prototype.forEach.call(elList.querySelectorAll(".tx-item"), function (li) {
-      var open = forceOpen || !!openSet[li.dataset.id];
+      var open = forceOpen || !!openSet[li.dataset.id] || !!forcedSet[li.dataset.id];
+      if (subsOpen) forcedSet[li.dataset.id] = true;
       li.classList.toggle("is-open", open);
       var toggle = li.querySelector(".tx-item-toggle");
       if (toggle) toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
-    // Hide expand-all button while search or a sub-category filter is active (both own the open state)
-    elExpandAll.hidden = forceOpen;
     updateExpandAllButton();
   }
 
@@ -276,10 +343,12 @@ You can find most of these in the public domain.
   function updateExpandAllButton() {
     var items = elList.querySelectorAll(".tx-item");
     if (items.length === 0) {
+      elExpandAll.hidden = true;
       elExpandAll.textContent = "Expand all";
       elExpandAll.setAttribute("aria-pressed", "false");
       return;
     }
+    elExpandAll.hidden = false;
     var openCount = elList.querySelectorAll(".tx-item.is-open").length;
     var anyOpen = openCount > 0;
     elExpandAll.textContent = anyOpen ? "Collapse all" : "Expand all";
@@ -297,8 +366,9 @@ You can find most of these in the public domain.
       li.classList.toggle("is-open", openAll);
       var toggle = li.querySelector(".tx-item-toggle");
       if (toggle) toggle.setAttribute("aria-expanded", openAll ? "true" : "false");
-      if (openAll) openSet[li.dataset.id] = true;
-      else delete openSet[li.dataset.id];
+      var id = li.dataset.id;
+      if (openAll && !isImpliedOpen(id)) openSet[id] = true;
+      else if (!openAll) delete openSet[id];
     });
     updateExpandAllButton();
   });
