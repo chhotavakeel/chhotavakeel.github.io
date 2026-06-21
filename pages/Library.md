@@ -69,12 +69,10 @@ Information worth retaining. Starred items have shaped how I think.
   });
 
   function toggleTag(t) {
-    if (t === 'All') {
+    if (t === 'All' || state.tags[0] === t) {
       state.tags = [];
     } else {
-      var idx = state.tags.indexOf(t);
-      if (idx >= 0) state.tags.splice(idx, 1);
-      else state.tags.push(t);
+      state.tags = [t];
     }
     syncButtons();
     render();
