@@ -85,7 +85,9 @@ You can find most of these in the public domain.
       b.classList.toggle("is-on", on);
       b.classList.toggle("is-indicated", indicated);
       b.setAttribute("aria-pressed", on ? "true" : "false");
-      b.disabled = count === 0 && c !== "All";
+      // Never disable a selected cat — otherwise narrowing its count to 0 (e.g. via search)
+      // would trap it: highlighted, greyed, and unclickable to deselect.
+      b.disabled = count === 0 && c !== "All" && !on;
       var n = b.querySelector(".tx-cat-n");
       if (n) n.textContent = "(" + count + ")";
     });
@@ -231,7 +233,8 @@ You can find most of these in the public domain.
         toggleSub(btn.dataset.sub);
       });
     });
-    // Row toggle (only meaningful when not force-open)
+    // Row toggle. Also live during force-open (search/subs): a manual collapse holds until
+    // the next render, when force-open re-expands it.
     Array.prototype.forEach.call(elList.querySelectorAll(".tx-toggle"), function (t) {
       var handler = function () {
         var li = t.closest(".tx-item");
@@ -301,15 +304,18 @@ You can find most of these in the public domain.
   margin-left: 0.1rem;
 }
 
+/* Selected (manual click): filled brand tint + bold — visibly stronger than an indicated hint. */
 #txn-experience .tx-cat.is-on {
   border-color: var(--brand);
   color: var(--brand);
   font-weight: 600;
+  background: color-mix(in srgb, var(--brand) 12%, transparent);
 }
 
-#txn-experience .tx-cat.is-on:hover { background: color-mix(in srgb, var(--brand) 8%, transparent); }
+#txn-experience .tx-cat.is-on:hover { background: color-mix(in srgb, var(--brand) 18%, transparent); }
 #txn-experience .tx-cat.is-on .tx-cat-n { color: var(--brand); opacity: 0.7; }
 
+/* Indicated (cat present in the active sector/sub pool): outline-only brand hint, no fill. */
 #txn-experience .tx-cat.is-indicated {
   border-color: var(--brand);
   color: var(--brand);
@@ -457,7 +463,15 @@ You can find most of these in the public domain.
   transition: grid-template-rows 0.28s ease;
 }
 #txn-experience .tx-item.is-open .tx-body { grid-template-rows: 1fr; }
-#txn-experience .tx-body-inner { overflow: hidden; min-height: 0; }
+/* visibility:hidden when collapsed pulls the sub-tag buttons out of the tab order and blocks
+   pointer events; it stays visible through the close animation, then flips off at the end. */
+#txn-experience .tx-body-inner {
+  overflow: hidden;
+  min-height: 0;
+  visibility: hidden;
+  transition: visibility 0.28s;
+}
+#txn-experience .tx-item.is-open .tx-body-inner { visibility: visible; }
 
 #txn-experience .tx-blurb {
   margin: 0 0 0.8rem;
