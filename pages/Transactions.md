@@ -5,7 +5,7 @@ layout: Post
 content-type: static
 ---
 
-You can find most of these in the public domain.
+You can find all of these in the public domain.
 
 <div id="txn-experience">
   <div class="tx-controls">
