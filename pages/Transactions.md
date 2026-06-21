@@ -26,7 +26,6 @@ You can find most of these in the public domain.
   var state = { cats: [], sector: "All", subs: [], q: "" };
   var catsAutoSelected = false; // true when state.cats was set by autoActivateCat(), not a manual click
   var openSet = {}; // row._id -> true, persists each card's manually-set open/closed state across re-renders
-  var suppressForceOpen = false; // one-shot: set by setSector() so a sector change collapses everything even during an active search
 
   var elList   = document.getElementById("tx-list");
   var elCats   = document.getElementById("tx-cats");
@@ -136,10 +135,7 @@ You can find most of these in the public domain.
       elSectorChip.hidden = false;
     }
     syncFlexBreak();
-    collapseAll();
-    // Selecting a real sector collapses everything, even mid-search. Clearing the sector
-    // (back to "All") does NOT suppress, so an active search re-expands all matches.
-    if (s !== "All") suppressForceOpen = true;
+    // Manually opened cards persist across sector changes, same as any other filter.
     autoActivateCat();
     render();
     if (s !== "All") {
@@ -318,14 +314,11 @@ You can find most of these in the public domain.
   // Sets every visible entry's expansion state. Called after render().
   // Rule: search non-empty or a sub-category filter active → force all visible cards open.
   // This force-open is transient — once the filter is cleared, cards revert to whatever was
-  // manually open (openSet). The one-shot suppress flag lets setSector() collapse everything
-  // for a single render even while search/subs would otherwise force-open.
+  // manually open (openSet).
   function applyExpansionState() {
-    var suppress = suppressForceOpen;
-    suppressForceOpen = false;
     var searchOpen = state.q.length > 0;
     var subsOpen = state.subs.length > 0;
-    var forceOpen = (searchOpen || subsOpen) && !suppress;
+    var forceOpen = searchOpen || subsOpen;
     Array.prototype.forEach.call(elList.querySelectorAll(".tx-item"), function (li) {
       var open = forceOpen || !!openSet[li.dataset.id];
       li.classList.toggle("is-open", open);
