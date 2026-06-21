@@ -26,7 +26,6 @@ You can find most of these in the public domain.
   var state = { cats: [], sector: "All", subs: [], q: "" };
   var catsAutoSelected = false; // true when state.cats was set by autoActivateCat(), not a manual click
   var openSet = {}; // row._id -> true, persists each card's manually-set open/closed state across re-renders
-  var forcedSet = {}; // row._id -> true, cards force-opened by the sub-cat filter
   var suppressForceOpen = false; // one-shot: set by setSector() so a sector change collapses everything even during an active search
 
   var elList   = document.getElementById("tx-list");
@@ -125,7 +124,6 @@ You can find most of these in the public domain.
   // Collapses every card, no exceptions — manually opened or filter-opened alike.
   function collapseAll() {
     openSet = {};
-    forcedSet = {};
   }
 
   function setSector(s) {
@@ -139,7 +137,9 @@ You can find most of these in the public domain.
     }
     syncFlexBreak();
     collapseAll();
-    suppressForceOpen = true; // selecting a sector should collapse everything, even mid-search
+    // Selecting a real sector collapses everything, even mid-search. Clearing the sector
+    // (back to "All") does NOT suppress, so an active search re-expands all matches.
+    if (s !== "All") suppressForceOpen = true;
     autoActivateCat();
     render();
     if (s !== "All") {
@@ -170,14 +170,6 @@ You can find most of these in the public domain.
     autoActivateCat();
     render();
     elCats.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }
-
-  function clearSubs() {
-    state.subs = [];
-    syncSubChips();
-    collapseAll();
-    autoActivateCat();
-    render();
   }
 
   elQ.addEventListener("input", function () {
@@ -304,9 +296,9 @@ You can find most of these in the public domain.
   }
 
   // True if a card is already shown open for reasons that have nothing to do with a manual click
-  // (active search, active sub-cat filter, or this id's own forced-open record).
-  function isImpliedOpen(id) {
-    return state.q.length > 0 || state.subs.length > 0 || !!forcedSet[id];
+  // (active search or active sub-cat filter force every visible card open).
+  function isImpliedOpen() {
+    return state.q.length > 0 || state.subs.length > 0;
   }
 
   // Per-entry toggle. Only records a genuine manual open into openSet — clicking a card that's
@@ -318,16 +310,16 @@ You can find most of these in the public domain.
     var toggle = li.querySelector(".tx-item-toggle");
     if (toggle) toggle.setAttribute("aria-expanded", open ? "true" : "false");
     var id = li.dataset.id;
-    if (open && !isImpliedOpen(id)) openSet[id] = true;
+    if (open && !isImpliedOpen()) openSet[id] = true;
     else if (!open) delete openSet[id];
     updateExpandAllButton();
   }
 
   // Sets every visible entry's expansion state. Called after render().
-  // Rule: search non-empty or a sub-category filter active → force all open. The sub-cat-driven
-  // force-open is persisted in forcedSet (separate from openSet, the manual-click record) so a card
-  // stays open after that filter is removed, without it being mistaken for a deliberate manual expand.
-  // Search-driven force-open stays fully transient — clearing the search reverts to whatever was open before.
+  // Rule: search non-empty or a sub-category filter active → force all visible cards open.
+  // This force-open is transient — once the filter is cleared, cards revert to whatever was
+  // manually open (openSet). The one-shot suppress flag lets setSector() collapse everything
+  // for a single render even while search/subs would otherwise force-open.
   function applyExpansionState() {
     var suppress = suppressForceOpen;
     suppressForceOpen = false;
@@ -335,8 +327,7 @@ You can find most of these in the public domain.
     var subsOpen = state.subs.length > 0;
     var forceOpen = (searchOpen || subsOpen) && !suppress;
     Array.prototype.forEach.call(elList.querySelectorAll(".tx-item"), function (li) {
-      var open = forceOpen || !!openSet[li.dataset.id] || !!forcedSet[li.dataset.id];
-      if (subsOpen && !suppress) forcedSet[li.dataset.id] = true;
+      var open = forceOpen || !!openSet[li.dataset.id];
       li.classList.toggle("is-open", open);
       var toggle = li.querySelector(".tx-item-toggle");
       if (toggle) toggle.setAttribute("aria-expanded", open ? "true" : "false");
@@ -373,7 +364,7 @@ You can find most of these in the public domain.
       var toggle = li.querySelector(".tx-item-toggle");
       if (toggle) toggle.setAttribute("aria-expanded", openAll ? "true" : "false");
       var id = li.dataset.id;
-      if (openAll && !isImpliedOpen(id)) openSet[id] = true;
+      if (openAll && !isImpliedOpen()) openSet[id] = true;
       else if (!openAll) delete openSet[id];
     });
     updateExpandAllButton();
