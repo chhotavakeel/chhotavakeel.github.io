@@ -155,13 +155,10 @@ You can find most of these in the public domain.
 
   function toggleSub(s) {
     var idx = state.subs.indexOf(s);
-    var deselecting = idx >= 0;
-    if (deselecting) state.subs.splice(idx, 1);
+    if (idx >= 0) state.subs.splice(idx, 1);
     else state.subs.push(s);
+    openSet = {};
     syncSubChips();
-    // Manually-opened cards (openSet) survive sub-cat changes, same as for sector pivots.
-    // While subs remain active the force-open keeps everything visible expanded; once the last
-    // sub is removed, only cards that were manually open before subs were turned on stay open.
     autoActivateCat();
     render();
     elCats.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -266,14 +263,8 @@ You can find most of these in the public domain.
     Array.prototype.forEach.call(elList.querySelectorAll(".tx-eyebrow-link"), function (btn) {
       btn.addEventListener("click", function (e) {
         e.stopPropagation();
-        var src = btn.closest(".tx-item");
-        var newSector = btn.dataset.sector;
-        Object.keys(openSet).forEach(function (id) {
-          var row = DATA[+id];
-          if (!row || row.sectors.indexOf(newSector) === -1) delete openSet[id];
-        });
-        if (src) openSet[src.dataset.id] = true;
-        setSector(newSector);
+        openSet = {};
+        setSector(btn.dataset.sector);
       });
     });
 
