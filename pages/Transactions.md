@@ -30,7 +30,7 @@ You can find most of these in the public domain.
   // cats are OR across active filters (union); sector is single-select (every row has one
   // sector, so multi-select is unreachable via eyebrows); subs are AND (intersection).
   var state = { cats: [], sector: "", subs: [], q: "" };
-  var catsIndicated = []; // cats present in the current sector/sub pool — visual only, not filtering
+  var catsIndicated = []; // cats present in the current sector/sub/search pool — visual only, not filtering
 
   var elList  = document.getElementById("tx-list");
   var elCats  = document.getElementById("tx-cats");
@@ -76,6 +76,33 @@ You can find most of these in the public domain.
     elCats.appendChild(b);
   });
 
+  // Expand-all toggle — sits at the right of the filter row (margin-left: auto in CSS).
+  // DOM-only, like the row toggle: it doesn't touch state, so a render() (any filter change)
+  // resets to whatever forceOpen dictates.
+  var elExpandAll = document.createElement("button");
+  elExpandAll.type = "button";
+  elExpandAll.className = "tx-expand-all";
+  elExpandAll.addEventListener("click", function () {
+    var items = elList.querySelectorAll(".tx-item");
+    var openAll = elList.querySelectorAll(".tx-item.is-open").length === 0;
+    Array.prototype.forEach.call(items, function (li) {
+      li.classList.toggle("is-open", openAll);
+      var t = li.querySelector(".tx-toggle");
+      if (t) t.setAttribute("aria-expanded", openAll ? "true" : "false");
+    });
+    syncExpandAll();
+  });
+  elCats.appendChild(elExpandAll);
+
+  function syncExpandAll() {
+    var items = elList.querySelectorAll(".tx-item");
+    if (items.length === 0) { elExpandAll.hidden = true; return; }
+    elExpandAll.hidden = false;
+    var openCount = elList.querySelectorAll(".tx-item.is-open").length;
+    elExpandAll.textContent = openCount > 0 ? "Collapse all" : "Expand all";
+    elExpandAll.setAttribute("aria-pressed", openCount > 0 ? "true" : "false");
+  }
+
   function syncCats() {
     Array.prototype.forEach.call(elCats.querySelectorAll(".tx-cat"), function (b) {
       var c = b.dataset.cat;
@@ -105,7 +132,7 @@ You can find most of these in the public domain.
   }
 
   function refreshCatsIndicated() {
-    if (!state.sector && state.subs.length === 0) {
+    if (!state.sector && state.subs.length === 0 && !state.q) {
       catsIndicated = [];
       return;
     }
@@ -216,6 +243,7 @@ You can find most of these in the public domain.
     });
 
     wireCards();
+    syncExpandAll();
   }
 
   function wireCards() {
@@ -241,6 +269,7 @@ You can find most of these in the public domain.
         var open = !li.classList.contains("is-open");
         li.classList.toggle("is-open", open);
         t.setAttribute("aria-expanded", open ? "true" : "false");
+        syncExpandAll();
       };
       t.addEventListener("click", handler);
       t.addEventListener("keydown", function (e) {
@@ -325,6 +354,33 @@ You can find most of these in the public domain.
 
 #txn-experience .tx-cat:disabled { opacity: 0.4; cursor: not-allowed; }
 #txn-experience .tx-cat:disabled:hover { background: transparent; }
+
+/* ---- Expand-all toggle (inline in filter row, pushed right) ---- */
+#txn-experience .tx-expand-all {
+  font: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: var(--brand);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.35rem 0.2rem;
+  margin-left: auto;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+#txn-experience .tx-expand-all:hover,
+#txn-experience .tx-expand-all:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+
+#txn-experience .tx-expand-all[hidden] { display: none; }
 
 /* ---- Active-filter chips (sectors + subs) ---- */
 #txn-experience .tx-chips {
@@ -541,4 +597,10 @@ You can find most of these in the public domain.
 }
 
 #txn-experience .tx-empty button:hover { opacity: 1; }
+
+/* ---- Mobile ---- */
+@media (max-width: 560px) {
+  /* Expand-all flows inline rather than being pushed right, but keeps a gap from the chips. */
+  #txn-experience .tx-expand-all { margin-left: 1rem; }
+}
 </style>
