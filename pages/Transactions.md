@@ -258,23 +258,20 @@ You can find most of these in the public domain.
       elList.appendChild(li);
     });
 
-    // Wire sector eyebrow clicks. Clicking an eyebrow from inside a card counts as engagement
-    // with that card — pin it into openSet so it survives the resulting filter change.
-    // From a clean-slate state (no other filters), the click is also treated as a "focus"
-    // gesture: forget any pinned cards that aren't in the new sector, so they don't resurface
-    // later as ghost-open cards when the user widens back.
+    // Wire sector eyebrow clicks. Clicking an eyebrow is a "commit to this sector" gesture:
+    // pin the source card into openSet (so it survives the resulting filter change) and prune
+    // any other openSet entries whose row doesn't include the new sector (so cards from prior
+    // browsing in other sectors don't resurface later as ghost-open cards when filters widen).
+    // The sector chip × is the opposite — a "back to exploration" gesture that doesn't prune.
     Array.prototype.forEach.call(elList.querySelectorAll(".tx-eyebrow-link"), function (btn) {
       btn.addEventListener("click", function (e) {
         e.stopPropagation();
         var src = btn.closest(".tx-item");
         var newSector = btn.dataset.sector;
-        var noFilters = state.cats.length === 0 && state.subs.length === 0 && state.q === "" && state.sector === "All";
-        if (noFilters) {
-          Object.keys(openSet).forEach(function (id) {
-            var row = DATA[+id];
-            if (!row || row.sectors.indexOf(newSector) === -1) delete openSet[id];
-          });
-        }
+        Object.keys(openSet).forEach(function (id) {
+          var row = DATA[+id];
+          if (!row || row.sectors.indexOf(newSector) === -1) delete openSet[id];
+        });
         if (src) openSet[src.dataset.id] = true;
         setSector(newSector);
       });
