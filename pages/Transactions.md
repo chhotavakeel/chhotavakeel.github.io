@@ -139,7 +139,9 @@ You can find most of these in the public domain.
     collapseAll();
     // Selecting a real sector collapses everything, even mid-search. Clearing the sector
     // (back to "All") does NOT suppress, so an active search re-expands all matches.
-    if (s !== "All") suppressForceOpen = true;
+    // Sub-cats also override the suppress: with subs active the user is in "show me everything
+    // for these tags" mode, and a sector pivot shouldn't override that.
+    if (s !== "All" && state.subs.length === 0) suppressForceOpen = true;
     autoActivateCat();
     render();
     if (s !== "All") {
