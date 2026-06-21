@@ -49,6 +49,11 @@ body.theme-transition {
   box-sizing: border-box;
 }
 
+::selection {
+  background: var(--brand);
+  color: var(--bg);
+}
+
 html {
   font-size: 15px;
 }
