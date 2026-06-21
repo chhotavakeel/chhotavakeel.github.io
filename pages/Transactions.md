@@ -27,6 +27,7 @@ You can find most of these in the public domain.
   var catsAutoSelected = false; // true when state.cats was set by autoActivateCat(), not a manual click
   var openSet = {}; // row._id -> true, persists each card's manually-set open/closed state across re-renders
   var forcedSet = {}; // row._id -> true, cards force-opened by the sub-cat filter
+  var suppressForceOpen = false; // one-shot: set by setSector() so a sector change collapses everything even during an active search
 
   var elList   = document.getElementById("tx-list");
   var elCats   = document.getElementById("tx-cats");
@@ -49,8 +50,10 @@ You can find most of these in the public domain.
     Array.prototype.forEach.call(elCats.querySelectorAll(".tx-cat"), function (b) {
       var cat = b.dataset.cat;
       if (!cat) return;
+      var count = catCount(cat);
       var n = b.querySelector(".tx-cat-n");
-      if (n) n.textContent = "(" + catCount(cat) + ")";
+      if (n) n.textContent = "(" + count + ")";
+      b.disabled = count === 0 && cat !== "All";
     });
   }
   ["All"].concat(CAT_ORDER).forEach(function (c) {
@@ -136,6 +139,7 @@ You can find most of these in the public domain.
     }
     syncFlexBreak();
     collapseAll();
+    suppressForceOpen = true; // selecting a sector should collapse everything, even mid-search
     autoActivateCat();
     render();
     if (s !== "All") {
@@ -186,8 +190,8 @@ You can find most of these in the public domain.
     state = { cats: [], sector: "All", subs: [], q: "" };
     elQ.value = "";
     syncCatButtons();
+    syncSubChips();
     setSector("All");
-    clearSubs();
   });
 
   function esc(s) {
@@ -325,12 +329,14 @@ You can find most of these in the public domain.
   // stays open after that filter is removed, without it being mistaken for a deliberate manual expand.
   // Search-driven force-open stays fully transient — clearing the search reverts to whatever was open before.
   function applyExpansionState() {
+    var suppress = suppressForceOpen;
+    suppressForceOpen = false;
     var searchOpen = state.q.length > 0;
     var subsOpen = state.subs.length > 0;
-    var forceOpen = searchOpen || subsOpen;
+    var forceOpen = (searchOpen || subsOpen) && !suppress;
     Array.prototype.forEach.call(elList.querySelectorAll(".tx-item"), function (li) {
       var open = forceOpen || !!openSet[li.dataset.id] || !!forcedSet[li.dataset.id];
-      if (subsOpen) forcedSet[li.dataset.id] = true;
+      if (subsOpen && !suppress) forcedSet[li.dataset.id] = true;
       li.classList.toggle("is-open", open);
       var toggle = li.querySelector(".tx-item-toggle");
       if (toggle) toggle.setAttribute("aria-expanded", open ? "true" : "false");
@@ -456,6 +462,15 @@ You can find most of these in the public domain.
 #txn-experience .tx-cat.is-on .tx-cat-n {
   color: var(--brand);
   opacity: 0.7;
+}
+
+#txn-experience .tx-cat:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+#txn-experience .tx-cat:disabled:hover {
+  background: transparent;
 }
 
 #txn-experience .tx-sector-chip {
