@@ -26,7 +26,6 @@ You can find most of these in the public domain.
   var state = { cats: [], sector: "All", subs: [], q: "" };
   var catsAutoSelected = false; // true when state.cats was set by autoActivateCat(), not a manual click
   var openSet = {}; // row._id -> true, persists each card's manually-set open/closed state across re-renders
-  var suppressForceOpen = false; // one-shot: set by setSector() so a sector change collapses everything even during an active search
 
   var elList   = document.getElementById("tx-list");
   var elCats   = document.getElementById("tx-cats");
@@ -121,11 +120,6 @@ You can find most of these in the public domain.
     elFlexBreak.hidden = state.sector === "All" && state.subs.length === 0;
   }
 
-  // Collapses every card, no exceptions — manually opened or filter-opened alike.
-  function collapseAll() {
-    openSet = {};
-  }
-
   function setSector(s) {
     state.sector = s;
     if (s === "All") {
@@ -136,12 +130,9 @@ You can find most of these in the public domain.
       elSectorChip.hidden = false;
     }
     syncFlexBreak();
-    collapseAll();
-    // Selecting a real sector collapses everything, even mid-search. Clearing the sector
-    // (back to "All") does NOT suppress, so an active search re-expands all matches.
-    // Sub-cats also override the suppress: with subs active the user is in "show me everything
-    // for these tags" mode, and a sector pivot shouldn't override that.
-    if (s !== "All" && state.subs.length === 0) suppressForceOpen = true;
+    // Manually-opened cards (openSet) survive sector pivots. If search or a sub-cat is active,
+    // applyExpansionState's force-open re-expands the new filtered set, same as it would for any
+    // other filter change — sector pivots are not a special case.
     autoActivateCat();
     render();
     if (s !== "All") {
@@ -168,7 +159,9 @@ You can find most of these in the public domain.
     if (deselecting) state.subs.splice(idx, 1);
     else state.subs.push(s);
     syncSubChips();
-    if (deselecting) collapseAll();
+    // Manually-opened cards (openSet) survive sub-cat changes, same as for sector pivots.
+    // While subs remain active the force-open keeps everything visible expanded; once the last
+    // sub is removed, only cards that were manually open before subs were turned on stay open.
     autoActivateCat();
     render();
     elCats.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -320,14 +313,9 @@ You can find most of these in the public domain.
   // Sets every visible entry's expansion state. Called after render().
   // Rule: search non-empty or a sub-category filter active → force all visible cards open.
   // This force-open is transient — once the filter is cleared, cards revert to whatever was
-  // manually open (openSet). The one-shot suppress flag lets setSector() collapse everything
-  // for a single render even while search/subs would otherwise force-open.
+  // manually open (openSet).
   function applyExpansionState() {
-    var suppress = suppressForceOpen;
-    suppressForceOpen = false;
-    var searchOpen = state.q.length > 0;
-    var subsOpen = state.subs.length > 0;
-    var forceOpen = (searchOpen || subsOpen) && !suppress;
+    var forceOpen = state.q.length > 0 || state.subs.length > 0;
     Array.prototype.forEach.call(elList.querySelectorAll(".tx-item"), function (li) {
       var open = forceOpen || !!openSet[li.dataset.id];
       li.classList.toggle("is-open", open);
