@@ -71,6 +71,7 @@ katex: true
 
 # Exclude from processing
 exclude:
+  - docs
   - Gemfile
   - Gemfile.lock
   - node_modules
