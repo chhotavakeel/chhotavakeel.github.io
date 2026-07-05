@@ -11,14 +11,15 @@ You can find all of these in the public domain.
     <div class="tx-search">
       <input id="tx-q" class="search-input" type="search" placeholder="Search" autocomplete="off">
     </div>
-    <div class="tx-cats" id="tx-cats" role="group" aria-label="Filter by transaction type"></div>
+    <div class="filter-row" id="tx-cats" role="group" aria-label="Filter by transaction type"></div>
     <div class="tx-chips" id="tx-chips"></div>
   </div>
 
   <ol class="tx-list" id="tx-list"></ol>
-  <p class="tx-empty" id="tx-empty" hidden>No matches. <button type="button" id="tx-clear">Clear filters</button></p>
+  <p class="filter-empty" id="tx-empty" hidden>No matches. <button type="button" id="tx-clear">Clear filters</button></p>
 </div>
 
+<script src="{{ site.baseurl }}/assets/js/filters.js"></script>
 <script>
 (function () {
   var DATA = [{% for row in site.data.transactions %}{"client":{{ row.client | jsonify }},"blurb":{{ row.blurb | jsonify }},"cats":{{ row.cats | split: "|" | jsonify }},"sectors":{{ row.sectors | split: "|" | jsonify }},"subs":{{ row.subs | split: "|" | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}];
@@ -37,11 +38,7 @@ You can find all of these in the public domain.
   var elQ     = document.getElementById("tx-q");
   var elEmpty = document.getElementById("tx-empty");
 
-  function esc(s) {
-    return String(s).replace(/[&<>"]/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
-    });
-  }
+  var esc = Filters.esc;
 
   // skip: an object like {cats:true} to ignore that facet during matching (used for count pools).
   function matches(r, skip) {
@@ -65,15 +62,7 @@ You can find all of these in the public domain.
     return c === "All" ? pool.length : pool.filter(function (r) { return r.cats.indexOf(c) >= 0; }).length;
   }
 
-  ["All"].concat(CAT_ORDER).forEach(function (c) {
-    var b = document.createElement("button");
-    b.type = "button";
-    b.className = "tx-cat";
-    b.dataset.cat = c;
-    b.innerHTML = esc(c) + ' <span class="tx-cat-n"></span>';
-    b.addEventListener("click", function () { toggleCat(c); });
-    elCats.appendChild(b);
-  });
+  Filters.buttons(elCats, ["All"].concat(CAT_ORDER), toggleCat);
 
   // Expand-all toggle — sits at the right of the filter row (margin-left: auto in CSS).
   // DOM-only, like the row toggle: it doesn't touch state, so a render() (any filter change)
@@ -103,19 +92,17 @@ You can find all of these in the public domain.
   }
 
   function syncCats() {
-    Array.prototype.forEach.call(elCats.querySelectorAll(".tx-cat"), function (b) {
-      var c = b.dataset.cat;
+    Filters.sync(elCats, function (c) {
       var on = (c === "All") ? state.cats.length === 0 : state.cats.indexOf(c) >= 0;
-      var indicated = !on && catsIndicated.indexOf(c) >= 0;
       var count = catCount(c);
-      b.classList.toggle("is-on", on);
-      b.classList.toggle("is-indicated", indicated);
-      b.setAttribute("aria-pressed", on ? "true" : "false");
-      // Never disable a selected cat — otherwise narrowing its count to 0 (e.g. via search)
-      // would trap it: highlighted, greyed, and unclickable to deselect.
-      b.disabled = count === 0 && c !== "All" && !on;
-      var n = b.querySelector(".tx-cat-n");
-      if (n) n.textContent = "(" + count + ")";
+      return {
+        on: on,
+        indicated: !on && catsIndicated.indexOf(c) >= 0,
+        // Never disable a selected cat — otherwise narrowing its count to 0 (e.g. via search)
+        // would trap it: highlighted, greyed, and unclickable to deselect.
+        disabled: count === 0 && c !== "All" && !on,
+        count: count
+      };
     });
   }
 
@@ -218,11 +205,11 @@ You can find all of these in the public domain.
       }).join('<span class="tx-eyebrow-sep"> · </span>');
 
       var catTags = r.cats.map(function (c) {
-        return '<span class="tx-tag tx-tag--cat">' + esc(c) + "</span>";
+        return '<span class="tag tag--strong">' + esc(c) + "</span>";
       }).join("");
       var subTags = r.subs.map(function (s) {
         var on = state.subs.indexOf(s) >= 0;
-        return '<button type="button" class="tx-tag tx-tag--sub' + (on ? " is-active" : "") + '" data-sub="' + esc(s) + '">' + esc(s) + "</button>";
+        return '<button type="button" class="tag tx-tag--sub' + (on ? " is-active" : "") + '" data-sub="' + esc(s) + '">' + esc(s) + "</button>";
       }).join("");
 
       li.innerHTML =
@@ -303,56 +290,7 @@ You can find all of these in the public domain.
   appearance: none;
 }
 
-#txn-experience .tx-cats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  align-items: center;
-}
-
-#txn-experience .tx-cat {
-  font: inherit;
-  font-family: inherit;
-  font-size: 0.8rem;
-  cursor: pointer;
-  padding: 0.35rem 0.7rem;
-  border-radius: 0.25rem;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text);
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
-}
-
-#txn-experience .tx-cat:hover { background: var(--bg2); }
-
-#txn-experience .tx-cat .tx-cat-n {
-  font-size: 0.72rem;
-  font-weight: 400;
-  opacity: 0.65;
-  margin-left: 0.1rem;
-}
-
-/* Selected (manual click): filled brand tint + bold — visibly stronger than an indicated hint. */
-#txn-experience .tx-cat.is-on {
-  border-color: var(--brand);
-  color: var(--brand);
-  font-weight: 600;
-  background: color-mix(in srgb, var(--brand) 12%, transparent);
-}
-
-#txn-experience .tx-cat.is-on:hover { background: color-mix(in srgb, var(--brand) 18%, transparent); }
-#txn-experience .tx-cat.is-on .tx-cat-n { color: var(--brand); opacity: 0.7; }
-
-/* Indicated (cat present in the active sector/sub pool): outline-only brand hint, no fill. */
-#txn-experience .tx-cat.is-indicated {
-  border-color: var(--brand);
-  color: var(--brand);
-}
-#txn-experience .tx-cat.is-indicated:hover { background: color-mix(in srgb, var(--brand) 8%, transparent); }
-#txn-experience .tx-cat.is-indicated .tx-cat-n { color: var(--brand); opacity: 0.7; }
-
-#txn-experience .tx-cat:disabled { opacity: 0.4; cursor: not-allowed; }
-#txn-experience .tx-cat:disabled:hover { background: transparent; }
+/* Filter buttons come from the shared .filter-row / .filter-btn component in style.css. */
 
 /* ---- Expand-all toggle (inline in filter row, pushed right) ---- */
 #txn-experience .tx-expand-all {
@@ -542,21 +480,7 @@ You can find all of these in the public domain.
   padding-bottom: 1.25rem;
 }
 
-#txn-experience .tx-tag {
-  font: inherit;
-  font-family: inherit;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: 0.35rem 0.55rem;
-  border-radius: 0.25rem;
-  background: var(--bg2);
-  color: var(--text);
-  white-space: nowrap;
-  border: none;
-}
-
-#txn-experience .tx-tag--cat { font-weight: 600; color: var(--title); }
-
+/* Tag chips come from the shared .tag / .tag--strong component in style.css. */
 #txn-experience button.tx-tag--sub {
   cursor: pointer;
   border: 1px solid var(--brand);
@@ -573,29 +497,7 @@ You can find all of these in the public domain.
   #txn-experience .tx-chevron { transition: opacity 0.2s !important; }
 }
 
-/* ---- Empty state ---- */
-#txn-experience .tx-empty {
-  margin: 2rem 0;
-  text-align: center;
-  color: var(--text);
-  font-size: 0.95rem;
-}
-
-#txn-experience .tx-empty button {
-  font: inherit;
-  font-size: 0.9rem;
-  color: var(--brand);
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  padding: 0;
-  opacity: 0.9;
-  transition: opacity 0.2s;
-}
-
-#txn-experience .tx-empty button:hover { opacity: 1; }
+/* Empty state comes from the shared .filter-empty component in style.css. */
 
 /* ---- Mobile ---- */
 @media (max-width: 560px) {

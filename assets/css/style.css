@@ -401,6 +401,125 @@ td {
 }
 
 
+/* Back button (notes) */
+.back-button-container {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--scale-sm);
+  transition: color 0.2s ease;
+}
+
+.back-button svg {
+  display: block;
+}
+
+.back-button:hover {
+  color: var(--brand);
+}
+
+/* Filterable-list components — shared by Library and Transactions.
+   Buttons are built and synced by assets/js/filters.js. */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.filter-btn {
+  font: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.filter-btn:hover { background: var(--bg2); }
+
+.filter-btn .filter-count {
+  font-size: 0.72rem;
+  font-weight: 400;
+  opacity: 0.65;
+  margin-left: 0.1rem;
+}
+
+/* Selected: filled brand tint + bold — visibly stronger than an indicated hint. */
+.filter-btn.is-on {
+  border-color: var(--brand);
+  color: var(--brand);
+  font-weight: 600;
+  background: color-mix(in srgb, var(--brand) 12%, transparent);
+}
+
+.filter-btn.is-on:hover { background: color-mix(in srgb, var(--brand) 18%, transparent); }
+.filter-btn.is-on .filter-count { color: var(--brand); opacity: 0.7; }
+
+/* Indicated (present in the active pool without being selected): outline-only hint. */
+.filter-btn.is-indicated {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+.filter-btn.is-indicated:hover { background: color-mix(in srgb, var(--brand) 8%, transparent); }
+.filter-btn.is-indicated .filter-count { color: var(--brand); opacity: 0.7; }
+
+.filter-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.filter-btn:disabled:hover { background: transparent; }
+
+.filter-empty {
+  margin: 2rem 0;
+  text-align: center;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.filter-empty button {
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--brand);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.filter-empty button:hover { opacity: 1; }
+
+/* Small label chips on list items */
+.tag {
+  font: inherit;
+  font-family: inherit;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.35rem 0.55rem;
+  border-radius: 0.25rem;
+  background: var(--bg2);
+  color: var(--text);
+  white-space: nowrap;
+  border: none;
+}
+
+.tag--strong {
+  font-weight: 600;
+  color: var(--title);
+}
+
 .stale-link {
   color: var(--text) !important;
   opacity: 0.6;

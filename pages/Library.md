@@ -6,15 +6,17 @@ layout: page
 
 Information worth retaining. Starred items have shaped how I think.
 
-<div class="lib-controls" id="lib-cats" role="group" aria-label="Filter by type"></div>
+<div class="filter-row" id="lib-cats" role="group" aria-label="Filter by type"></div>
 
 
 <ul class="lib-grid" id="lib-grid"></ul>
-<p class="lib-empty" id="lib-empty" hidden>Nothing matches. <button type="button" id="lib-clear">Clear filters</button></p>
+<p class="filter-empty" id="lib-empty" hidden>Nothing matches. <button type="button" id="lib-clear">Clear filters</button></p>
 
+<script src="{{ site.baseurl }}/assets/js/filters.js"></script>
 <script>
 (function () {
   var DATA = {{ site.data.library | jsonify }};
+  var esc = Filters.esc;
 
   var state = { tags: [] };
 
@@ -31,12 +33,6 @@ Information worth retaining. Starred items have shaped how I think.
       }
       return esc(part).replace(/\*(.*?)\*/g, '<em>$1</em>');
     }).join('');
-  }
-
-  function esc(s) {
-    return String(s ?? '').replace(/[&<>"']/g, function (c) {
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
-    });
   }
 
   function parseTags(d) {
@@ -56,16 +52,7 @@ Information worth retaining. Starred items have shaped how I think.
     return tag === 'All' ? DATA.length : DATA.filter(function (d) { return parseTags(d).indexOf(tag) !== -1; }).length;
   }
 
-  ['All'].concat(allTags).forEach(function (t) {
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'lib-filter' + (t === 'All' ? ' active' : '');
-    b.setAttribute('aria-pressed', t === 'All' ? 'true' : 'false');
-    b.dataset.tag = t;
-    b.innerHTML = esc(t) + ' <span class="count">(' + tagCount(t) + ')</span>';
-    b.addEventListener('click', function () { toggleTag(t); });
-    elCats.appendChild(b);
-  });
+  Filters.buttons(elCats, ['All'].concat(allTags), toggleTag);
 
   function toggleTag(t) {
     if (t === 'All' || state.tags[0] === t) {
@@ -78,10 +65,11 @@ Information worth retaining. Starred items have shaped how I think.
   }
 
   function syncButtons() {
-    Array.prototype.forEach.call(elCats.querySelectorAll('.lib-filter'), function (b) {
-      var on = b.dataset.tag === 'All' ? state.tags.length === 0 : state.tags.indexOf(b.dataset.tag) >= 0;
-      b.classList.toggle('active', on);
-      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    Filters.sync(elCats, function (t) {
+      return {
+        on: t === 'All' ? state.tags.length === 0 : state.tags.indexOf(t) >= 0,
+        count: tagCount(t)
+      };
     });
   }
 
@@ -116,7 +104,7 @@ Information worth retaining. Starred items have shaped how I think.
 
       var tags = parseTags(d);
       var extraChips = tags.slice(1).map(function (t) {
-        return '<span class="lib-tag">' + esc(t) + '</span>';
+        return '<span class="tag">' + esc(t) + '</span>';
       }).join('');
 
       li.innerHTML =
@@ -124,58 +112,25 @@ Information worth retaining. Starred items have shaped how I think.
         '<h3 class="lib-card-title">' + (d.Link ? '<a href="' + esc(d.Link) + '" target="_blank" rel="noopener noreferrer">' + esc(d.Title) + '</a>' : esc(d.Title)) + '</h3>' +
         '<div class="lib-card-author">' + esc(d.Author) + '</div>' +
         (d.Notes ? '<p class="lib-card-notes">' + mdLinks(d.Notes) + '</p>' : '') +
-        '<div class="lib-tags"><span class="lib-tag lib-tag--type">' + esc(d.Type) + '</span>' + extraChips + '</div>';
+        '<div class="lib-tags"><span class="tag tag--strong">' + esc(d.Type) + '</span>' + extraChips + '</div>';
 
       elGrid.appendChild(li);
     });
   }
 
+  syncButtons();
   render();
 })();
 </script>
 
 <style>
-.lib-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  align-items: center;
-  margin-bottom: var(--space-sm);
-}
-.lib-filter {
-  font: inherit;
-  font-size: 0.8rem;
-  cursor: pointer;
-  padding: 0.35rem 0.7rem;
-  border-radius: 0.25rem;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text);
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
-}
-.lib-filter:hover { background: var(--bg2); }
-.lib-filter.active {
-  background: transparent;
-  border-color: var(--brand);
-  color: var(--brand);
-  font-weight: 600;
-}
-.lib-filter.active:hover { background: color-mix(in srgb, var(--brand) 8%, transparent); }
-.lib-filter .count {
-  font-size: 0.72rem;
-  font-weight: 400;
-  opacity: 0.65;
-  margin-left: 0.1rem;
-}
-.lib-filter.active .count { color: var(--brand); opacity: 0.7; }
-
 .lib-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--space-sm);
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: var(--space-sm) 0 0;
 }
 
 .lib-card {
@@ -194,25 +149,19 @@ Information worth retaining. Starred items have shaped how I think.
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-.lib-tags { margin-top: auto; }
-
-.lib-card-title a { color: var(--brand); text-decoration: none; }
-.lib-card-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
-.lib-card-notes a { color: var(--brand); text-underline-offset: 3px; }
-a.lib-tag--link { color: var(--brand); font-weight: var(--weight-bold); text-decoration: none; }
-a.lib-tag--link:hover { text-decoration: underline; text-underline-offset: 3px; }
-.lib-card-title {
   font-size: var(--scale-base);
   font-weight: var(--weight-bold);
   color: var(--title);
   margin: 0;
   line-height: 1.35;
 }
-.lib-card-eyebrow { display: flex; justify-content: space-between; }
-.lib-card-star { color: var(--brand); }
-.lib-card-author { font-size: var(--scale-sm); color: var(--text); opacity: 0.8; }
+
+.lib-card-title a { color: var(--brand); text-decoration: none; }
+.lib-card-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.lib-card-notes a { color: var(--brand); text-underline-offset: 3px; }
 .lib-card-eyebrow {
+  display: flex;
+  justify-content: space-between;
   font-size: 0.7rem;
   font-weight: var(--weight-bold);
   text-transform: uppercase;
@@ -221,40 +170,13 @@ a.lib-tag--link:hover { text-decoration: underline; text-underline-offset: 3px; 
   margin: 0 0 0.25rem;
   line-height: 1.3;
 }
+.lib-card-star { color: var(--brand); }
+.lib-card-author { font-size: var(--scale-sm); color: var(--text); opacity: 0.8; }
 .lib-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: 0.25rem;
-}
-.lib-tag {
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: 0.35rem 0.55rem;
-  border-radius: 0.25rem;
-  background: var(--bg2);
-  color: var(--text);
-  white-space: nowrap;
-}
-.lib-tag--type {
-  font-weight: var(--weight-bold);
-  color: var(--title);
+  margin-top: auto;
 }
 .lib-card-notes { font-size: var(--scale-sm); color: var(--text); line-height: 1.55; margin: 0.15rem 0 0; }
-
-.lib-empty {
-  margin: var(--space-lg) 0;
-  color: var(--text);
-  font-size: var(--scale-sm);
-}
-.lib-empty button {
-  font: inherit;
-  color: var(--brand);
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  padding: 0;
-}
 </style>
