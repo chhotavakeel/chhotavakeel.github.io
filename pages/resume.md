@@ -1,8 +1,7 @@
 ---
 permalink: /resume.html
 title: Resume
-layout: Post
-content-type: static
+layout: page
 ---
 
 <style>

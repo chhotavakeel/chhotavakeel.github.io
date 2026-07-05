@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: About
-layout: Post
+layout: default
 --- 
 
 ## About

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+      // Set theme before first paint to avoid a flash of the wrong theme.
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved) {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      })();
+    </script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="{{ site.title | default: site.heading }}" property="og:site_name" />
+    <meta content="{{ site.description | default: 'A Jekyll Garden site' }}" property="og:description">
+    <meta content="{{ site.url }}/about/" property="article:author">
+    {%- if site.og_image -%}
+    <meta property="og:image" content="{{ site.baseurl }}{{ site.og_image }}">
+    {%- endif -%}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    {%- if page.title -%}
+    <meta content="{{ page.title }}" property="og:title">
+    <meta content="article" property="og:type">
+    {%- else -%}
+    <meta content="website" property="og:type">
+    {%- endif -%}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+
+    <title>{%- if page.title -%}{{ page.title }} - {%- endif -%}{{ site.heading }}</title>
+    <link rel="canonical" href="{{site.url}}{{page.url}}" />
+    {%- if site.apple_touch_icon -%}
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}{{ site.apple_touch_icon }}">
+    {%- endif -%}
+    {%- if site.favicon -%}
+    <link rel="icon" href="{{ site.baseurl }}{{ site.favicon }}" type="image/svg+xml" sizes="any" />
+    {%- endif -%}
+    <link href="{{ site.baseurl }}{{ site.css_file | default: '/assets/css/style.css' }}" rel="stylesheet" media="all" class="default" />
+    <link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet" media="all" class="default" />
+    {%- if site.katex -%}
+    <link href="{{ site.baseurl }}/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    {%- endif -%}
+
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            {%- include Nav.html -%}
+            {{ content }}
+            {%- include Footer.html -%}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,7 +1,9 @@
 ---
 permalink: /writing
 title: Writing
-layout: Post
+layout: page
 ---
 
 Not legal advice. Views own.
+
+{% include Feed.html %}

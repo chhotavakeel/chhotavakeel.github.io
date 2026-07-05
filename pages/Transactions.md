@@ -1,8 +1,7 @@
 ---
 permalink: /transactions.html
 title: Transactions
-layout: Post
-content-type: static
+layout: page
 ---
 
 You can find all of these in the public domain.

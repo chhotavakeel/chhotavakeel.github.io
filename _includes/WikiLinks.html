@@ -1,0 +1,26 @@
+{%- comment -%}
+Resolves [[Note Title]] wiki links in the rendered `content` at build time.
+Tag notes link with lowercase text and no preview; regular notes carry a
+data-excerpt attribute that the hover-preview script in note.html reads.
+Matching mirrors the old client-side resolver: exact title, plus an
+all-lowercase variant for case tolerance.
+{%- endcomment -%}
+{%- assign resolved = content -%}
+{%- for note in site.notes -%}
+    {%- capture note_href -%}{{ site.baseurl }}{{ note.url }}{%- endcapture -%}
+    {%- if note.tag -%}
+        {%- capture note_link -%}<a class="wiki-link" href="{{ note_href }}">{{ note.title | downcase }}</a>{%- endcapture -%}
+    {%- else -%}
+        {%- capture note_excerpt -%}{{ note.content | strip_html | normalize_whitespace | truncatewords: 20 }}{%- endcapture -%}
+        {%- capture note_link -%}<a class="wiki-link" href="{{ note_href }}" data-title="{{ note.title | escape }}" data-excerpt="{{ note_excerpt | escape }}">{{ note.title }}</a>{%- endcapture -%}
+    {%- endif -%}
+    {%- capture exact -%}[[{{ note.title }}]]{%- endcapture -%}
+    {%- assign resolved = resolved | replace: exact, note_link -%}
+    {%- capture lowered -%}[[{{ note.title | downcase }}]]{%- endcapture -%}
+    {%- if lowered != exact -%}
+        {%- assign resolved = resolved | replace: lowered, note_link -%}
+    {%- endif -%}
+{%- endfor -%}
+<div class="content">
+{{ resolved }}
+</div>

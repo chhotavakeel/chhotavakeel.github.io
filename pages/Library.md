@@ -1,8 +1,7 @@
 ---
 permalink: /library
 title: Library
-layout: Post
-content-type: static
+layout: page
 ---
 
 Information worth retaining. Starred items have shaped how I think.

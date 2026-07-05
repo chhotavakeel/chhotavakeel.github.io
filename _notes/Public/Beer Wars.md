@@ -1,7 +1,6 @@
 ---
 feed: show
 title: Beer Wars
-layout: Post
 date: 2025-11-02
 date modified: 04-03-2026
 category: Injunctions

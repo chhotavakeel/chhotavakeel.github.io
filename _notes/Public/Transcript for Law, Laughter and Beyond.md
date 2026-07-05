@@ -1,7 +1,6 @@
 ---
 feed: show
 title: Transcript for Law, Laughter and Beyond
-layout: Post
 date: 2023-11-19
 date modified: 14-06-2026
 category: Interview

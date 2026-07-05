@@ -23,13 +23,7 @@
 
 # Preferences (controls template behavior)
 preferences:
-  homepage:
-    enabled: true
   backlinks:
-    enabled: true
-  pagepreview:
-    enabled: true
-  wiki_style_link:
     enabled: true
 
 # Site Configuration
@@ -64,17 +58,8 @@ defaults:
       path: ""
       type: "notes"
     values:
-      layout: "Post"
-      content-type: "notes"
+      layout: "note"
       feed: "show"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "Post"
-      content-type: "post"
-      feed: "show"
-      permalink: /blog/:title/
 
 # Plugins
 plugins:

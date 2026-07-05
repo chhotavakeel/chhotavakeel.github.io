@@ -1,7 +1,6 @@
 ---
 feed: show
 title: All Electricity is Accounting
-layout: Post
 date: 2025-10-23
 date modified: 04-03-2026
 category: Electricity
