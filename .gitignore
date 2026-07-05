@@ -7,4 +7,4 @@ _notes/Public/.obsidian
 vendor/
 .bundle/
 .claude/
-.obsidian/
+.obsidian/.DS_Store
