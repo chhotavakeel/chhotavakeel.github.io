@@ -18,6 +18,12 @@
   
   --max-width: 48rem;
   --line-height: 1.5;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --reveal-duration: 0.45s;
+  --reveal-step: 45ms;
+  --reveal-rise: 8px;
   
   /* 5-level typography scale (1rem = 15px) */
   --scale-xs: 0.8rem;     /* 12px */
@@ -65,6 +71,122 @@ body {
   color: var(--text);
   background: var(--bg);
   font-size: var(--scale-base);
+}
+
+/* Page-load reveal — blocks settle up into place in a gentle cascade.
+   Delays cap out so long pages don't crawl; past the last index below,
+   everything shares one delay.
+
+   Layout wrappers hand the reveal off to their children (the `animation:
+   none` group) so a whole article body or resume column doesn't rise as one
+   slab. A wrapper that delegates must not animate itself, or the parent and
+   child fades multiply and the block arrives late and dim. */
+@keyframes reveal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(var(--reveal-rise));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.container > div > *,
+.content > *,
+.two-col > *,
+.col-left > section,
+.reveal-rows > * {
+  animation: reveal-rise var(--reveal-duration) var(--ease-out) both;
+  animation-delay: calc(var(--reveal-index) * var(--reveal-step));
+}
+
+.container > div > .content,
+.content > .two-col,
+.two-col > .col-left,
+.content .reveal-rows {
+  animation: none;
+}
+
+/* Custom properties inherit, so each level sets --reveal-index outright
+   rather than leaning on a fallback — otherwise a wrapper's own index would
+   leak down and flatten its children's cascade.
+
+   `of :not(style, script)` makes the count skip non-rendered siblings. Pages
+   carry inline <style>/<script> in the body, and being display:none doesn't
+   stop them occupying an nth-child slot — the resume's leading <style> was
+   silently eating the first step of its cascade. */
+.container > div > *              { --reveal-index: 5; }
+.container > div > *:nth-child(1 of :not(style, script)) { --reveal-index: 0; }
+.container > div > *:nth-child(2 of :not(style, script)) { --reveal-index: 1; }
+.container > div > *:nth-child(3 of :not(style, script)) { --reveal-index: 2; }
+.container > div > *:nth-child(4 of :not(style, script)) { --reveal-index: 3; }
+.container > div > *:nth-child(5 of :not(style, script)) { --reveal-index: 4; }
+
+/* The page and note layouts wrap the body in .content, so cascade its blocks
+   instead of the wrapper — otherwise a whole article rises as one lump while
+   the home page (which has no wrapper) cascades. Indices pick up roughly
+   where .content itself sits in the outer sequence. */
+.content > *              { --reveal-index: 5; }
+.content > *:nth-child(1 of :not(style, script)) { --reveal-index: 3; }
+.content > *:nth-child(2 of :not(style, script)) { --reveal-index: 4; }
+
+/* Resume's two-column grid. The columns read as one visual row, so they
+   arrive a step apart rather than in document order — which would land the
+   whole right-hand column last, after both left sections. Order settles
+   top-left, top-right, then bottom-left. */
+.two-col > *            { --reveal-index: 4; }  /* right column (Experience) */
+.col-left > section     { --reveal-index: 5; }  /* below-left (Volunteering) */
+.col-left > section:nth-child(1 of :not(style, script)) { --reveal-index: 3; }
+
+/* Filterable lists (Library, Transactions) own their rows' reveal, so the
+   container sits out the page-load cascade. `reveal-rows` is set in the
+   markup rather than added by JS on purpose: a container that starts out
+   excluded can never have its own fade re-triggered by a later class change
+   mid-session. Rows cascade a little deeper than page blocks — that tail is
+   the effect. */
+.reveal-rows > *              { --reveal-index: 8; }
+.reveal-rows > *:nth-child(1) { --reveal-index: 4; }
+.reveal-rows > *:nth-child(2) { --reveal-index: 5; }
+.reveal-rows > *:nth-child(3) { --reveal-index: 6; }
+.reveal-rows > *:nth-child(4) { --reveal-index: 7; }
+
+/* First paint only. Filtering tears down and rebuilds every row, so leaving
+   the cascade live would restart it on each keystroke — the list strobes,
+   and the results you're reading are the thing being hidden. */
+.reveal-rows.reveal-settled > * {
+  animation: none;
+}
+
+/* Filter/search re-render. A brief partial dip, never a fade from zero:
+   these are results the reader is mid-way through, and blanking them on
+   every keystroke makes an instant search feel slow. */
+@keyframes reveal-refresh {
+  from { opacity: 0.5; }
+  to   { opacity: 1; }
+}
+
+.content .reveal-rows.is-refreshing {
+  animation: reveal-refresh 0.12s ease-out both;
+}
+
+/* The empty state is the one place a full fade-in is right: it's new
+   information, not text already being read. Un-setting `hidden` restarts the
+   animation on its own, so this needs no JS. */
+.filter-empty:not([hidden]) {
+  animation: reveal-rise 0.3s var(--ease-out) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .container > div > *,
+  .content > *,
+  .two-col > *,
+  .col-left > section,
+  .reveal-rows > *,
+  .content .reveal-rows.is-refreshing,
+  .filter-empty:not([hidden]) {
+    animation: none;
+  }
 }
 
 .container {

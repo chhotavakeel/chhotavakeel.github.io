@@ -9,7 +9,7 @@ Information worth retaining. Starred items have shaped how I think.
 <div class="filter-row" id="lib-cats" role="group" aria-label="Filter by type"></div>
 
 
-<ul class="lib-grid" id="lib-grid"></ul>
+<ul class="lib-grid reveal-rows" id="lib-grid"></ul>
 <p class="filter-empty" id="lib-empty" hidden>Nothing matches. <button type="button" id="lib-clear">Clear filters</button></p>
 
 <script src="{{ site.baseurl }}/assets/js/filters.js"></script>
@@ -116,6 +116,8 @@ Information worth retaining. Starred items have shaped how I think.
 
       elGrid.appendChild(li);
     });
+
+    Filters.revealed(elGrid);
   }
 
   syncButtons();

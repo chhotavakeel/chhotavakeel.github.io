@@ -15,7 +15,7 @@ You can find all of these in the public domain.
     <div class="tx-chips" id="tx-chips"></div>
   </div>
 
-  <ol class="tx-list" id="tx-list"></ol>
+  <ol class="tx-list reveal-rows" id="tx-list"></ol>
   <p class="filter-empty" id="tx-empty" hidden>No matches. <button type="button" id="tx-clear">Clear filters</button></p>
 </div>
 
@@ -230,6 +230,8 @@ You can find all of these in the public domain.
 
     wireCards();
     syncExpandAll();
+
+    Filters.revealed(elList);
   }
 
   function wireCards() {
