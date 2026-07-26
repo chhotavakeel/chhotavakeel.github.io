@@ -197,7 +197,36 @@ body {
   animation: reveal-rise 0.3s var(--ease-out) both;
 }
 
+/* Narrow screens rise as one motion instead of cascading. With everything in
+   a single column the stagger runs the same direction the eye already travels,
+   so it reads as the page being drawn rather than settling — and published
+   Notion pages on mobile settle as one piece, which is the feel we're after.
+
+   Animating the wrapper rather than syncing every block to delay 0 is the
+   point: it's genuinely one motion, and a phone composites one layer instead
+   of a dozen large ones at once.
+
+   Filter and empty-state motion are state changes rather than page load, so
+   they stay live here. Breakpoint matches the width at which the resume's grid
+   folds to one column (set in resume.md), i.e. where the whole site becomes
+   single-column. */
+@media (max-width: 560px) {
+  .container > div {
+    animation: reveal-rise var(--reveal-duration) var(--ease-out) both;
+  }
+
+  .container > div > *,
+  .content > *,
+  .two-col > *,
+  .col-left > section,
+  .reveal-rows > * {
+    animation: none;
+  }
+}
+
+/* Last, so it overrides the single-motion block above as well as the cascade. */
 @media (prefers-reduced-motion: reduce) {
+  .container > div,
   .container > div > *,
   .content > *,
   .two-col > *,
