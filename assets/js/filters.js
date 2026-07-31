@@ -34,30 +34,5 @@ window.Filters = (function () {
     });
   }
 
-  // Motion for a list container that carries `reveal-rows` (see the reveal
-  // block in style.css). Call after each render: the first call lets the row
-  // cascade play, every later one plays the short refresh dip instead. The
-  // first-render state lives on the element rather than in a caller-side flag
-  // so neither page has to keep that bookkeeping.
-  function revealed(el) {
-    if (!el.dataset.revealed) {
-      el.dataset.revealed = '1';
-      return; // let the first-paint cascade play
-    }
-
-    // Any later render has rebuilt the rows, so pin the cascade off for good —
-    // re-running it per keystroke strobes the list. Settling here rather than
-    // on a timer means it also holds when the reader starts filtering while
-    // the cascade is still in flight, and adding it before the reflow below
-    // keeps those rebuilt rows from animating even once.
-    el.classList.add('reveal-settled');
-
-    // Removing, forcing a reflow, then re-adding is what makes the animation
-    // replay when the class is already there from the previous keystroke.
-    el.classList.remove('is-refreshing');
-    void el.offsetWidth;
-    el.classList.add('is-refreshing');
-  }
-
-  return { esc: esc, buttons: buttons, sync: sync, revealed: revealed };
+  return { esc: esc, buttons: buttons, sync: sync };
 })();
