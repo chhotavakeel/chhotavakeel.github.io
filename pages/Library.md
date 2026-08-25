@@ -125,58 +125,57 @@ Information worth retaining. Starred items have shaped how I think.
 
 <style>
 .lib-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: var(--space-sm);
   list-style: none;
   padding: 0;
-  margin: var(--space-sm) 0 0;
+  margin: 1.5rem 0 0;
 }
 
 .lib-card {
-  border: 1px solid var(--border);
-  border-radius: 0.25rem;
-  padding: var(--space-md);
-  background: var(--bg);
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
   list-style: none;
-  min-height: 14rem;
+  border-top: 1px solid var(--border);
+  padding: 1.25rem 0;
 }
+.lib-card:last-child { border-bottom: 1px solid var(--border); }
+
+.lib-card-eyebrow {
+  font-size: 0.7rem;
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text);
+  margin: 0 0 0.4rem;
+  line-height: 1.3;
+}
+.lib-card-star { color: var(--brand); margin-left: 0.35rem; }
+
 .lib-card-title {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
   font-size: var(--scale-base);
   font-weight: var(--weight-bold);
   color: var(--title);
   margin: 0;
   line-height: 1.35;
 }
-
 .lib-card-title a { color: var(--brand); text-decoration: none; }
 .lib-card-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
-.lib-card-notes a { color: var(--brand); text-underline-offset: 3px; }
-.lib-card-eyebrow {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.7rem;
-  font-weight: var(--weight-bold);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+
+.lib-card-author {
+  font-size: var(--scale-sm);
   color: var(--text);
-  margin: 0 0 0.25rem;
-  line-height: 1.3;
+  opacity: 0.85;
+  margin-top: 0.15rem;
 }
-.lib-card-star { color: var(--brand); }
-.lib-card-author { font-size: var(--scale-sm); color: var(--text); opacity: 0.8; }
+
+.lib-card-notes {
+  font-size: var(--scale-sm);
+  color: var(--text);
+  line-height: 1.65;
+  margin: 0.5rem 0 0.6rem;
+}
+.lib-card-notes a { color: var(--brand); text-underline-offset: 3px; }
+
 .lib-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: auto;
 }
-.lib-card-notes { font-size: var(--scale-sm); color: var(--text); line-height: 1.55; margin: 0.15rem 0 0; }
 </style>

@@ -1,10 +1,8 @@
 ---
 permalink: /
 title: About
-layout: default
+layout: page
 --- 
-
-## About
 
 Hi! I'm Pranav, an MBA student at the <a href="https://www.london.edu/" target="_blank" rel="noopener noreferrer">London Business School</a>. Previously, I was a corporate lawyer-turned-policy professional specialising in renewable energy and social infrastructure. You can go through my resume <a href="/resume">here</a>. 
 

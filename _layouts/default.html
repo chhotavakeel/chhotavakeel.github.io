@@ -45,10 +45,11 @@
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
 </head>
 
-<body>
+<body{% if page.url == '/' %} class="home"{% endif %}>
     <div class="container">
         <div>
             {%- include Nav.html -%}
+            {%- if page.url == '/' -%}{%- include Windmill.html -%}{%- endif -%}
             {{ content }}
             {%- include Footer.html -%}
         </div>

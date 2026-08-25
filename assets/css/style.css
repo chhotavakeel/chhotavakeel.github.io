@@ -199,6 +199,73 @@ a:hover {
   justify-content: space-between;
 }
 
+.windmill-footer {
+  width: 100%;
+  line-height: 0;
+  margin: 0 0 var(--space-lg);
+}
+
+.windmill-footer svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  shape-rendering: crispEdges;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+}
+
+/* Map the pixel-art palette onto site tokens so it inherits light/dark. */
+.windmill-footer svg > rect:first-child,
+.windmill-footer rect[fill="#0a1929"] {
+  fill: var(--bg);
+}
+.windmill-footer rect[fill="#F4B942"] {
+  fill: var(--text);
+}
+.windmill-footer rect[fill="#FFD966"] {
+  fill: var(--title);
+}
+
+/* Drop the moon; the प्र logo takes its place in the sky. */
+.windmill-footer rect.moon-core,
+.windmill-footer rect.moon-halo {
+  display: none;
+}
+
+/* Home page: overlay the nav's logo onto the top-left of the scene so the
+   two share vertical space and the content stays above the fold. */
+body.home .container {
+  padding-top: 0;
+}
+body.home .container > div {
+  position: relative;
+  padding-top: 0;
+}
+body.home .nav {
+  position: absolute;
+  top: var(--space-xl);
+  left: var(--space-xl);
+  right: var(--space-xl);
+  margin: 0;
+  z-index: 2;
+}
+/* Buffer: pad the logo with the page background so scene pixels are
+   always cleared around it, no matter how the viewport is resized. */
+body.home .nav-left a {
+  display: inline-block;
+  padding: var(--space-xs);
+  margin: calc(-1 * var(--space-xs));
+  background: var(--bg);
+  line-height: 0;
+}
+body.home .windmill-footer {
+  margin: 0 0 var(--space-sm);
+}
+
+/* Blade rotation is driven via SVG's own transform attribute in Windmill.html
+   (CSS transforms would rasterize the group through the compositor, which
+   anti-aliases and paints a thin border on every pixel). */
+
 .footer h6 {
   color: var(--title);
   font-size: var(--scale-xs);
