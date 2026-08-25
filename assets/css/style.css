@@ -241,11 +241,20 @@ body.home .container > div {
   position: relative;
   padding-top: 0;
 }
+body.home {
+  --edge: var(--space-xl);
+}
+@media (max-width: 768px) {
+  body.home { --edge: var(--space-md); }
+}
+@media (max-width: 520px) {
+  body.home { --edge: var(--space-sm); }
+}
 body.home .nav {
   position: absolute;
-  top: var(--space-xl);
-  left: var(--space-xl);
-  right: var(--space-xl);
+  top: var(--edge);
+  left: var(--edge);
+  right: var(--edge);
   margin: 0;
   z-index: 2;
 }

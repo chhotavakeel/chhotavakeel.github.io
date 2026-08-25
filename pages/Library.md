@@ -146,7 +146,13 @@ Information worth retaining. Starred items have shaped how I think.
   margin: 0 0 0.4rem;
   line-height: 1.3;
 }
-.lib-card-star { color: var(--brand); margin-left: 0.35rem; }
+.lib-card-star {
+  color: var(--brand);
+  margin-left: 0.35rem;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: 0.05em;
+}
 
 .lib-card-title {
   font-size: var(--scale-base);
