@@ -4,6 +4,6 @@ title: Writing
 layout: page
 ---
 
-Not legal advice. Views own.
+None of this is legal advice and all views are my own.
 
 {% include Feed.html %}
