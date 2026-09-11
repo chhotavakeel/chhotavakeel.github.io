@@ -483,56 +483,54 @@ td {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--text) 70%, transparent);
-  margin-bottom: var(--space-xs);
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.4rem;
-  flex-wrap: wrap;
+  margin: 0 0 var(--space-xs);
+  line-height: 1.5;
 }
 .eyebrow .back {
   color: inherit;
   text-decoration: none;
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.4rem;
 }
 .eyebrow .back:hover { color: var(--brand); }
-.eyebrow .back .arr {
-  color: var(--brand);
-  font-size: var(--scale-base);
-  letter-spacing: 0;
-  text-transform: none;
-  line-height: 1;
-}
 .eyebrow .back:focus-visible {
   outline: 2px solid var(--brand);
   outline-offset: 3px;
   border-radius: 2px;
+}
+.eyebrow .arr {
+  color: var(--brand);
+  font-size: var(--scale-base);
+  letter-spacing: 0;
+  text-transform: none;
+  margin-right: 0.4rem;
+  display: inline-block;
+  vertical-align: -0.05em;
 }
 .eyebrow .accent {
   color: var(--brand);
   font-weight: 600;
 }
 
-.doc-title { margin-bottom: var(--space-xs); }
+.doc-title { margin: 0 0 var(--space-xs); }
 
 .doc-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 1.25rem;
   font-size: var(--scale-sm);
   color: var(--text);
+  line-height: 1.6;
   margin: 0 0 var(--space-lg);
 }
-.doc-meta > div { display: inline; }
+.doc-meta dt,
+.doc-meta dd { display: inline; margin: 0; }
 .doc-meta dt {
-  display: inline;
-  font-weight: 400;
   color: var(--text);
   opacity: 0.7;
   margin-right: 0.35rem;
 }
-.doc-meta dd { display: inline; margin: 0; color: var(--title); }
+.doc-meta dd { color: var(--title); }
+.doc-meta dt + dd + dt::before {
+  content: "·";
+  margin: 0 0.6rem 0 0.2rem;
+  opacity: 0.7;
+}
 
 /* Back button (notes) — fallback for tag pages */
 .back-button-container {
