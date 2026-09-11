@@ -477,7 +477,64 @@ td {
 }
 
 
-/* Back button (notes) */
+/* Note eyebrow (↩ Writing · №xx · Mmm YYYY) + meta row */
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text) 70%, transparent);
+  margin-bottom: var(--space-xs);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.eyebrow .back {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+.eyebrow .back:hover { color: var(--brand); }
+.eyebrow .back .arr {
+  color: var(--brand);
+  font-size: var(--scale-base);
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1;
+}
+.eyebrow .back:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.eyebrow .accent {
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.doc-title { margin-bottom: var(--space-xs); }
+
+.doc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.25rem;
+  font-size: var(--scale-sm);
+  color: var(--text);
+  margin: 0 0 var(--space-lg);
+}
+.doc-meta > div { display: inline; }
+.doc-meta dt {
+  display: inline;
+  font-weight: 400;
+  color: var(--text);
+  opacity: 0.7;
+  margin-right: 0.35rem;
+}
+.doc-meta dd { display: inline; margin: 0; color: var(--title); }
+
+/* Back button (notes) — fallback for tag pages */
 .back-button-container {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
