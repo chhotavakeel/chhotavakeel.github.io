@@ -13,8 +13,7 @@ layout: default
         {%- if parts.size == 3 -%}
             {%- assign months = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," -%}
             {%- assign m_idx = parts[1] | plus: 0 | minus: 1 -%}
-            {%- assign day_num = parts[0] | plus: 0 -%}
-            {%- capture updated_display -%}{{ day_num }} {{ months[m_idx] }} {{ parts[2] }}{%- endcapture -%}
+            {%- capture updated_display -%}{{ months[m_idx] }} {{ parts[2] }}{%- endcapture -%}
         {%- endif -%}
     {%- endif -%}
 
