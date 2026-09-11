@@ -2,14 +2,6 @@
 layout: default
 ---
 {% if page.feed == "show" and page.date %}
-    {%- assign published_notes = site.notes | where: "feed", "show" | sort: "date" -%}
-    {%- assign note_number = 0 -%}
-    {%- for n in published_notes -%}
-        {%- if n.url == page.url -%}{% assign note_number = forloop.index %}{%- endif -%}
-    {%- endfor -%}
-    {%- assign num_str = note_number -%}
-    {%- if note_number < 10 -%}{% assign num_str = note_number | prepend: "0" %}{%- endif -%}
-
     {%- assign words = content | number_of_words -%}
     {%- assign reading_min = words | divided_by: 200 -%}
     {%- if reading_min < 1 -%}{% assign reading_min = 1 %}{%- endif -%}
@@ -27,13 +19,14 @@ layout: default
     {%- endif -%}
 
     <div class="eyebrow">
-        <a class="back" href="{{ site.baseurl }}/writing"><span class="arr">↩</span>Writing</a><span>· <span class="accent">№{{ num_str }}</span> · {{ page.date | date: "%b %Y" }}</span>
+        <a class="back" href="{{ site.baseurl }}/writing" title="Back to Writing" aria-label="Back to Writing"><span class="arr">↩</span></a>{{ page.date | date: "%b %Y" }} · {{ reading_min }} min read
     </div>
     <h1 class="doc-title">{{ page.title }}</h1>
+    {%- if updated_display != "" %}
     <dl class="doc-meta">
-        {%- if updated_display != "" -%}<dt>Updated</dt> <dd>{{ updated_display }}</dd> {% endif -%}
-        <dt>Reading time</dt> <dd>{{ reading_min }} min</dd>
+        <dt>Updated</dt> <dd>{{ updated_display }}</dd>
     </dl>
+    {% endif -%}
 {% else %}
     <div class="eyebrow">
         <a class="back" href="{{ site.baseurl }}/writing"><span class="arr">↩</span>Writing</a>
