@@ -510,7 +510,7 @@ td {
   font-weight: 600;
 }
 
-.doc-title { margin: 0 0 var(--space-xs); }
+.doc-title { margin: 0 0 var(--space-lg); }
 
 .doc-meta {
   font-size: var(--scale-sm);

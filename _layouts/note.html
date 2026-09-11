@@ -6,26 +6,10 @@ layout: default
     {%- assign reading_min = words | divided_by: 200 -%}
     {%- if reading_min < 1 -%}{% assign reading_min = 1 %}{%- endif -%}
 
-    {%- assign modified_raw = page["date modified"] -%}
-    {%- assign updated_display = "" -%}
-    {%- if modified_raw -%}
-        {%- assign parts = modified_raw | split: "-" -%}
-        {%- if parts.size == 3 -%}
-            {%- assign months = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," -%}
-            {%- assign m_idx = parts[1] | plus: 0 | minus: 1 -%}
-            {%- capture updated_display -%}{{ months[m_idx] }} {{ parts[2] }}{%- endcapture -%}
-        {%- endif -%}
-    {%- endif -%}
-
     <div class="eyebrow">
         <a class="back" href="{{ site.baseurl }}/writing" title="Back to Writing" aria-label="Back to Writing"><span class="arr">↩</span></a>{{ page.date | date: "%b %Y" }} · {{ reading_min }} min read
     </div>
     <h1 class="doc-title">{{ page.title }}</h1>
-    {%- if updated_display != "" %}
-    <dl class="doc-meta">
-        <dt>Updated</dt> <dd>{{ updated_display }}</dd>
-    </dl>
-    {% endif -%}
 {% else %}
     <div class="eyebrow">
         <a class="back" href="{{ site.baseurl }}/writing"><span class="arr">↩</span>Writing</a>
