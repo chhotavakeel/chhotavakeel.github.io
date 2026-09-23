@@ -75,7 +75,7 @@ layout: page
       <div class="edu-item">
         <div class="edu-degree">London Business School</div>
         <div class="edu-school">Masters of Business Administration</div>
-        <div class="edu-year">Ongoing</div>
+        <div class="edu-year">2026 - Present</div>
       </div>
 
       <div class="edu-item">
