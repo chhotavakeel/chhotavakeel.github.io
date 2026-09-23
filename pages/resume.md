@@ -102,7 +102,7 @@ layout: page
 
       <div class="role">
         <div class="role-title">All for Law</div>
-        <div class="role-org">Mentor</div>
+        <div class="role-org">Member, Founding Team</div>
         <div class="role-period">2021 - 2025</div>
       </div>
 
@@ -132,7 +132,7 @@ layout: page
     <div class="role">
       <div class="role-title">The World Bank Group</div>
       <div class="role-org">Consultant</div>
-      <div class="role-period">Dec 2024 - Present</div>
+      <div class="role-period">Dec 2024 - Jul 2026</div>
       <div class="role-desc">I help the Bank's Education and Skills Practice structure and negotiate the PPP aspects of their loans in the South Asian Region.</div>
     </div>
 
