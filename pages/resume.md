@@ -133,7 +133,7 @@ layout: page
       <div class="role-title">The World Bank Group</div>
       <div class="role-org">Consultant</div>
       <div class="role-period">Dec 2024 - Jul 2026</div>
-      <div class="role-desc">I help the Bank's Education and Skills Practice structure and negotiate the PPP aspects of their loans in the South Asian Region.</div>
+      <div class="role-desc">I helped the Bank's Education and Skills Practice structure and negotiate the PPP aspects of their loans in the South Asian Region.</div>
     </div>
 
     <div class="role">
