@@ -102,7 +102,7 @@ layout: page
 
       <div class="role">
         <div class="role-title">All for Law</div>
-        <div class="role-org">Member, Founding Team</div>
+        <div class="role-org">Founding Team Member</div>
         <div class="role-period">2021 - 2025</div>
       </div>
 
