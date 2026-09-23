@@ -140,7 +140,7 @@ layout: page
       <div class="role-title">Trilegal</div>
 
       <div class="position">
-        <div class="role-org">Secondee Lawyer, O2 Power</div>
+        <div class="role-org">Secondee, O2 Power</div>
         <div class="role-period">May 2024 - Aug 2024</div>
         <div class="role-desc">I was seconded to a key client to support them during their fundraise. During my time there, I collaborated with and advised the in-house legal team on regulatory, contractual, and compliance issues.</div>
       </div>
