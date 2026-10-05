@@ -85,7 +85,7 @@ layout: page
       </div>
 
       <div class="edu-item">
-        <div class="edu-degree">Delhi Public School, R.K. Puram, New Delhi</div>
+        <div class="edu-degree">Delhi Public School, R.K. Puram</div>
         <div class="edu-school">All India Senior School Certificate Examination</div>
         <div class="edu-year">2014</div>
       </div>
