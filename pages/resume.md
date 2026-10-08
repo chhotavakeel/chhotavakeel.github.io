@@ -160,7 +160,7 @@ layout: page
       <div class="position">
         <div class="role-org">Associate, Regulatory Litigation</div>
         <div class="role-period">Jun 2019 - Nov 2020</div>
-        <div class="role-desc">My role in the Dispute Resolution practice group saw me acting on a variety of contentious and non-contentious mandates for clients in the energy and infrastructure sectors, including representing them in proceedings before courts, arbitral tribunals, and regulatory bodies.</div>
+        <div class="role-desc">My role in the Litigation practice group saw me acting on a variety of contentious and non-contentious mandates for clients in the energy and infrastructure sectors, including representing them in proceedings before courts, arbitral tribunals, and regulatory bodies.</div>
       </div>
     </div>
   </section>
