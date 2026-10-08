@@ -132,8 +132,8 @@ layout: page
     <div class="role">
       <div class="role-title">The World Bank Group</div>
       <div class="role-org">Consultant</div>
-      <div class="role-period">Dec 2024 - Jul 2026</div>
-      <div class="role-desc">I helped the Bank's Education and Skills Practice structure and negotiate the PPP aspects of their loans in the South Asian Region.</div>
+      <div class="role-period">Dec 2024 - Present</div>
+      <div class="role-desc">I help the Bank's Education and Skills Practice structure and negotiate the PPP aspects of their loans in the South Asian Region.</div>
     </div>
 
     <div class="role">
@@ -158,7 +158,7 @@ layout: page
       </div>
 
       <div class="position">
-        <div class="role-org">Associate, Dispute Resolution</div>
+        <div class="role-org">Associate, Regulatory Litigation</div>
         <div class="role-period">Jun 2019 - Nov 2020</div>
         <div class="role-desc">My role in the Dispute Resolution practice group saw me acting on a variety of contentious and non-contentious mandates for clients in the energy and infrastructure sectors, including representing them in proceedings before courts, arbitral tribunals, and regulatory bodies.</div>
       </div>
