@@ -1,0 +1,314 @@
+---
+permalink: /80plates
+layout: null
+sitemap: false
+title: 80 Plates
+description: "A food and drink trip through Spain, one ticket per plate."
+---
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+  // Same as _layouts/default.html: apply the saved theme before first paint.
+  (function () {
+    var saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  })();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ page.title }} -{{ site.heading }}</title>
+<meta content="{{ page.description }}" name="description">
+<meta content="{{ site.title }}" property="og:site_name">
+<meta content="{{ page.title }}" property="og:title">
+<meta content="{{ page.description }}" property="og:description">
+<meta content="article" property="og:type">
+<meta content="{{ site.url }}{{ page.url }}" property="og:url">
+<meta property="og:image" content="{{ site.url }}/assets/img/80plates/madrid-tapas.jpg">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}{{ site.apple_touch_icon }}">
+<link rel="icon" href="{{ site.baseurl }}{{ site.favicon }}" type="image/svg+xml" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&family=Overpass+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #16161A;
+    --on-ink: #FFFFFF;
+    --muted: #3D3D45;
+    --page: #F7F6F2;
+    --paper: #FFFDF7;
+    --stripe: #ECE8DE;
+    --rule: #E4DFD2;
+    --bar: #E2DED3;
+    --sans: 'Overpass', 'Helvetica Neue', Arial, sans-serif;
+    --mono: 'Overpass Mono', ui-monospace, monospace;
+    --card-w: 300px;
+  }
+  /* Dark theme, toggled site-wide (see _includes/Footer.html) */
+  [data-theme="dark"] {
+    --ink: #FFFFFF;
+    --on-ink: #18181c;
+    --muted: #d6d6d6;
+    --page: #18181c;
+    --paper: #23232a;
+    --stripe: #2c2c33;
+    --rule: #33343a;
+    --bar: #33343a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; overscroll-behavior-x: none; }
+  body { background: var(--page); color: var(--ink); font-family: var(--sans); }
+
+  /* Scroll-jack: tall section, sticky viewport inside */
+  #jack { position: relative; touch-action: pan-y; }
+  .stage {
+    position: sticky; top: 0; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .track-wrap { flex: none; }
+  .track {
+    display: flex; gap: 64px; width: max-content; padding: 0 40px;
+    transform-origin: 0 0; will-change: transform; backface-visibility: hidden;
+  }
+  .city { display: flex; gap: 24px; }
+
+  /* Ticket */
+  .ticket {
+    position: relative; flex: none; width: var(--card-w);
+    background: var(--paper); border: 2px solid var(--ink); border-radius: 16px;
+    display: flex; flex-direction: column;
+  }
+  .band {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 16px 8px; border-radius: 14px 14px 0 0;
+    font-family: var(--mono); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+  }
+  .photo {
+    position: relative; margin: 14px 14px 10px; aspect-ratio: 4 / 5;
+    border: 2px solid var(--ink); border-radius: 8px; overflow: hidden;
+    background: repeating-linear-gradient(45deg, var(--stripe) 0 10px, var(--rule) 10px 20px);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; color: var(--muted);
+  }
+  .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .caption {
+    margin: 3px 0 0; padding: 0 18px; text-align: center;
+    font-size: 1rem; font-weight: 600; line-height: 1.35; color: var(--muted);
+  }
+  .tear { position: relative; height: 28px; }
+  .tear::before {
+    content: ""; position: absolute; left: 13px; right: 13px; top: 13px;
+    border-top: 2px dashed var(--ink);
+  }
+  .notch {
+    position: absolute; top: 0; width: 15px; height: 28px;
+    background: var(--page); border: 2px solid var(--ink);
+  }
+  .notch.l { left: -2px; border-left: 0; border-radius: 0 14px 14px 0; }
+  .notch.r { right: -2px; border-right: 0; border-radius: 14px 0 0 14px; }
+  .stub {
+    padding: 4px 16px 18px;
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 12px;
+  }
+  .field { display: flex; flex-direction: column; gap: 2px; }
+  .field.wide { grid-column: 1 / -1; }
+  .label { font-family: var(--mono); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; color: var(--muted); }
+  .value { font-size: 0.95rem; font-weight: 600; }
+  .value.big { font-size: 1.35rem; font-weight: 800; line-height: 1.1; }
+  .barcode {
+    grid-column: 1 / -1; height: 34px; margin-top: 4px;
+    background: repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 4px, var(--ink) 4px 7px, transparent 7px 9px, var(--ink) 9px 10px, transparent 10px 13px);
+  }
+  .digits { grid-column: 1 / -1; margin-top: -6px; font-family: var(--mono); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.3em; }
+
+  /* Cover (boarding pass) */
+  .cover .band { background: var(--ink); color: var(--on-ink); }
+  .cover-body { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 22px; padding: 28px 20px; }
+  .cover h1 { margin: 0; font-weight: 900; font-size: 3.4rem; line-height: 0.95; letter-spacing: -0.03em; }
+  .route { align-self: flex-start; display: inline-flex; flex-direction: column; gap: 6px; }
+  .route-row { display: flex; align-items: center; gap: 6px; }
+  .chip {
+    padding: 4px 7px 2px; border-radius: 5px;
+    font-family: var(--mono); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em;
+  }
+  .cover .stub-plain { padding: 8px 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+  .cover .stub-plain .barcode { margin-top: 0; }
+  .cover .stub-plain .digits { margin-top: -4px; }
+
+  /* Progress bar */
+  .bar { position: relative; flex: none; margin: 32px 40px 0; height: 4px; border-radius: 3px; background: var(--bar); }
+  .bar-fill { height: 100%; width: 0%; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<section id="jack" aria-label="Tickets">
+  <div class="stage" id="stage">
+    <div class="track-wrap" id="trackWrap">
+      <div class="track" id="track"></div>
+    </div>
+    <div class="bar" aria-hidden="true"><div class="bar-fill" id="barFill"></div></div>
+  </div>
+</section>
+
+<script>
+/* Content lives in _data/80plates.yml */
+const TRIP = {{ site.data['80plates'] | jsonify }};
+
+/* ------------------------------------------------------------------
+   RENDER
+------------------------------------------------------------------- */
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const pad = (n) => String(n).padStart(2, '0');
+const digits = (ci, ti) => '8 4' + pad(ci + 1) + (ti + 1) + '90 ' + String(ci * 4231 + ti * 977 + 100000).slice(-6);
+
+function coverHTML() {
+  const chip = (c) => `<span class="chip" style="background:${c.color};color:${c.on}">${esc(c.code)}</span>`;
+  const half = Math.ceil(TRIP.cities.length / 2);
+  return `
+  <article class="ticket cover" aria-label="80 Plates boarding pass">
+    <div class="band"><span>BOARDING PASS</span><span>Nº 00</span></div>
+    <div class="cover-body">
+      <div class="field"><span class="label">PASSENGER</span><span class="value" style="font-size:1rem;font-weight:700">${esc(TRIP.passenger)}</span></div>
+      <h1>80 Plates</h1>
+      <div class="route">
+        <div class="route-row">${TRIP.cities.slice(0, half).map(chip).join('')}</div>
+        <div class="route-row">${TRIP.cities.slice(half).map(chip).join('')}</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px">
+        <div class="field"><span class="label">FROM</span><span class="value">${esc(TRIP.from)}</span></div>
+        <div class="field"><span class="label">TO</span><span class="value">${esc(TRIP.to)}</span></div>
+      </div>
+    </div>
+    <div class="tear" aria-hidden="true"><span class="notch l"></span><span class="notch r"></span></div>
+    <div class="stub-plain">
+      <div class="barcode" aria-hidden="true"></div>
+      <span class="digits">8 400000 080080</span>
+    </div>
+  </article>`;
+}
+
+function ticketHTML(city, ci, t, ti) {
+  const photo = t.photo
+    ? `<img src="${esc(t.photo)}" alt="${esc(t.alt || t.item)}" loading="lazy" decoding="async">`
+    : `<span>[YOUR PHOTO]</span>`;
+  return `
+  <article class="ticket">
+    <div class="band" style="background:${city.color};color:${city.on}">
+      <span>80 PLATES · ${esc(city.code)}</span><span>Nº ${pad(ci + 1)}-${String.fromCharCode(65 + ti)}</span>
+    </div>
+    <div class="photo">${photo}</div>
+    <p class="caption">${esc(t.time || '[Time]')}</p>
+    <div class="tear" aria-hidden="true"><span class="notch l"></span><span class="notch r"></span></div>
+    <div class="stub">
+      <div class="field wide"><span class="label">${esc(t.kind || 'DRINK')}</span><span class="value big">${esc(t.item)}</span></div>
+      <div class="field"><span class="label">LOCATION</span><span class="value">${esc(t.location || '[Location]')}</span></div>
+      <div class="field"><span class="label">DATE</span><span class="value">${esc(t.date || '[Date]')}</span></div>
+      <div class="barcode" aria-hidden="true"></div>
+      <span class="digits">${digits(ci, ti)}</span>
+    </div>
+  </article>`;
+}
+
+const track = document.getElementById('track');
+track.innerHTML = coverHTML() + TRIP.cities.map((c, ci) =>
+  `<div class="city">${c.tickets.map((t, ti) => ticketHTML(c, ci, t, ti)).join('')}</div>`
+).join('');
+
+/* ------------------------------------------------------------------
+   SCROLL-JACK
+   Vertical scroll drives the horizontal track. Time-based easing so
+   it feels the same at 60Hz and 120Hz. Sideways wheel/swipe also work.
+------------------------------------------------------------------- */
+const jack = document.getElementById('jack');
+const stage = document.getElementById('stage');
+const wrap = document.getElementById('trackWrap');
+const barFill = document.getElementById('barFill');
+const colors = TRIP.cities.map((c) => c.color);
+
+let m = { travel: 0, s: 1 };
+let cur = 0, lastX = -1, lastIdx = -1, lastTs = 0, vel = 0;
+
+function measure() {
+  const vh = window.innerHeight;
+  const viewW = stage.clientWidth;
+  track.style.transform = 'none';
+  const h = track.offsetHeight;
+  const s = Math.min(1, Math.max(0.5, (vh - 80) / h));
+  const travel = Math.max(0, Math.ceil(track.scrollWidth * s - viewW));
+  m = { travel, s };
+  stage.style.height = vh + 'px';
+  wrap.style.height = Math.ceil(h * s) + 'px';
+  jack.style.height = (vh + travel) + 'px';
+  lastX = -1;
+}
+
+function inJack() {
+  const r = jack.getBoundingClientRect();
+  return r.top <= 1 && r.bottom >= window.innerHeight - 1;
+}
+
+function tick(ts) {
+  const dt = lastTs ? Math.min(0.05, Math.max(0, (ts - lastTs) / 1000)) : 1 / 60;
+  lastTs = ts;
+
+  if (vel) {                       // touch momentum for sideways swipes
+    window.scrollBy(0, vel * dt);
+    vel *= Math.exp(-dt / 0.325);
+    if (Math.abs(vel) < 20) vel = 0;
+  }
+
+  const r = jack.getBoundingClientRect();
+  const run = r.height - window.innerHeight;
+  const target = run > 0 ? Math.min(1, Math.max(0, -r.top / run)) : 0;
+  const d = target - cur;
+  cur = Math.abs(d) < 0.00003 ? target : cur + d * (1 - Math.exp(-dt / 0.07));
+
+  const x = cur * m.travel;
+  if (Math.abs(x - lastX) > 0.01) {
+    lastX = x;
+    track.style.transform = `translate3d(${(-x).toFixed(2)}px,0,0) scale(${m.s.toFixed(4)})`;
+    barFill.style.width = (cur * 100).toFixed(2) + '%';
+  }
+  const idx = Math.min(colors.length - 1, Math.floor(cur * colors.length));
+  if (idx !== lastIdx) { lastIdx = idx; barFill.style.background = colors[idx]; }
+
+  requestAnimationFrame(tick);
+}
+
+/* Sideways trackpad / mouse wheel */
+window.addEventListener('wheel', (e) => {
+  if (Math.abs(e.deltaX) > Math.abs(e.deltaY) && inJack()) window.scrollBy(0, e.deltaX);
+}, { passive: true });
+
+/* Sideways touch swipe, with momentum on release */
+let tx = 0, ty = 0, tt = 0, v = 0, lock = null;
+window.addEventListener('touchstart', (e) => {
+  const t = e.touches[0]; tx = t.clientX; ty = t.clientY; tt = performance.now();
+  lock = null; vel = 0; v = 0;
+}, { passive: true });
+window.addEventListener('touchmove', (e) => {
+  const t = e.touches[0];
+  const dx = tx - t.clientX, dy = ty - t.clientY;
+  if (!lock && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) lock = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+  if (lock === 'x' && inJack()) {
+    const now = performance.now();
+    v = 0.7 * (dx / Math.max(1, now - tt)) + 0.3 * v;
+    tt = now; tx = t.clientX; ty = t.clientY;
+    window.scrollBy(0, dx);
+  }
+}, { passive: true });
+window.addEventListener('touchend', () => {
+  if (lock === 'x' && Math.abs(v) > 0.05) vel = v * 1000;
+  lock = null;
+}, { passive: true });
+
+window.addEventListener('resize', measure);
+window.addEventListener('load', measure);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+measure();
+requestAnimationFrame(tick);
+</script>
+</body>
+</html>

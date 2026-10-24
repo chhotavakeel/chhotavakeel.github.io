@@ -1,0 +1,164 @@
+# Content for /80plates (pages/80plates.html).
+# Each city can have any number of tickets. Leave `photo` out for a
+# placeholder. `kind` is the label above the item (DRINK or SNACK).
+# Optional per ticket: photo, alt, time, location, date.
+# Keep "on" quoted: unquoted, YAML reads it as true.
+
+passenger: Jamón R.
+from: "[Start date]"
+to: "[End date]"
+
+cities:
+  - name: Barcelona
+    code: BCN
+    color: "#004D98"
+    "on": "#FFFFFF"
+    tickets:
+      - kind: DRINK
+        item: Victoria
+        photo: /assets/img/80plates/barcelona-victoria.jpg
+        alt: A can of Victoria held up in front of an Eixample apartment block
+      - kind: SNACK
+        item: Gelato
+        location: Lucciano's
+        photo: /assets/img/80plates/barcelona-gelato.jpg
+        alt: A cup of pistachio and vanilla gelato with a Lucciano's wafer
+      - kind: DRINK
+        item: Coffee
+        photo: /assets/img/80plates/barcelona-coffee.jpg
+        alt: A paper coffee cup held up beside a carved stone facade
+      - kind: DRINK
+        item: Café
+        location: Sagrada Família
+        photo: /assets/img/80plates/barcelona-sagrada-coffee.jpg
+        alt: An "Un buen café" cup held up in front of the Sagrada Família
+      - kind: DRINK
+        item: Estrella Damm
+        photo: /assets/img/80plates/barcelona-estrella.jpg
+        alt: A can of Estrella Damm and a Kindle by a rooftop pool
+
+  - name: Madrid
+    code: MAD
+    color: "#C8102E"
+    "on": "#FFFFFF"
+    tickets:
+      - kind: DRINK
+        item: Mahou Cinco Estrellas
+        photo: /assets/img/80plates/madrid-mahou.jpg
+        alt: A bottle of Mahou Cinco Estrellas on a wooden bar table, with a bowl of crisps
+      - kind: SNACK
+        item: Croquetas
+        photo: /assets/img/80plates/madrid-tapas.jpg
+        alt: Croquetas in a red bowl and a stewed tapa on a slate board
+      - kind: SNACK
+        item: Gambas al ajillo
+        photo: /assets/img/80plates/madrid-gambas.jpg
+        alt: Garlic prawns and chorizo in clay dishes
+      - kind: SNACK
+        item: Huevos rotos
+        photo: /assets/img/80plates/madrid-huevos-rotos.jpg
+        alt: Fried eggs over potatoes, topped with jamón and chives
+      - kind: SNACK
+        item: Mini burger
+        photo: /assets/img/80plates/madrid-burger.jpg
+        alt: A small burger on a red plate, with olives at the bar
+
+  - name: Granada
+    code: GRX
+    color: "#7B1E4B"
+    "on": "#FFFFFF"
+    tickets:
+      - kind: DRINK
+        item: Red Bull Apricot
+        location: Alhambra
+        photo: /assets/img/80plates/granada-red-bull.jpg
+        alt: An apricot Red Bull held up in the Alhambra gardens
+      - kind: DRINK
+        item: Vermut
+        photo: /assets/img/80plates/granada-vermouth.jpg
+        alt: A vermouth with orange on a sunny terrace
+      - kind: SNACK
+        item: Berenjenas con miel
+        photo: /assets/img/80plates/granada-berenjenas.jpg
+        alt: Fried aubergine with honey, a croqueta, olives and a vermouth
+
+  - name: Málaga
+    code: AGP
+    color: "#00838F"
+    "on": "#FFFFFF"
+    tickets:
+      - kind: DRINK
+        item: Coffee
+        location: Santa Specialty Coffee
+        photo: /assets/img/80plates/malaga-coffee.jpg
+        alt: A Santa Specialty Coffee cup held up in a narrow old-town street
+      - kind: SNACK
+        item: Alcachofas con jamón
+        photo: /assets/img/80plates/malaga-alcachofas.jpg
+        alt: Artichokes with jamón on a red pepper sauce, beside a glass of Victoria
+      - kind: SNACK
+        item: Gilda
+        photo: /assets/img/80plates/malaga-gilda.jpg
+        alt: A skewer of olives, anchovy, octopus and guindilla peppers
+
+  - name: Córdoba
+    code: ODB
+    color: "#5B6B2F"
+    "on": "#FFFFFF"
+    tickets:
+      - kind: SNACK
+        item: Gambas en caldo
+        photo: /assets/img/80plates/cordoba-gambas.jpg
+        alt: Prawns in a saffron broth on a blue and white tiled plate
+      - kind: DRINK
+        item: Cruzcampo
+        photo: /assets/img/80plates/cordoba-cruzcampo.jpg
+        alt: A glass of Cruzcampo in a whitewashed courtyard restaurant
+      - kind: DRINK
+        item: Caña
+        photo: /assets/img/80plates/cordoba-cana.jpg
+        alt: A small beer held up in a patio hung with ivy and lanterns
+
+  - name: Seville
+    code: SVQ
+    color: "#E0A526"
+    "on": "#16161A"
+    tickets:
+      - kind: DRINK
+        item: Caña
+        location: Pez Globo
+        photo: /assets/img/80plates/seville-pez-globo-cana.jpg
+        alt: A beer in a Pez Globo glass by a window onto the street
+      - kind: SNACK
+        item: Montadito
+        location: Pez Globo
+        photo: /assets/img/80plates/seville-pez-globo-montadito.jpg
+        alt: A grilled sandwich cut in half on Pez Globo paper
+      - kind: SNACK
+        item: Banderilla
+        location: Pez Globo
+        photo: /assets/img/80plates/seville-pez-globo-banderilla.jpg
+        alt: A skewer of olives, tomato and peppers on Pez Globo paper
+      - kind: DRINK
+        item: Iced coffee
+        photo: /assets/img/80plates/seville-iced-coffee.jpg
+        alt: An iced coffee held up on a shaded park path
+      - kind: DRINK
+        item: Aperol Spritz
+        photo: /assets/img/80plates/seville-aperol.jpg
+        alt: An Aperol Spritz and a focaccia sandwich at a street table
+      - kind: SNACK
+        item: Churros con chocolate
+        photo: /assets/img/80plates/seville-churros.jpg
+        alt: Churros and a cup of hot chocolate against blue tiled walls
+
+  - name: In transit
+    code: DXB
+    color: "#5A5A63"
+    "on": "#FFFFFF"
+    tickets:
+      - kind: DRINK
+        item: Iced coffee
+        location: "% Arabica"
+        photo: /assets/img/80plates/transit-arabica.jpg
+        alt: A % Arabica cup held up in front of the café's arched counter
